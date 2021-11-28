@@ -2,17 +2,17 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
 export default function DarkmodeButton() {
-	const [darkmode, setDarkmode] = useState(false)
+	const [mounted, setMounted] = useState(false)
 	const { resolvedTheme, setTheme } = useTheme()
 
 	// After mounting, we have access to the theme
-	useEffect(() => setDarkmode(true), [])
+	useEffect(() => setMounted(false), [])
 
 	return (
 		<button
-			className=' p-4 text-white dark:text-black bg-red-300 dark:bg-red-800 font-semibold rounded-md'
+			className=' p-4 text-white dark:text-black bg-red-300 dark:bg-red-800 font-semibold rounded-md hover:ring-2 ring-gray-300  transition-all'
 			onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
-			{darkmode && (
+			{mounted && (
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 24 24'
