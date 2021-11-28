@@ -6,11 +6,11 @@ export default function DarkmodeButton() {
 	const { resolvedTheme, setTheme } = useTheme()
 
 	// After mounting, we have access to the theme
-	useEffect(() => setMounted(false), [])
+	useEffect(() => setMounted(true), [])
 
 	return (
 		<button
-			className=' p-4 text-white dark:text-black bg-red-300 dark:bg-red-800 font-semibold rounded-md hover:ring-2 ring-gray-300  transition-all'
+			className=' p-3 text-white dark:text-black bg-red-300 dark:bg-red-800 font-semibold rounded-md hover:ring-2 ring-gray-300  transition-all'
 			onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
 			{mounted && (
 				<svg
@@ -18,7 +18,7 @@ export default function DarkmodeButton() {
 					viewBox='0 0 24 24'
 					fill='none'
 					stroke='currentColor'
-					className='w-5 h-5 text-gray-800 dark:text-gray-200'>
+					className='w-6 h-6 text-gray-800 dark:text-gray-200'>
 					{resolvedTheme === 'light' ? (
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
