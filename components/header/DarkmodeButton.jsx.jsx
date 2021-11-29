@@ -10,7 +10,7 @@ export default function DarkmodeButton() {
 
 	return (
 		<button
-			className=' p-3 text-white dark:text-black bg-red-300 dark:bg-red-800 font-semibold rounded-md hover:ring-2 ring-gray-300  transition-all'
+			className='flex items-center justify-center p-1 h-10 w-10 my-auto bg-transparent font-semibold rounded-full hover:ring-2 ring-gray-500  transition-all'
 			onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
 			{mounted && (
 				<svg
@@ -18,7 +18,7 @@ export default function DarkmodeButton() {
 					viewBox='0 0 24 24'
 					fill='none'
 					stroke='currentColor'
-					className='w-6 h-6 text-gray-800 dark:text-gray-200'>
+					className='w-6 h-6 text-gray-200 dark:text-gray-600'>
 					{resolvedTheme === 'light' ? (
 						<svg
 							xmlns='http://www.w3.org/2000/svg'

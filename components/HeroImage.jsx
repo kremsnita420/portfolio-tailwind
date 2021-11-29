@@ -1,11 +1,11 @@
 export default function HeroImage() {
 	return (
-		<section className='flex relative'>
+		<section className='flex'>
 			<svg
 				data-name='Layer 1'
 				xmlns='http://www.w3.org/2000/svg'
 				viewBox='0 0 734.736 779.785'
-				className='h-96 absolute top-auto left-auto'>
+				className='h-96'>
 				<path
 					d='M734.736 172.947h-3.998V63.402A63.402 63.402 0 00667.336 0H435.249a63.402 63.402 0 00-63.402 63.402v600.974a63.402 63.402 0 0063.402 63.402h232.086a63.402 63.402 0 0063.402-63.402V250.923h4z'
 					fill='#3f3d56'
