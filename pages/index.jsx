@@ -7,7 +7,7 @@ export default function IndexPage() {
 			<section className='flex flex-col items-center w-full justify-start'>
 				<div className=' flex items-start w-full justify-start '>
 					<div className='flex pl-5 md:pl-20 flex-col items-start justify-start'>
-						<h2 className=' text-xl md:text-2xl xl:text-3xl mb-2 mt-24 animate-moveRight1'>
+						<h2 className=' text-xl md:text-2xl xl:text-3xl mb-2 mt-5 md:mt-24 animate-moveRight1'>
 							<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 								Hi,
 							</span>
