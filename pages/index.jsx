@@ -36,6 +36,9 @@ export default function IndexPage() {
 								I'm
 							</span>
 							<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+								a
+							</span>
+							<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 								Web
 							</span>
 							<span className='p-2 border-t-2 border-l-2 border-b-2 border-r-2 border-gray-800 dark:border-gray-200'>

@@ -22,8 +22,8 @@ export default function Header() {
 			<div className='container  flex align-center justify-between px-5 sm:px-0'>
 				{/* header logo */}
 				<NextLink href='/'>
-					<a>
-						<HeaderLogo />
+					<a className='text-5xl font-body text-gray-200 dark:text-gray-800'>
+						Safet Dev
 					</a>
 				</NextLink>
 

@@ -18,15 +18,19 @@ module.exports = {
 
       },
       animation: {
+        //hero text animations
         moveRight1: 'moveRight 2s ease-in-out ',
         moveRight2: 'moveRight 4s ease-in-out ',
         moveRight3: 'moveRight 6s ease-in-out ',
         moveRight4: 'moveRight 8s ease-in-out ',
+        // generic
         spinSlow: 'spin 15s linear infinite',
       },
       keyframes: {
+        //hero text animations
         moveRight: {
           '0%': { transform: 'translateX(-2000px)', opacity: 0 },
+          '90%': { transform: 'translateX(-5px)', opacity: 0.9 },
           '100%': { transform: 'translatateX(2000px)', opacity: 1 },
         },
 
