@@ -2,10 +2,9 @@ import NextLink from 'next/link'
 import { useState } from 'react'
 import DarkmodeButton from './DarkmodeButton.jsx'
 import HeaderLogo from './HeaderLogo.jsx'
-import Drawer from './mobile-navigation/Drawer.jsx'
-import DrawerNavigationItem from './navigation/DrawerNavigationItem.jsx'
+
+import DrawerNavigationItem from './mobile-navigation/DrawerNavigationItem.jsx'
 import NavigationBar from './navigation/NavigationBar.jsx'
-import NavigationItem from './navigation/NavigationItem.jsx'
 
 export default function Header() {
 	const [sidebarVisible, setSidebarVisible] = useState(false)
@@ -37,8 +36,8 @@ export default function Header() {
 					{/* mobile nav button */}
 					{!sidebarVisible ? (
 						<button
-							className='flex md:hidden items-center justify-center p-2 h-10 w-10 my-auto  ml-2
-									   font-semibold rounded-md  hover:ring-2 ring-gray-500  transition-all z-50'
+							className='flex md:hidden items-center justify-center p-2 h-10 w-10 my-auto ml-2
+									   font-semibold rounded-md transition-all z-50'
 							onClick={sidebarOpenHandler}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -56,8 +55,8 @@ export default function Header() {
 						</button>
 					) : (
 						<button
-							className='p-2 h-10 w-10 my-auto bg-gray-800 dark:bg-gray-200 font-semibold 
-									   rounded-md hover:ring-2 ring-gray-500  transition-all z-50'
+							className='p-2 h-10 w-10 my-auto bg-gray-800 dark:bg-gray-200 font-semibold
+									   rounded-md  transition-all z-50'
 							onClick={sidebarCloseHandler}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'

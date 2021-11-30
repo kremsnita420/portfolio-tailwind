@@ -7,7 +7,7 @@ export default function IndexPage() {
 			<section className='flex flex-col items-center w-full justify-start'>
 				<div className=' flex items-start w-full justify-start '>
 					<div className='flex pl-5 md:pl-20 flex-col items-start justify-start'>
-						<h2 className=' text-xl md:text-2xl xl:text-3xl mb-2 mt-36 animate-moveRight1'>
+						<h2 className=' text-xl md:text-2xl xl:text-3xl mb-2 mt-24 animate-moveRight1'>
 							<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 								Hi,
 							</span>
@@ -43,7 +43,7 @@ export default function IndexPage() {
 							</span>
 						</h2>
 						<button
-							className='border-2 p-4 mt-20 w-auto px-20  py-5 rounded-md animate-moveTop1
+							className='border-2 p-4 mt-20 w-auto px-20  py-5 rounded-md animate-moveRight4
 									 bg-gray-800 text-gray-200 hover:ring-2 ring-gray-500
 									 dark:bg-gray-200 dark:text-gray-800'>
 							My Work
