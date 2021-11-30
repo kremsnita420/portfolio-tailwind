@@ -9,7 +9,10 @@ export default function Layout({ title, description, children }) {
 				{description && <meta name='description' content={description} />}
 			</Head>
 			<Header />
-			<main className='container h-full mx-auto bg-gray-300 dark:bg-gray-700'>
+			<main
+				className='container
+						   flex flex-col items-center
+				 		   justify-center mx-auto'>
 				{children}
 			</main>
 		</>
