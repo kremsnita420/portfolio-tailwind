@@ -8,7 +8,6 @@ import path from 'path'
 import fs from 'fs/promises'
 
 export default function IndexPage({ projects }) {
-	console.log(projects)
 	return (
 		<Layout title='Home Page' description='First Page'>
 			{/* hero section */}

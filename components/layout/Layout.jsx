@@ -10,9 +10,9 @@ export default function Layout({ title, description, children }) {
 			</Head>
 			<Header />
 			<main
-				className='container font-body
+				className='container font-body min-h-[calc(100vh-56px)]
 						   flex flex-col items-center
-				 		   justify-center mx-auto'>
+				 		   justify-start mx-auto'>
 				{children}
 			</main>
 		</>

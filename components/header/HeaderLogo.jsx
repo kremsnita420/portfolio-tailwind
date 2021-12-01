@@ -6,7 +6,7 @@ export default function HeaderLogo() {
 			<a
 				className='
 						text-4xl md:text-6xl my-auto font-heading1 text-transparent bg-clip-text
-						bg-gradient-to-br from-pink-400 to-red-600 dark:from-purle-900 dark:to-red-900'>
+						bg-gradient-to-br dark:from-pink-400 dark:to-red-600 from-blue-600 to-pink-900'>
 				{`<Safet Dev/>`}
 			</a>
 		</NextLink>
