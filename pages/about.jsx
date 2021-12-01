@@ -2,10 +2,10 @@
 import HeadTitle from '../components/layout/HeadTitle'
 import Layout from '../components/layout/Layout'
 
-export default function ProjectsPage() {
+export default function AboutPage() {
 	return (
 		<Layout>
-			<HeadTitle title='Skills Page' />
+			<HeadTitle title='About Page' />
 		</Layout>
 	)
 }

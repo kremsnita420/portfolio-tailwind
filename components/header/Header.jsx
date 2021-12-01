@@ -1,7 +1,6 @@
 import NextLink from 'next/link'
 import { useState } from 'react'
 import DarkmodeButton from './DarkmodeButton.jsx'
-import HeaderLogo from './HeaderLogo.jsx'
 
 import DrawerNavigationItem from './mobile-navigation/DrawerNavigationItem.jsx'
 import NavigationBar from './navigation/NavigationBar.jsx'
@@ -18,12 +17,12 @@ export default function Header() {
 	}
 
 	return (
-		<header className=' bg-gray-800 dark:bg-gray-200 flex align-center justify-center py-2 '>
+		<header className='bg-gray-800 dark:bg-gray-200 flex align-center justify-center py-2 z-20 '>
 			<div className='container  flex align-center justify-between px-5 sm:px-0'>
 				{/* header logo */}
 				<NextLink href='/'>
-					<a className='text-5xl font-body text-gray-200 dark:text-gray-800'>
-						Safet Dev
+					<a className='text-4xl font-heading1 font-black text-gray-200 dark:text-gray-800'>
+						{`<Safet Dev/>`}
 					</a>
 				</NextLink>
 
@@ -37,7 +36,7 @@ export default function Header() {
 					{!sidebarVisible ? (
 						<button
 							className='flex md:hidden items-center justify-center p-2 h-10 w-10 my-auto ml-2
-									   font-semibold rounded-md transition-all z-50'
+									   font-semibold rounded-md hover:ring-2 ring-gray-500 transition-all z-10'
 							onClick={sidebarOpenHandler}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -83,16 +82,12 @@ export default function Header() {
 						? 'top-0 absolute right-[100%] w-full h-full bg-gray-800 dark:bg-gray-200 '
 						: 'top-0 absolute right-0 w-full h-full bg-gray-800 dark:bg-gray-200 z-10 '
 				}>
-				<div className='flex flex-col h-2/3 m-auto w-2/3 items-center justify-around'>
+				<div className='flex flex-col h-full w-full items-center justify-center'>
 					<div>
-						<nav className='flex flex-col items-center justify-start text-gray-200 dark:text-gray-800'>
-							<DrawerNavigationItem
-								className='inline-block'
-								href='/'
-								text='About'
-							/>
-							<DrawerNavigationItem href='/projects' text='Projects' />
+						<nav className='flex font-heading1 flex-col items-center justify-center text-gray-200 dark:text-gray-800'>
+							<DrawerNavigationItem href='/' text='Home' />
 							<DrawerNavigationItem href='/skills' text='Skills' />
+							<DrawerNavigationItem href='/about' text='About' />
 						</nav>
 					</div>
 				</div>

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from './header/Header'
+import Header from '../header/Header'
 
 export default function Layout({ title, description, children }) {
 	return (
@@ -10,7 +10,7 @@ export default function Layout({ title, description, children }) {
 			</Head>
 			<Header />
 			<main
-				className='container
+				className='container font-body
 						   flex flex-col items-center
 				 		   justify-center mx-auto'>
 				{children}
