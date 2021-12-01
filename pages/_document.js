@@ -10,7 +10,7 @@ class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Tourney:wght@100;500;900&display=swap" rel="stylesheet" />
                 </Head>
-                <body className=" bg-gradient-to-tr from-yellow-300 via-red-300 to-pink-300">
+                <body className=" bg-gradient-to-tr from-yellow-300 via-red-300 to-pink-300 dark:from-green-900 dark:via-purple-900 dark:to-yellow-900">
                     <Main />
                     <NextScript />
                 </body>

@@ -1,6 +1,6 @@
-import NextLink from 'next/link'
 import { useState } from 'react'
 import DarkmodeButton from './DarkmodeButton.jsx'
+import HeaderLogo from './HeaderLogo.jsx'
 
 import DrawerNavigationItem from './mobile-navigation/DrawerNavigationItem.jsx'
 import NavigationBar from './navigation/NavigationBar.jsx'
@@ -17,14 +17,10 @@ export default function Header() {
 	}
 
 	return (
-		<header className='bg-gray-800 dark:bg-gray-200 flex align-center justify-center py-2 z-20 '>
+		<header className='bg-gray-800 dark:bg-gray-300 flex align-center justify-center py-2 z-20 '>
 			<div className='container  flex align-center justify-between px-5 sm:px-0'>
 				{/* header logo */}
-				<NextLink href='/'>
-					<a className='text-4xl md:text-6xl my-auto font-heading1 text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600'>
-						{`<Safet Dev/>`}
-					</a>
-				</NextLink>
+				<HeaderLogo />
 
 				{/* navigation bar */}
 				<NavigationBar />

@@ -1,7 +1,7 @@
 export default function HeroText() {
 	return (
 		<div className='flex pl-5 md:px-5 flex-col items-start justify-center'>
-			<h2 className=' text-xl md:text-2xl xl:text-3xl mb-10 mt-20 md:mt-24 animate-moveRight1'>
+			<h2 className=' text-xl md:text-2xl xl:text-3xl my-10 md:mt-20 animate-moveRight1'>
 				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					Hi,
 				</span>
