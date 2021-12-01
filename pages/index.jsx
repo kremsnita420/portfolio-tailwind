@@ -12,14 +12,14 @@ export default function IndexPage({ projects }) {
 	return (
 		<Layout title='Home Page' description='First Page'>
 			{/* hero section */}
-			<section className='flex flex-col items-center w-full bg-gray-300 dark:bg-gray-700 p-5 pb-10 rounded-md justify-start mt-8'>
+			<section className='flex flex-col items-center w-full  p-5 pb-10 justify-start'>
 				<div className=' flex items-start w-full justify-start '>
 					<HeroText />
 				</div>
 			</section>
 
 			{/* Projects section */}
-			<section className='flex flex-col items-center w-full justify-start'>
+			<section className='flex flex-col items-center w-full justify-start  p-5 pb-10'>
 				<HeadTitle title='Projects' />
 				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 p-5'>
 					{projects.map((project) => (
