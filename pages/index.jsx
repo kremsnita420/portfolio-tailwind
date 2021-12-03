@@ -7,6 +7,7 @@ import Layout from '../components/layout/Layout'
 import HeadTitle from '../components/layout/HeadTitle'
 import ProjectCard from '../components/layout/ProjectCard'
 import HeroText from '../components/hero/HeroText'
+import HeroBgSvg from '../components/hero/HeroBgSvg'
 //dependencies
 import path from 'path'
 import fs from 'fs/promises'
@@ -24,20 +25,21 @@ export default function IndexPage({ projects }) {
 	return (
 		<Layout title='Home Page' description='First Page'>
 			{/* hero section */}
-			<section className='flex flex-col items-center w-full  p-5 pb-10 justify-start'>
+			<section className='flex flex-col items-center w-full   pb-10 justify-start'>
 				<div className=' flex items-start w-full justify-start '>
 					<HeroText />
 				</div>
 			</section>
 
 			{/* Projects section */}
-			<section className='flex flex-col items-center w-full justify-start  p-5 pb-10'>
+			<section className='flex flex-col items-center w-full justify-start   pb-10'>
 				<HeadTitle title='Projects' />
+
 				<p className='text-2xl mb-10'>
 					Some of my selected projects that I'm working on.
 				</p>
 				{/* categories filter */}
-				<div className='flex'>
+				<div className='flex mb-5'>
 					<button
 						onClick={() => setProjectCategory('')}
 						className={
@@ -62,7 +64,7 @@ export default function IndexPage({ projects }) {
 						</button>
 					))}
 				</div>
-				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 p-5'>
+				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 '>
 					{projects
 						.filter((filterProject) =>
 							filterProject.category.includes(projectCategory)

@@ -7,7 +7,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Tourney:wght@100;500;900&display=swap" rel="stylesheet" />
                 </Head>
                 <body className=" bg-gradient-to-tr from-yellow-300 via-red-300 to-pink-300 dark:from-green-900 dark:via-purple-900 dark:to-yellow-900">
