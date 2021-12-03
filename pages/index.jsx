@@ -11,6 +11,7 @@ import HeroBgSvg from '../components/hero/HeroBgSvg'
 //dependencies
 import path from 'path'
 import fs from 'fs/promises'
+import ScrollToBottomButton from '../components/layout/ScrollBottomButton copy'
 
 export default function IndexPage({ projects }) {
 	const [projectCategory, setProjectCategory] = useState('')
@@ -25,15 +26,16 @@ export default function IndexPage({ projects }) {
 	return (
 		<Layout title='Home Page' description='First Page'>
 			{/* hero section */}
-			<section className='flex flex-col items-center w-full   pb-10 justify-start'>
+			<section className='flex flex-col items-center w-full justify-start'>
 				<div className=' flex items-start w-full justify-start '>
 					<HeroText />
 				</div>
+				<ScrollToBottomButton />
 			</section>
 
 			{/* Projects section */}
 			<section className='flex flex-col items-center w-full justify-start   pb-10'>
-				<HeadTitle title='Projects' />
+				<HeadTitle id='projects' title='Projects' />
 
 				<p className='text-2xl mb-10'>
 					Some of my selected projects that I'm working on.

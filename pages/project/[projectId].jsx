@@ -6,6 +6,7 @@ import fs from 'fs/promises'
 import HeadTitle from '../../components/layout/HeadTitle'
 import Layout from '../../components/layout/Layout'
 import { useState } from 'react'
+import ScrollToBottomButton from '../../components/layout/ScrollBottomButton copy'
 
 export default function ProjectPage(props) {
 	const { filteredProject } = props
@@ -31,6 +32,9 @@ export default function ProjectPage(props) {
 					blurDataURL='https://images.unsplash.com/photo-1613387275674-cb92af1c29d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
 				/>
 			</div>
+
+			<ScrollToBottomButton />
+
 			{/* image thumbnails */}
 			<div className='flex flex-wrap my-10'>
 				{filteredProject.image.map((img, i) => (

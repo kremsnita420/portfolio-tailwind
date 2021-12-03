@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 
-export default function ScrollToButton() {
+export default function ScrollToBottomButton() {
 	const [scrollY, setScrollY] = useState(0)
+
+	console.log(scrollY)
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -19,15 +21,15 @@ export default function ScrollToButton() {
 	}, [])
 	return (
 		<button
-			onClick={() => window.scrollTo(0, 0)}
+			onClick={() => window.scrollBy(0, window.innerHeight)}
 			className={
-				scrollY > 100
-					? 'rounded-full p-3 bg text-gray-800 dark:text-gray-200 bg-gray-400 dark:bg-gray-600 fixed bottom-5 right-5'
+				scrollY === 0
+					? 'rounded-full p-3 bg text-gray-800 dark:text-gray-200 bg-gray-400 dark:bg-gray-600 fixed bottom-10 right-[50%]'
 					: 'hidden'
 			}>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
+				className='h-6 w-6 rotate-180'
 				fill='none'
 				viewBox='0 0 24 24'
 				stroke='currentColor'>

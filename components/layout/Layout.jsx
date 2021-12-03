@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '../header/Header'
-import ScrollToButton from './ScrollToButton'
+import ScrollToButton from './ScrollTopButton'
 
 export default function Layout({ title, description, children }) {
 	return (
