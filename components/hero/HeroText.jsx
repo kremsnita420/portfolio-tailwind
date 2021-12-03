@@ -1,17 +1,17 @@
 export default function HeroText() {
 	return (
-		<div className='flex pl-5 md:px-5 flex-col items-start justify-center'>
-			<h2 className=' text-xl md:text-2xl xl:text-3xl my-10 md:mt-20 animate-moveRight1'>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+		<div className='flex flex-col items-start justify-center'>
+			<h2 className=' text-xl md:text-2xl xl:text-3xl my-10 md:mt-14 animate-moveRight1'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					Hi,
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					my
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					name
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-r-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-r-2 border-gray-800 dark:border-gray-200'>
 					is
 				</span>
 			</h2>
@@ -24,24 +24,24 @@ export default function HeroText() {
 			</h1>
 
 			<h2 className='text-1xl md:text-2xl xl:text-3xl text-left animate-moveRight3'>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					and
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					I'm
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					a
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-gray-800 dark:border-gray-200'>
 					Web
 				</span>
-				<span className='p-2 border-t-2 border-l-2 border-b-2 border-r-2 border-gray-800 dark:border-gray-200'>
+				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 border-r-2 border-gray-800 dark:border-gray-200'>
 					Developer
 				</span>
 			</h2>
 			<button
-				className=' w-auto px-10 font-heading1 my-20
+				className=' w-auto px-10 font-heading1 mt-20
                            font-black text-xl py-5 rounded-md animate-moveRight4
 						 bg-gray-800 text-gray-200 hover:ring-2 
 						 dark:bg-gray-200 dark:text-gray-800'>

@@ -31,12 +31,12 @@ export default function Header() {
 					{/* mobile nav button */}
 					{!sidebarVisible ? (
 						<button
-							className='flex md:hidden items-center justify-center p-2 h-10 w-10 my-auto ml-2
+							className='flex md:hidden items-center justify-center p-2 h-12 w-12 my-auto ml-2
 									   font-semibold rounded-md hover:ring-2 ring-gray-500 transition-all z-10'
 							onClick={sidebarOpenHandler}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
-								className='h-6 w-6 text-gray-200 dark:text-gray-800'
+								className='h-10 w-10 text-gray-800 dark:text-gray-200'
 								fill='none'
 								viewBox='0 0 24 24'
 								stroke='currentColor'>
@@ -50,12 +50,12 @@ export default function Header() {
 						</button>
 					) : (
 						<button
-							className='p-2 h-10 w-10 my-auto bg-gray-800 dark:bg-gray-200 font-semibold
-									   rounded-md  transition-all z-50'
+							className='p-2 h-12 w-12 my-auto bg-gray-800 dark:bg-gray-200 font-semibold
+									   rounded-md mr-[7px] transition-all z-50'
 							onClick={sidebarCloseHandler}>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
-								className='h-6 w-6  text-gray-200 dark:text-gray-800'
+								className='h-10 w-10  text-gray-200 dark:text-gray-800'
 								fill='none'
 								viewBox='0 0 24 24'
 								stroke='currentColor'>

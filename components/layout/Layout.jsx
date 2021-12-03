@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../header/Header'
+import ScrollToButton from './ScrollToButton'
 
 export default function Layout({ title, description, children }) {
 	return (
@@ -10,10 +11,11 @@ export default function Layout({ title, description, children }) {
 			</Head>
 			<Header />
 			<main
-				className='container font-body min-h-[calc(100vh-56px)]
+				className='container font-body min-h-[calc(100vh-76px)]
 						   flex flex-col items-center
 				 		   justify-start mx-auto'>
 				{children}
+				<ScrollToButton />
 			</main>
 		</>
 	)

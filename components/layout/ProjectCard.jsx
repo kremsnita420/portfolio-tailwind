@@ -1,7 +1,14 @@
 import NextImage from 'next/image'
 import NextLink from 'next/link'
 
-export default function ProjectCard({ id, image, title, description, stack }) {
+export default function ProjectCard({
+	id,
+	image,
+	title,
+	description,
+	stack,
+	category,
+}) {
 	return (
 		<NextLink href={`/project/${id}`}>
 			<a
@@ -28,9 +35,11 @@ export default function ProjectCard({ id, image, title, description, stack }) {
 					<p className=' text-gray-700 mb-3 dark:text-gray-400'>
 						{description}
 					</p>
-					<p className=' text-gray-700 mb-3 dark:text-gray-400'>
-						<strong>Stack: </strong>
-						{stack}
+					<p className=' flex text-gray-700 mb-3 dark:text-gray-400'>
+						<strong>Stack: </strong> {stack}
+					</p>
+					<p className=' flex text-gray-700 mb-3 dark:text-gray-400'>
+						<strong>Category: </strong> {category}
 					</p>
 				</div>
 			</a>
