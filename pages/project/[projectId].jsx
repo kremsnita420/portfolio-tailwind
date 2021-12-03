@@ -57,18 +57,18 @@ export default function ProjectPage(props) {
 			</div>
 
 			<div className='flex flex-col items-center justify-around '>
-				<div className='flex'>
-					<div className='flex flex-col min-h-[150px] min-w-[25vw] items-start justify-center'>
-						{/* built with */}
-						<h2 className='text-2xl mb-5'>Built with</h2>
-						<ul>
+				{/* built with */}
+				<div className='flex flex-col'>
+					<h2 className='text-2xl m-auto mb-5'>Built with </h2>
+					<div className='flex md:flex-col items-center justify-center'>
+						<ul className='flex flex-col md:flex-row mb-5'>
 							{filteredProject.builtWith.map((tech, i) => (
 								<li
-									className='flex items-start justify-start cursor-pointer mr-5 pb-2'
+									className='flex items-center justify-start cursor-pointer mr-5'
 									key={i}>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										className='h-6 w-6 mr-5'
+										className='h-6 w-6 ml-5 mr-2'
 										fill='none'
 										viewBox='0 0 24 24'
 										stroke='currentColor'>
@@ -91,11 +91,15 @@ export default function ProjectPage(props) {
 						</ul>
 					</div>
 
-					<div className='flex flex-col min-w-[25vw] md:flex-row items-center justify-around'>
-						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 '>
+					<h2 className='text-2xl m-auto mb-0 sm:mb-5 '>
+						Github repository & Live Website{' '}
+					</h2>
+
+					<div className='flex flex-col sm:flex-row items-center justify-around'>
+						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
 							Github
 						</button>
-						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 '>
+						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 min-w-[6.5rem] rounded-md'>
 							Website
 						</button>
 					</div>
