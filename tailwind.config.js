@@ -24,6 +24,7 @@ module.exports = {
         moveRight4: 'moveRight 4s ease-in',
         // general animations
         spinSlow: 'spin 15s linear infinite',
+        bounceSlow: 'bounce 2s linear infinite'
       },
       keyframes: {
         //hero text animations

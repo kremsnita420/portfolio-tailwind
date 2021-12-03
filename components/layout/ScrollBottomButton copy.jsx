@@ -24,7 +24,7 @@ export default function ScrollToBottomButton() {
 			onClick={() => window.scrollBy(0, window.innerHeight)}
 			className={
 				scrollY === 0
-					? 'rounded-full p-3 bg text-gray-800 dark:text-gray-200 bg-gray-400 dark:bg-gray-600 fixed bottom-10 right-[50%] translate-x-[50%]'
+					? 'rounded-full p-3 bg text-gray-500 dark:text-gray-200 animate-bounceSlow fixed bottom-5 right-5'
 					: 'hidden'
 			}>
 			<svg
