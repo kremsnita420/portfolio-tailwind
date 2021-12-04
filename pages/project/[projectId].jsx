@@ -6,7 +6,7 @@ import fs from 'fs/promises'
 import HeadTitle from '../../components/layout/HeadTitle'
 import Layout from '../../components/layout/Layout'
 import { useState } from 'react'
-import ScrollToBottomButton from '../../components/layout/ScrollBottomButton copy'
+import ScrollToBottomButton from '../../components/layout/ScrollBottomButton'
 
 export default function ProjectPage(props) {
 	const { filteredProject } = props

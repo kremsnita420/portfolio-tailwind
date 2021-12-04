@@ -11,7 +11,7 @@ import HeroBgSvg from '../components/hero/HeroBgSvg'
 //dependencies
 import path from 'path'
 import fs from 'fs/promises'
-import ScrollToBottomButton from '../components/layout/ScrollBottomButton copy'
+import ScrollToBottomButton from '../components/layout/ScrollBottomButton'
 
 export default function IndexPage({ projects }) {
 	const [projectCategory, setProjectCategory] = useState('')
@@ -66,7 +66,7 @@ export default function IndexPage({ projects }) {
 						</button>
 					))}
 				</div>
-				<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 '>
+				<div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 '>
 					{projects
 						.filter((filterProject) =>
 							filterProject.category.includes(projectCategory)
