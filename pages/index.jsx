@@ -5,7 +5,7 @@ import NextImage from 'next/image'
 //components
 import Layout from '../components/layout/Layout'
 import HeadTitle from '../components/layout/HeadTitle'
-import ProjectCard from '../components/layout/ProjectCard'
+import ProjectCard from '../components/Projects/ProjectCard'
 import HeroText from '../components/hero/HeroText'
 import HeroBgSvg from '../components/hero/HeroBgSvg'
 //dependencies
@@ -41,7 +41,7 @@ export default function IndexPage({ projects }) {
 					Some of my selected projects that I'm working on.
 				</p>
 				{/* categories filter */}
-				<div className='flex mb-5'>
+				<div className='flex mb-10'>
 					<button
 						onClick={() => setProjectCategory('')}
 						className={
@@ -51,6 +51,7 @@ export default function IndexPage({ projects }) {
 						}>
 						All
 					</button>
+
 					{PRODUCT_CATEGORIES.map((category, i) => (
 						<button
 							onClick={() => {
@@ -66,19 +67,19 @@ export default function IndexPage({ projects }) {
 						</button>
 					))}
 				</div>
-				<div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 '>
+
+				<div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-20 justify-center items-center '>
 					{projects
 						.filter((filterProject) =>
 							filterProject.category.includes(projectCategory)
 						)
 						.map((project) => (
-							<div key={project.id}>
+							<div className='relative' key={project.id}>
 								<ProjectCard
 									id={project.id}
 									image={project.image[0]}
+									title={project.title}
 									description={project.description}
-									stack={project.stack}
-									category={project.category}
 								/>
 							</div>
 						))}

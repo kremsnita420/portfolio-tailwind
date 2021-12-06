@@ -25,8 +25,8 @@ module.exports = {
         // general animations
         spinSlow: 'spin 15s linear infinite',
         bounceSlow: 'bounce 2s linear infinite',
-        cardShow: 'cardShown 1s ease-in',
-        cardHide: 'cardHidden 1s ease-in',
+        cardShow: 'cardShown 2s ease-in',
+        cardHide: 'cardHidden 2s ease-in',
       },
       keyframes: {
         //hero text animations
@@ -35,8 +35,14 @@ module.exports = {
           '90%': { transform: 'translateY(-5px)', opacity: 0 },
           '100%': { transform: 'translatateY(0px)', opacity: 1 },
         },
-        cardShown: { transform: 'rotateY(180deg)' },
-        cardHidden: { transform: 'rotateY(0deg)' }
+        cardShown: {
+
+          '100%': { transform: 'rotateY(180deg)' }
+        },
+        cardHidden: {
+
+          '0%': { transform: 'rotateY(0deg)' }
+        },
 
       },
       transitionDelay: {
