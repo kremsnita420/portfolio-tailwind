@@ -13,7 +13,7 @@ import path from 'path'
 import fs from 'fs/promises'
 import ScrollToBottomButton from '../components/layout/ScrollBottomButton'
 
-export default function IndexPage({ projects }) {
+export default function IndexPage({ projects, href }) {
 	const [projectCategory, setProjectCategory] = useState('')
 
 	// get unique category items
