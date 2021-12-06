@@ -18,18 +18,18 @@ export default function ProjectCard({ id, image, title }) {
 					rel='preload'
 					as='image'
 				/>
+				<p className='text-xl text-center p-2'>{title}</p>
 			</div>
 
-			<NextLink passHref href={`/project/${id}`}>
-				<div className='content'>
-					<p className='text-xl text-center p-2'>{title}</p>
-					<div className='card-description ring-1'>
+			<div className='content'>
+				<div className='card-description ring-1'>
+					<NextLink passHref href={`/project/${id}`}>
 						<button className='text-xl text-center p-2 cursor-pointer'>
 							More
 						</button>
-					</div>
+					</NextLink>
 				</div>
-			</NextLink>
+			</div>
 		</div>
 	)
 }
