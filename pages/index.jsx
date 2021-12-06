@@ -34,10 +34,10 @@ export default function IndexPage({ projects, href }) {
 			</section>
 
 			{/* Projects section */}
-			<section className='flex flex-col items-center w-full justify-start   pb-10'>
+			<section className='flex flex-col items-center w-full justify-start min-h-[calc(100vh-72px)] pb-10'>
 				<HeadTitle id='projects' title='Projects' />
 
-				<p className='text-2xl mb-10'>
+				<p className='text-2xl text-left my-10'>
 					Some of my selected projects that I'm working on.
 				</p>
 				{/* categories filter */}
@@ -46,7 +46,7 @@ export default function IndexPage({ projects, href }) {
 						onClick={() => setProjectCategory('')}
 						className={
 							projectCategory === ''
-								? 'rounded-md ring-1 m-2 px-4 py-2 bg-green-400'
+								? 'rounded-md ring-1 m-2 px-4 py-2 bg-blue-400'
 								: 'rounded-md ring-1 m-2 px-4 py-2'
 						}>
 						All
@@ -59,8 +59,8 @@ export default function IndexPage({ projects, href }) {
 							}}
 							className={
 								category === projectCategory
-									? 'rounded-md ring-1 m-2 px-4 py-2 bg-red-400'
-									: 'rounded-md ring-1 m-2 px-4 py-2'
+									? 'rounded-md ring-1 m-2 px-4 py-2 hover:opacity-70 bg-red-400'
+									: 'rounded-md ring-1 m-2 px-4 py-2 hover:opacity-70 '
 							}
 							key={i}>
 							{category}

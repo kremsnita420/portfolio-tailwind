@@ -2,7 +2,7 @@ import HeroBgSvg from './HeroBgSvg'
 
 export default function HeroText() {
 	return (
-		<div className='flex flex-col items-start justify-start my-5 min-h-[calc(100vh-64px)]'>
+		<div className='flex flex-col items-start justify-start my-10 min-h-[calc(100vh-64px)]'>
 			<h2 className=' text-xl md:text-2xl xl:text-3xl my-10 md:mt-14 animate-moveRight1'>
 				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200'>
 					Hi,
@@ -18,7 +18,7 @@ export default function HeroText() {
 				</span>
 			</h2>
 			<h1
-				className=' text-6xl md:text-[8rem] xl:text-[12rem] text-left py-5 mb-10
+				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-left py-5 mb-10
 								      text-gray-800 dark:text-gray-100 font-heading1 font-black animate-moveRight2'>
 				Safet
 				<br />

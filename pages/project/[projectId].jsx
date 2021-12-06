@@ -99,7 +99,7 @@ export default function ProjectPage(props) {
 						Github repository & Live Website{' '}
 					</h2>
 
-					<div className='flex flex-col sm:flex-row items-center justify-around'>
+					<div className='flex items-center justify-around'>
 						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
 							Github
 						</button>
@@ -110,7 +110,7 @@ export default function ProjectPage(props) {
 				</div>
 
 				{/* project description */}
-				<p className='text-xl md:text-2xl my-10 md:p-0'>
+				<p className='text-lg md:text-xl my-10 md:p-0'>
 					{filteredProject.description}
 				</p>
 			</div>
