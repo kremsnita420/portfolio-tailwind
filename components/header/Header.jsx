@@ -17,7 +17,7 @@ export default function Header() {
 	}
 
 	return (
-		<header className=' flex align-center justify-center py-2 z-20 '>
+		<header className=' flex align-center justify-center py-2 z-20 mb-5'>
 			<div className='container  flex align-center justify-between px-5 sm:px-0'>
 				{/* header logo */}
 				<HeaderLogo />
