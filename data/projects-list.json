@@ -2,7 +2,6 @@
 	"projectsData": [
 		{
 			"id": "pp1",
-			"isFeatured": true,
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 1",
 			"category": "Html",
@@ -24,7 +23,6 @@
 		},
 		{
 			"id": "pp2",
-			"isFeatured": false,
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 2",
 			"category": "React",
@@ -46,7 +44,6 @@
 		},
 		{
 			"id": "pp3",
-			"isFeatured": true,
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 3",
 			"category": "Html",
@@ -68,7 +65,6 @@
 		},
 		{
 			"id": "pp4",
-			"isFeatured": false,
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 4",
 			"category": "Javascript",

@@ -45,7 +45,7 @@ img {
     transform: translate(-50%, -50%); 
     text-align: center;
     color: #111;
-    transition: .1s;
+    transition: 1s;
    z-index: 0;
     
 }
