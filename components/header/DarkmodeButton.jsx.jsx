@@ -10,7 +10,7 @@ export default function DarkmodeButton() {
 
 	return (
 		<button
-			className='flex items-center justify-center p-1 h-8 w-8 my-auto bg-transparent
+			className='flex items-center justify-center ml-5 p-1 h-8 w-8 my-auto bg-transparent
 					   rounded-full hover:ring-2 ring-gray-500  transition-all'
 			onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
 			{mounted && (

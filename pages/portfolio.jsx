@@ -34,8 +34,8 @@ export default function IndexPage({ projects, href }) {
 						onClick={() => setProjectCategory('')}
 						className={
 							projectCategory === ''
-								? 'rounded-md ring-1 m-2 px-4 py-2 bg-blue-400'
-								: 'rounded-md ring-1 m-2 px-4 py-2'
+								? 'rounded-md ring-1 m-2 px-2 py-1 bg-blue-400'
+								: 'rounded-md ring-1 m-2 px-2 py-1'
 						}>
 						All
 					</button>
@@ -47,8 +47,8 @@ export default function IndexPage({ projects, href }) {
 							}}
 							className={
 								category === projectCategory
-									? 'rounded-md ring-1 m-2 px-4 py-2 hover:opacity-70 bg-red-400'
-									: 'rounded-md ring-1 m-2 px-4 py-2 hover:opacity-70 '
+									? 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 bg-red-400'
+									: 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 '
 							}
 							key={i}>
 							{category}
@@ -56,7 +56,7 @@ export default function IndexPage({ projects, href }) {
 					))}
 				</div>
 
-				<div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-20 justify-center items-center '>
+				<div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-20 gap-20 justify-center items-center '>
 					{projects
 						.filter((filterProject) =>
 							filterProject.category.includes(projectCategory)
