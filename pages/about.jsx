@@ -5,7 +5,7 @@ import Layout from '../components/layout/Layout'
 export default function AboutPage() {
 	return (
 		<Layout>
-			<HeadTitle title='About Page' />
+			<HeadTitle title='About Me' />
 		</Layout>
 	)
 }

@@ -13,7 +13,7 @@ class MyDocument extends Document {
                 <body className=" 
                 bg-gradient-to-bl from-blue-400 via-green-300 to-blue-400 
                 dark:from-yellow-900 dark:via-purple-900 dark:to-yellow-900 
-                text-gray-800 dark:text-gray-200 tracking-wider">
+                text-gray-800 dark:text-gray-200 tracking-wider md:ml-5">
                     <Main />
                     <NextScript />
                 </body>
