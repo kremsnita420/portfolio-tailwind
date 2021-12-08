@@ -22,7 +22,7 @@ export default function ScrollTopButton() {
 			onClick={() => window.scrollTo(0, 0)}
 			className={
 				scrollY > 100
-					? 'rounded-full p-3 bg text-gray-200 dark:text-gray-500 animate-bounceSlow bg-gray-400 dark:bg-gray-200 fixed bottom-5 right-5'
+					? 'rounded-full p-3 bg text-gray-200 dark:text-gray-500 animate-bounceSlow bg-gray-400 dark:bg-gray-200 fixed bottom-5 right-5 z-10'
 					: 'hidden'
 			}>
 			<svg
