@@ -56,7 +56,7 @@ export default function IndexPage({ projects, href }) {
 					))}
 				</div>
 
-				<div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-20 gap-20 justify-center items-center '>
+				<div className='grid md:grid-cols-2 xl:grid-cols-4 my-20 gap-10 justify-center items-center '>
 					{projects
 						.filter((filterProject) =>
 							filterProject.category.includes(projectCategory)

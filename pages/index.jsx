@@ -28,7 +28,7 @@ export default function IndexPage({ projects, href }) {
 			<section className='flex flex-col items-center w-full justify-start min-h-[calc(100vh-72px)] pb-10'>
 				<HeadTitle id='projects' title='Featured Projects' />
 
-				<p className='text-2xl text-left my-10 text-center'>
+				<p className='text-2xl my-10 text-center'>
 					Some of my selected projects that I'm working on. <br /> For all
 					projects visit{' '}
 					{
@@ -39,7 +39,7 @@ export default function IndexPage({ projects, href }) {
 					.
 				</p>
 
-				<div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-20 justify-center items-center '>
+				<div className='grid md:grid-cols-2 xl:grid-cols-3 mt-20 gap-10 justify-center items-center '>
 					{projects.map((project) => (
 						<div className='relative' key={project.id}>
 							<ProjectCard

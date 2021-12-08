@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 
 export default function ProjectCard({ id, image, title }) {
 	return (
-		<div className='card'>
+		<div className='card mb-10'>
 			<div className='imgbox '>
 				<NextImage
 					className='object-cover'
@@ -27,7 +27,12 @@ export default function ProjectCard({ id, image, title }) {
 				<div className='card-description'>
 					<NextLink passHref href={`/project/${id}`}>
 						<a className=' mt-5'>
-							<button className='text-xl text-center text-gray-800 dark:text-gray-200 p-2 px-4 ring-1 rounded-md hover:bg-gray-100 dark:hover:text-gray-400 hover:opacity-70 cursor-pointer'>
+							<button
+								className='
+							text-xl text-center text-gray-800 dark:text-gray-200 p-2 mb-5 px-4 
+							ring-1 ring-gray-800 dark:ring-gray-200 rounded-md 
+							hover:bg-gray-200 dark:hover:bg-gray-400  hover:opacity-70 
+							cursor-pointer'>
 								More
 							</button>
 						</a>
