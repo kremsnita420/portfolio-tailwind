@@ -1,100 +1,94 @@
 import NextImage from 'next/image'
 //components
-import HeadTitle from '../components/layout/HeadTitle'
+import HeadTitle from '../components/layout/typography/HeadTitle'
 import Layout from '../components/layout/Layout'
-import SecondaryTitle from '../components/layout/SecondaryTitle'
+import SecondaryTitle from '../components/layout/typography/SecondaryTitle'
+
+const skills = [
+	{
+		title: 'frontend',
+		skills: ['HTML', 'CSS', 'Javascript', 'React'],
+	},
+	{
+		title: 'backend',
+		skills: ['Node', 'Express', 'MongoDB', 'Vercel', 'Firebase'],
+	},
+	{
+		title: 'frameworks',
+		skills: ['NextJS', 'TailwindCSS', 'Styled Components', 'MaterialUI'],
+	},
+	{
+		title: 'tools',
+		skills: ['Git & Github', 'npm', 'Chrome', 'VSCode'],
+	},
+]
+
+console.log(skills)
 
 export default function AboutPage() {
 	return (
 		<Layout>
 			<HeadTitle title='About Page' />
 			<div className='flex flex-col md:flex-row items-center justify-center'>
-				<div className='flex bg-gray-200 rounded-xl m-10'>
-					<NextImage src='/images/my-gif.gif' width={600} height={600} />
+				<div className='flex m-10'>
+					<NextImage src='/images/portrait.png' width={600} height={600} />
 				</div>
 
-				<div className='flex w-1/2 '>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						Accusantium nisi dicta consequatur voluptatum? Eveniet rem ullam
-						enim dignissimos odio blanditiis quam cupiditate officiis provident,
-						culpa quod nulla? Officia, fugit doloremque rem totam atque ut hic
-						explicabo nam reprehenderit vitae unde a odit ducimus eos
-						consectetur accusamus molestias. Sapiente, laboriosam! Quia.
+				<div className='flex flex-col items-start justify-between p-2 md:w-2/3 xl:w-1/2 '>
+					<h2 className='font-heading1 font-black text-xl md:text-2xl mb-5'>
+						Hello, I'm <span className=' font-normal'>Safet</span>, Web
+						<span className=' font-normal'> Developer</span> living in
+						Ljubljana.
+					</h2>
+					<p className='mb-5 text-lg'>
+						In January 2021 I have quit my job to learn web development. Since
+						then I spend all my time learning fundamentals of frontend and
+						backend web technologies and I'm loving every second of it.
+					</p>
+					<p className='mb-5 text-lg'>
+						I love building apps that are simple and user-friendly.
+					</p>
+					<p className='mb-5 text-lg'>
+						I'm looking for junior web developer position.
 					</p>
 				</div>
 			</div>
 
 			<SecondaryTitle title='Tech Stack' />
 
-			<div className='flex items-start justify-around w-full'>
-				{/* frontend */}
-				<div className='flex flex-col items-start justify-around'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						className='h-6 w-6'
-						fill='none'
-						viewBox='0 0 24 24'
-						stroke='currentColor'>
-						<path
-							strokeLinecap='round'
-							strokeLinejoin='round'
-							strokeWidth='2'
-							d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-						/>
-					</svg>
-					<h3>Frontend</h3>
-					<ul className='flex flex-col items-start justify-start'>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Javascript</li>
-						<li>React</li>
-					</ul>
-				</div>
+			<div className='flex flex-wrap w-3/4 justify-between relative'>
+				{/* skills */}
+				{skills.map((skillGroup, i) => (
+					<div
+						key={i}
+						className='flex flex-col px-5 items-start justify-around mb-10'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							className='h-6 w-6'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth='2'
+								d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
+							/>
+						</svg>
 
-				{/* backend */}
-				<div className='flex flex-col items-start justify-center'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						className='h-6 w-6'
-						fill='none'
-						viewBox='0 0 24 24'
-						stroke='currentColor'>
-						<path
-							strokeLinecap='round'
-							strokeLinejoin='round'
-							strokeWidth='2'
-							d='M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4'
-						/>
-					</svg>
-					<h3>Backend</h3>
-					<ul className='flex flex-col items-start justify-start'>
-						<li>Node</li>
-						<li>Express</li>
-						<li>MongoDB</li>
-						<li>Heroku</li>
-						<li>Vercel</li>
-					</ul>
-				</div>
-				{/* frameworks */}
-				<div className='flex flex-col items-start justify-center'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						className='h-5 w-5'
-						viewBox='0 0 20 20'
-						fill='currentColor'>
-						<path d='M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z' />
-					</svg>
-					<h3>Frameworks</h3>
-					<ul className='flex flex-col items-start justify-start'>
-						<li>NextJS</li>
-						<li>TailwindCSS</li>
-						<li>Styled Components</li>
-						<li>MaterialUI</li>
-						<li>Vercel</li>
-					</ul>
-				</div>
+						<h3 className='text-gray-500 dark:text-gray-800 uppercase my-2'>
+							{skillGroup.title}
+						</h3>
+						<ul className='flex flex-col items-start justify-start'>
+							{skillGroup.skills.map((singleSkill, i) => (
+								<li key={i}>{singleSkill}</li>
+							))}
+						</ul>
+					</div>
+				))}
 			</div>
+
+			<SecondaryTitle title='Courses & Certifications' />
 		</Layout>
 	)
 }

@@ -45,8 +45,8 @@ export default function HeroText() {
 			<button
 				className=' w-auto px-10 font-heading1 mt-20  tracking-wider
                            font-black text-xl py-5 rounded-md animate-moveRight4
-						 bg-gray-200 text-gray-800 hover:ring-2 
-						 dark:bg-gray-800 dark:text-gray-200'>
+						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:ring-2 
+						 dark:text-gray-800'>
 				Contact
 			</button>
 

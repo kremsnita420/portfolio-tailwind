@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 import NextImage from 'next/image'
 //components
 import Layout from '../components/layout/Layout'
-import HeadTitle from '../components/layout/HeadTitle'
+import HeadTitle from '../components/layout/typography/HeadTitle'
 import ProjectCard from '../components/Projects/ProjectCard'
 import HeroText from '../components/hero/HeroText'
 import HeroBgSvg from '../components/hero/HeroBgSvg'

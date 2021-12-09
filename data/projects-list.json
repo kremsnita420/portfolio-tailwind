@@ -5,6 +5,7 @@
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 1",
 			"category": "Html",
+			"isFeatured": true,
 			"image": [
 				"/images/project-1/project-1-1.JPG",
 				"/images/project-1/project-1-2.JPG",
@@ -26,6 +27,7 @@
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 2",
 			"category": "React",
+			"isFeatured": true,
 			"image": [
 				"/images/project-2/project-2-1.JPG",
 				"/images/project-2/project-2-2.JPG",
@@ -47,6 +49,7 @@
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 3",
 			"category": "Html",
+			"isFeatured": false,
 			"image": [
 				"/images/project-3/project-3-1.JPG",
 				"/images/project-3/project-3-2.JPG",
@@ -68,6 +71,7 @@
 			"date": "May 2021 - Sep 2021",
 			"title": "Project 4",
 			"category": "Javascript",
+			"isFeatured": false,
 			"image": [
 				"/images/project-4/project-4-1.JPG",
 				"/images/project-4/project-4-2.JPG",

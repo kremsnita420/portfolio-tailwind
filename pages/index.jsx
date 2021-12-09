@@ -4,10 +4,9 @@ import NextLink from 'next/link'
 import NextImage from 'next/image'
 //components
 import Layout from '../components/layout/Layout'
-import HeadTitle from '../components/layout/HeadTitle'
+import HeadTitle from '../components/layout/typography/HeadTitle'
 import ProjectCard from '../components/Projects/ProjectCard'
 import HeroText from '../components/hero/HeroText'
-import HeroBgSvg from '../components/hero/HeroBgSvg'
 //dependencies
 import path from 'path'
 import fs from 'fs/promises'
@@ -40,16 +39,18 @@ export default function IndexPage({ projects, href }) {
 				</p>
 
 				<div className='grid md:grid-cols-2 xl:grid-cols-3 mt-20 gap-10 justify-center items-center '>
-					{projects.map((project) => (
-						<div className='relative' key={project.id}>
-							<ProjectCard
-								id={project.id}
-								image={project.image[0]}
-								title={project.title}
-								description={project.description}
-							/>
-						</div>
-					))}
+					{projects
+						.filter((project) => project.isFeatured == true)
+						.map((project) => (
+							<div className='relative' key={project.id}>
+								<ProjectCard
+									id={project.id}
+									image={project.image[0]}
+									title={project.title}
+									description={project.description}
+								/>
+							</div>
+						))}
 				</div>
 			</section>
 		</Layout>
