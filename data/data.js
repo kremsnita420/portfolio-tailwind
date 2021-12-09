@@ -46,6 +46,6 @@ export const skills = [
     },
     {
         title: 'tools',
-        skills: ['Git & Github', 'npm', 'Chrome', 'VSCode'],
+        skills: ['Github', 'Git', 'npm', 'Chrome', 'VSCode'],
     },
 ]
