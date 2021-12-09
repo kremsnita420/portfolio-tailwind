@@ -31,3 +31,21 @@ export const education = [
     }
 ]
 
+export const skills = [
+    {
+        title: 'frontend',
+        skills: ['HTML', 'CSS', 'Javascript', 'React'],
+    },
+    {
+        title: 'backend',
+        skills: ['Node', 'Express', 'MongoDB', 'Vercel', 'Firebase'],
+    },
+    {
+        title: 'frameworks',
+        skills: ['NextJS', 'TailwindCSS', 'Styled Components', 'MaterialUI'],
+    },
+    {
+        title: 'tools',
+        skills: ['Git & Github', 'npm', 'Chrome', 'VSCode'],
+    },
+]

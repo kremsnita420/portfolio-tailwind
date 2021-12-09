@@ -3,27 +3,8 @@ import NextImage from 'next/image'
 import HeadTitle from '../components/layout/typography/HeadTitle'
 import Layout from '../components/layout/Layout'
 import SecondaryTitle from '../components/layout/typography/SecondaryTitle'
-
-const skills = [
-	{
-		title: 'frontend',
-		skills: ['HTML', 'CSS', 'Javascript', 'React'],
-	},
-	{
-		title: 'backend',
-		skills: ['Node', 'Express', 'MongoDB', 'Vercel', 'Firebase'],
-	},
-	{
-		title: 'frameworks',
-		skills: ['NextJS', 'TailwindCSS', 'Styled Components', 'MaterialUI'],
-	},
-	{
-		title: 'tools',
-		skills: ['Git & Github', 'npm', 'Chrome', 'VSCode'],
-	},
-]
-
-console.log(skills)
+//data
+import { skills } from '../data/data'
 
 export default function AboutPage() {
 	return (
@@ -56,12 +37,12 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Tech Stack' />
 
-			<div className='flex flex-wrap w-3/4 justify-between relative'>
+			<div className='flex flex-wrap w-3/4 items-start justify-around relative'>
 				{/* skills */}
 				{skills.map((skillGroup, i) => (
 					<div
 						key={i}
-						className='flex flex-col px-5 items-start justify-around mb-10'>
+						className='flex flex-col px-5 items-start justify-center mb-10'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							className='h-6 w-6'

@@ -3,7 +3,7 @@ import NextImage from 'next/image'
 import path from 'path'
 import fs from 'fs/promises'
 //components
-import HeadTitle from '../../components/layout/HeadTitle'
+import HeadTitle from '../../components/layout/typography/HeadTitle'
 import Layout from '../../components/layout/Layout'
 import { useState } from 'react'
 import ScrollToBottomButton from '../../components/layout/ScrollBottomButton'
@@ -101,10 +101,14 @@ export default function ProjectPage(props) {
 
 					<div className='flex items-center justify-around'>
 						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
-							Github
+							<a href={filteredProject.gitLink} target='_blank' rel='noopener'>
+								Github
+							</a>
 						</button>
 						<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 min-w-[6.5rem] rounded-md'>
-							Website
+							<a href={filteredProject.webLink} target='_blank' rel='noopener'>
+								Website
+							</a>
 						</button>
 					</div>
 				</div>
