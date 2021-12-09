@@ -37,12 +37,12 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Tech Stack' />
 
-			<div className='flex flex-wrap w-3/4 items-start justify-around relative'>
+			<div className='flex flex-wrap w-full items-start justify-start md:justify-between m-auto relative'>
 				{/* skills */}
 				{skills.map((skillGroup, i) => (
 					<div
 						key={i}
-						className='flex flex-col px-5 items-start justify-center mb-10'>
+						className='flex flex-col px-5 items-start justify-start mb-10'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							className='h-6 w-6'

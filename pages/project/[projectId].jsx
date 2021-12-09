@@ -60,7 +60,7 @@ export default function ProjectPage(props) {
 				))}
 			</div>
 
-			<div className='flex flex-col items-center justify-around '>
+			<div className='flex flex-col items-center justify-around'>
 				{/* built with */}
 				<div className='flex flex-col'>
 					<h2 className='text-2xl m-auto mb-5'>Built with </h2>
