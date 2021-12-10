@@ -24,7 +24,7 @@ module.exports = {
         moveRight4: 'moveRight 4s ease-in',
         // general animations
         spinSlow: 'spin 15s linear infinite',
-        bounceSlow: 'bounce 2s linear infinite',
+        bounceSlow: 'bounce 5s linear infinite',
         cardShow: 'cardShown 2s ease-in',
         cardHide: 'cardHidden 2s ease-in',
       },

@@ -12,7 +12,7 @@ export default function AboutPage() {
 		<Layout>
 			<HeadTitle title='About Page' />
 			<div className='flex flex-col md:flex-row items-center justify-start'>
-				<div className='flex items-start justify-start pb-10'>
+				<div className='flex items-start ml-[-20px] justify-start pb-10'>
 					<NextImage src='/images/portrait.png' width={550} height={600} />
 				</div>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
 							/>
 						</svg>
 
-						<h3 className='text-gray-500 dark:text-gray-800 uppercase my-2'>
+						<h3 className='text-gray-600 dark:text-gray-400 uppercase my-2'>
 							{skillGroup.title}
 						</h3>
 						<ul className='flex flex-col items-center sm:items-start justify-start'>

@@ -1,12 +1,10 @@
-import { useState } from 'react'
-
 import NextLink from 'next/link'
-import NextImage from 'next/image'
 //components
 import Layout from '../components/layout/Layout'
 import HeadTitle from '../components/layout/typography/HeadTitle'
 import ProjectCard from '../components/Projects/ProjectCard'
 import HeroText from '../components/hero/HeroText'
+import HeroBgSvg from '../components/hero/HeroBgSvg'
 //dependencies
 import path from 'path'
 import fs from 'fs/promises'
@@ -17,8 +15,9 @@ export default function IndexPage({ projects, href }) {
 		<Layout title='Home Page' description='Home Page'>
 			{/* hero section */}
 
-			<div className=' flex items-start w-full justify-start '>
+			<div className='relative flex items-start w-full justify-start '>
 				<HeroText />
+				<HeroBgSvg />
 			</div>
 			<ScrollToBottomButton />
 

@@ -1,7 +1,7 @@
 export default function HeroBgSvg() {
 	return (
 		<svg
-			className='BgAnimation__svg absolute w-full h-full top-[-7rem] left-0 md:top-[5rem]  z-[-100]'
+			className='BgAnimation__svg absolute w-full h-full top-[-30%] md:top-[-20%] xl:top-[-5%] left-[5%] xl:left-[20%] z-[-100]'
 			viewBox='0 0 600 600'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'>

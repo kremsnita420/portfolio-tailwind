@@ -11,9 +11,9 @@ export default function Layout({ title, description, children }) {
 			</Head>
 			<Header />
 			<main
-				className='container font-body min-h-[calc(100vh-60px)]
+				className='container font-body
 						   flex flex-col items-center sm:items-start px-5
-				 		   justify-center mx-auto'>
+				 		   justify-center mx-auto relative'>
 				{children}
 				<ScrollToButton />
 			</main>

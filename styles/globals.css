@@ -64,3 +64,8 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.18);
 
 }
+
+.main-bg {
+    background: url('/images/main-bg.png');
+    
+}

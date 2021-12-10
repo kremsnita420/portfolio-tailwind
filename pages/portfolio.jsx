@@ -1,13 +1,10 @@
 import { useState } from 'react'
-
 import NextLink from 'next/link'
-import NextImage from 'next/image'
 //components
 import Layout from '../components/layout/Layout'
 import HeadTitle from '../components/layout/typography/HeadTitle'
 import ProjectCard from '../components/Projects/ProjectCard'
-import HeroText from '../components/hero/HeroText'
-import HeroBgSvg from '../components/hero/HeroBgSvg'
+
 //dependencies
 import path from 'path'
 import fs from 'fs/promises'
@@ -24,10 +21,17 @@ export default function IndexPage({ projects, href }) {
 
 	return (
 		<Layout title='Portfolio Page' description='First Page'>
-			{/* Projects section */}
-
 			<HeadTitle title='Portfolio' />
-
+			<p className='text-2xl my-10'>
+				Some of my selected projects that I'm working on. <br /> For all
+				projects visit{' '}
+				{
+					<NextLink href='/portfolio'>
+						<a className='underline'>portfolio page</a>
+					</NextLink>
+				}
+				.
+			</p>
 			{/* categories filter */}
 			<div className='flex mb-10 mx-auto'>
 				<button
