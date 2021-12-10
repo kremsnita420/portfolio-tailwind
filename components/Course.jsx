@@ -4,7 +4,7 @@ export default function Course({ date, link, title, platform, description }) {
 			<div
 				className='
 				flex flex-col items-start glassmorph min-h-[19rem] rounded-lg mb-5 p-5
-			    hover:opacity-90'>
+			     hover:bg-gray-100 dark:hover:bg-gray-600 hover:scale-105 transition-all'>
 				<p className='my-2 text-md'>{date}</p>
 				<h3 className='text-gray-500 dark:text-gray-800 uppercase my-2'>
 					{title}
