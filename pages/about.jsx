@@ -12,7 +12,7 @@ export default function AboutPage() {
 		<Layout>
 			<HeadTitle title='About Page' />
 			<div className='flex flex-col md:flex-row items-center justify-start'>
-				<div className='flex items-start ml-[-20px] justify-start pb-10'>
+				<div className='flex items-center  justify-center pb-10'>
 					<NextImage src='/images/portrait.png' width={550} height={600} />
 				</div>
 
