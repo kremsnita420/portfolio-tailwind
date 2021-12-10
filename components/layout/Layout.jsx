@@ -12,7 +12,7 @@ export default function Layout({ title, description, children }) {
 			<Header />
 			<main
 				className='container font-body
-						   flex flex-col items-center sm:items-start px-5
+						   flex flex-col items-center md:items-start px-5
 				 		   justify-center mx-auto relative'>
 				{children}
 				<ScrollToButton />
