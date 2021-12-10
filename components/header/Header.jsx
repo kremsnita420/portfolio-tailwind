@@ -18,7 +18,7 @@ export default function Header() {
 	}
 
 	return (
-		<header className='container mx-auto flex items-center px-5 lg:px-0 z-20 mb-5'>
+		<header className='container mx-auto flex items-center px-5 z-20 mb-5'>
 			{/* header logo */}
 			<HeaderLogo />
 			<div className='flex-1'></div>

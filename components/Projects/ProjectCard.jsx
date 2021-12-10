@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 
 export default function ProjectCard({ id, image, title }) {
 	return (
-		<div className='card mb-10'>
+		<div className='card mb-10 glassmorph'>
 			<div className='imgbox '>
 				<NextImage
 					className='object-cover'

@@ -25,54 +25,53 @@ export default function IndexPage({ projects, href }) {
 	return (
 		<Layout title='Portfolio Page' description='First Page'>
 			{/* Projects section */}
-			<section className='flex flex-col items-center w-fulljustify-start min-h-[calc(100vh-72px)] pb-10'>
-				<HeadTitle title='Portfolio' />
 
-				{/* categories filter */}
-				<div className='flex mb-10'>
+			<HeadTitle title='Portfolio' />
+
+			{/* categories filter */}
+			<div className='flex mb-10 mx-auto'>
+				<button
+					onClick={() => setProjectCategory('')}
+					className={
+						projectCategory === ''
+							? 'rounded-md ring-1 m-2 px-2 py-1 bg-blue-400'
+							: 'rounded-md ring-1 m-2 px-2 py-1'
+					}>
+					All
+				</button>
+
+				{PRODUCT_CATEGORIES.map((category, i) => (
 					<button
-						onClick={() => setProjectCategory('')}
+						onClick={() => {
+							setProjectCategory(category)
+						}}
 						className={
-							projectCategory === ''
-								? 'rounded-md ring-1 m-2 px-2 py-1 bg-blue-400'
-								: 'rounded-md ring-1 m-2 px-2 py-1'
-						}>
-						All
+							category === projectCategory
+								? 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 bg-red-400'
+								: 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 '
+						}
+						key={i}>
+						{category}
 					</button>
+				))}
+			</div>
 
-					{PRODUCT_CATEGORIES.map((category, i) => (
-						<button
-							onClick={() => {
-								setProjectCategory(category)
-							}}
-							className={
-								category === projectCategory
-									? 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 bg-red-400'
-									: 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 '
-							}
-							key={i}>
-							{category}
-						</button>
+			<div className='grid md:grid-cols-2 xl:grid-cols-4 my-20 gap-20 justify-center items-center mx-auto '>
+				{projects
+					.filter((filterProject) =>
+						filterProject.category.includes(projectCategory)
+					)
+					.map((project) => (
+						<div className='relative' key={project.id}>
+							<ProjectCard
+								id={project.id}
+								image={project.image[0]}
+								title={project.title}
+								description={project.description}
+							/>
+						</div>
 					))}
-				</div>
-
-				<div className='grid md:grid-cols-2 xl:grid-cols-4 my-20 gap-10 justify-center items-center '>
-					{projects
-						.filter((filterProject) =>
-							filterProject.category.includes(projectCategory)
-						)
-						.map((project) => (
-							<div className='relative' key={project.id}>
-								<ProjectCard
-									id={project.id}
-									image={project.image[0]}
-									title={project.title}
-									description={project.description}
-								/>
-							</div>
-						))}
-				</div>
-			</section>
+			</div>
 		</Layout>
 	)
 }

@@ -4,20 +4,21 @@ import HeadTitle from '../components/layout/typography/HeadTitle'
 import Layout from '../components/layout/Layout'
 import SecondaryTitle from '../components/layout/typography/SecondaryTitle'
 //data
-import { skills } from '../data/data'
+import { skills, courses } from '../data/data'
+import Course from '../components/Course'
 
 export default function AboutPage() {
 	return (
 		<Layout>
 			<HeadTitle title='About Page' />
-			<div className='flex flex-col md:flex-row items-center justify-center'>
-				<div className='flex m-10'>
-					<NextImage src='/images/portrait.png' width={600} height={600} />
+			<div className='flex flex-col md:flex-row items-center justify-start'>
+				<div className='flex items-start justify-start pb-10'>
+					<NextImage src='/images/portrait.png' width={550} height={600} />
 				</div>
 
-				<div className='flex flex-col items-start justify-between p-2 md:w-2/3 xl:w-1/2 '>
+				<div className='flex flex-col items-start justify-between md:pl-10 md:w-2/3 xl:w-1/2 '>
 					<h2 className='font-heading1 font-black text-xl md:text-2xl mb-5'>
-						Hello, I'm <span className=' font-normal'>Safet</span>, Web
+						Hello, my name Is <span className=' font-normal'>Safet</span>, Web
 						<span className=' font-normal'> Developer</span> living in
 						Ljubljana.
 					</h2>
@@ -37,12 +38,12 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Tech Stack' />
 
-			<div className='flex flex-wrap w-full items-start justify-start md:justify-between m-auto relative'>
+			<div className='flex flex-wrap w-full items-start justify-between glassmorph rounded-lg'>
 				{/* skills */}
 				{skills.map((skillGroup, i) => (
 					<div
 						key={i}
-						className='flex flex-col px-5 items-start justify-start mb-10'>
+						className='flex flex-col px-10 pt-10 items-center sm:items-start justify-center w-full sm:w-1/2 md:w-auto mb-10'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							className='h-6 w-6'
@@ -60,7 +61,7 @@ export default function AboutPage() {
 						<h3 className='text-gray-500 dark:text-gray-800 uppercase my-2'>
 							{skillGroup.title}
 						</h3>
-						<ul className='flex flex-col items-start justify-start'>
+						<ul className='flex flex-col items-center sm:items-start justify-start'>
 							{skillGroup.skills.map((singleSkill, i) => (
 								<li key={i}>{singleSkill}</li>
 							))}
@@ -70,6 +71,19 @@ export default function AboutPage() {
 			</div>
 
 			<SecondaryTitle title='Courses & Certifications' />
+
+			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10  w-full items-start justify-between'>
+				{courses.map((course) => (
+					<Course
+						key={course.id}
+						date={course.date}
+						title={course.title}
+						description={course.description}
+						link={course.link}
+						platform={course.platform}
+					/>
+				))}
+			</div>
 		</Layout>
 	)
 }
