@@ -13,7 +13,7 @@ export default function ContactForm() {
 						If you wish to contact me just fill the form and I will reply as
 						soon as possible.
 					</p>
-					<div className='w-full'>
+					<div className='w-2/3 lg:w-full xl:w-2/3 m-auto'>
 						<NextImage
 							src='/images/mail.png'
 							width={1000}

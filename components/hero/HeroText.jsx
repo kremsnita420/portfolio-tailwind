@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 
 export default function HeroText() {
 	return (
-		<div className='flex flex-col items-start justify-around min-h-[calc(100vh-64px)] relative'>
+		<div className='flex flex-col items-start justify-around min-h-[calc(100vh-76px)] relative'>
 			<h2 className=' text-xl md:text-2xl xl:text- animate-moveRight1'>
 				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200'>
 					Hi,
