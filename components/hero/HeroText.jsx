@@ -1,7 +1,9 @@
+import NextLink from 'next/link'
+
 export default function HeroText() {
 	return (
-		<div className='flex flex-col items-start justify-start my-10 min-h-[calc(100vh-64px)] relative'>
-			<h2 className=' text-xl md:text-2xl xl:text-3xl my-10 md:mt-14 animate-moveRight1'>
+		<div className='flex flex-col items-start justify-around min-h-[calc(100vh-64px)] relative'>
+			<h2 className=' text-xl md:text-2xl xl:text- animate-moveRight1'>
 				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200'>
 					Hi,
 				</span>
@@ -16,7 +18,7 @@ export default function HeroText() {
 				</span>
 			</h2>
 			<h1
-				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-left py-5 mb-10
+				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-left
 								      text-gray-800 dark:text-gray-100 font-heading1 font-black animate-moveRight2'>
 				Safet
 				<br />
@@ -40,13 +42,15 @@ export default function HeroText() {
 					Developer
 				</span>
 			</h2>
-			<button
-				className=' w-auto px-10 font-heading1 mt-20  tracking-wider
-                           font-black text-xl py-5 rounded-md animate-moveRight4
-						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:ring-2 
-						 dark:text-gray-800'>
-				Contact
-			</button>
+			<NextLink href='/portfolio'>
+				<button
+					className=' w-auto px-10 py-5 font-heading1 tracking-wider
+                           font-black text-xl rounded-md animate-moveRight4
+						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:bg-gray-600 
+						 dark:text-gray-800 dark:hover:bg-gray-400'>
+					Portfolio
+				</button>
+			</NextLink>
 		</div>
 	)
 }

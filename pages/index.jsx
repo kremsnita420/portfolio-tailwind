@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import NextImage from 'next/image'
 //components
 import Layout from '../components/layout/Layout'
 import HeadTitle from '../components/layout/typography/HeadTitle'
@@ -9,8 +10,10 @@ import HeroBgSvg from '../components/hero/HeroBgSvg'
 import path from 'path'
 import fs from 'fs/promises'
 import ScrollToBottomButton from '../components/layout/ScrollBottomButton'
+import SecondaryTitle from '../components/layout/typography/SecondaryTitle'
+import ContactForm from '../components/contact-form/ContactForm'
 
-export default function IndexPage({ projects, href }) {
+export default function IndexPage({ projects }) {
 	return (
 		<Layout title='Home Page' description='Home Page'>
 			{/* hero section */}
@@ -36,7 +39,7 @@ export default function IndexPage({ projects, href }) {
 				.
 			</p>
 
-			<div className='grid md:grid-cols-2 xl:grid-cols-3 mt-20 gap-10 justify-center items-center mx-auto '>
+			<div className='grid md:grid-cols-2 xl:grid-cols-3 mt-20 gap-10 justify-center items-center'>
 				{projects
 					.filter((project) => project.isFeatured == true)
 					.map((project) => (
@@ -49,6 +52,11 @@ export default function IndexPage({ projects, href }) {
 							/>
 						</div>
 					))}
+			</div>
+
+			<SecondaryTitle title='Get in touch' />
+			<div className='flex w-full'>
+				<ContactForm />
 			</div>
 		</Layout>
 	)

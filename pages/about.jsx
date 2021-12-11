@@ -11,6 +11,7 @@ export default function AboutPage() {
 	return (
 		<Layout>
 			<HeadTitle title='About Page' />
+
 			<div className='flex flex-col md:flex-row items-center justify-start'>
 				<div className='flex items-center  justify-center pb-10'>
 					<NextImage src='/images/portrait.png' width={550} height={600} />
@@ -38,7 +39,7 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Tech Stack' />
 
-			<div className='flex flex-wrap w-full items-start justify-between glassmorph rounded-lg'>
+			<div className='flex flex-wrap w-full items-start justify-around glassmorph rounded-lg'>
 				{/* skills */}
 				{skills.map((skillGroup, i) => (
 					<div

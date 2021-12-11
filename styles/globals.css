@@ -34,27 +34,6 @@ img {
     
 }
 
-.card:hover {
-    height: 450px;
-    
-}
-
-.content {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center;
-    color: #111;
-    transition: 1s;
-   z-index: 0;
-    
-}
-
-.card:hover .content {
-    opacity: 1;
-   bottom: 0;
-}
 
 .glassmorph {
     background: rgba(255, 255, 255, 0.1);
