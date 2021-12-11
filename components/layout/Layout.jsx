@@ -3,7 +3,7 @@ import Header from '../header/Header'
 import ScrollToButton from './ScrollTopButton'
 
 export default function Layout({ title, description, children }) {
-	const previewImage = '/images/preview.JPG'
+	const previewImage = '/images/preview.jpg'
 	return (
 		<>
 			<Head>
