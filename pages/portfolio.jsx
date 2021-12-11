@@ -22,16 +22,7 @@ export default function IndexPage({ projects, href }) {
 	return (
 		<Layout title='Portfolio Page' description='First Page'>
 			<HeadTitle title='Portfolio' />
-			<p className='text-2xl my-10'>
-				Some of my selected projects that I'm working on. <br /> For all
-				projects visit{' '}
-				{
-					<NextLink href='/portfolio'>
-						<a className='underline'>portfolio page</a>
-					</NextLink>
-				}
-				.
-			</p>
+			<p className='text-2xl my-10'>ALl my projects.</p>
 			{/* categories filter */}
 			<div className='flex mb-10 mx-auto'>
 				<button
