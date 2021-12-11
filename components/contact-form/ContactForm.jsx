@@ -4,10 +4,10 @@ import SecondaryTitle from '../layout/typography/SecondaryTitle'
 export default function ContactForm() {
 	return (
 		<>
-			<div className='flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph p-5'>
-				<div className='w-full lg:pr-10 my-5 flex flex-col'>
+			<div className='flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-10'>
+				<div className='w-full lg:pr-10 flex flex-col mb-10'>
 					<h2 className='font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5'>
-						Contact Form
+						Send me a message.
 					</h2>
 					<p className='text-lg mb-10'>
 						If you wish to contact me just fill the form and I will reply as
@@ -27,7 +27,10 @@ export default function ContactForm() {
 				</div>
 
 				{/* FORM */}
-				<div className='flex flex-col items-center justify-center w-full my-5'>
+				<div className='flex flex-col items-start justify-end w-full'>
+					<h2 className='font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5'>
+						Contact Form
+					</h2>
 					{/* NAME */}
 					<div className='mb-6 w-full'>
 						<label
@@ -83,7 +86,7 @@ export default function ContactForm() {
 					</div>
 					<button
 						type='submit'
-						className=' w-auto px-6 py-3 mt-10 font-heading1 tracking-wider
+						className=' w-auto self-center px-6 py-3 mt-10 font-heading1 tracking-wider
                            font-black text-xl rounded-md
 						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:bg-gray-600 
 						 dark:text-gray-800 dark:hover:bg-gray-400'>

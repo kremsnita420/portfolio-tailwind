@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import NextImage from 'next/image'
+
 //components
 import Layout from '../components/layout/Layout'
 import HeadTitle from '../components/layout/typography/HeadTitle'
