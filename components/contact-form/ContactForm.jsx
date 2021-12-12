@@ -2,12 +2,16 @@ import NextImage from 'next/image'
 import React, { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import SocialIcons from './SocialIcons'
+
 export default function ContactForm() {
 	const form = useRef()
 
 	const sendEmail = (e) => {
 		e.preventDefault()
-		e.target.reset()
+
 		emailjs
 			.sendForm(
 				process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -18,8 +22,6 @@ export default function ContactForm() {
 			.then(
 				(result) => {
 					console.log(result.text)
-
-					alert('Message sent successfully. You will hear from very soon. :)')
 				},
 				(error) => {
 					console.log(error.text)
@@ -28,7 +30,12 @@ export default function ContactForm() {
 					)
 				}
 			)
+		e.target.reset()
 	}
+
+	const notify = () =>
+		toast('🦄 Message sent successfully. You will hear from very soon. 🦄 ')
+
 	return (
 		<>
 			<div className='flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-10'>
@@ -37,8 +44,8 @@ export default function ContactForm() {
 						Send me a message.
 					</h2>
 					<p className='text-lg mb-10'>
-						If you wish to contact me just fill the form and I will reply as
-						soon as possible.
+						If you wish to contact me just fill the form and I will reply very
+						fast.
 					</p>
 					<div className='w-2/3 lg:w-full xl:w-2/3 m-auto'>
 						<NextImage
@@ -51,13 +58,16 @@ export default function ContactForm() {
 							blurDataURL='https://images.unsplash.com/photo-1613387275674-cb92af1c29d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
 						/>
 					</div>
+					<p className='text-lg mt-10'>Or you can reach me with</p>
+
+					<SocialIcons />
 				</div>
 
 				{/* FORM */}
 				<form
 					ref={form}
 					onSubmit={sendEmail}
-					className='flex flex-col items-center justify-end w-full'>
+					className='flex flex-col items-center justify-end w-full mt-10 lg:mt-0'>
 					<h2 className='font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5'>
 						Contact Form
 					</h2>
@@ -100,6 +110,26 @@ export default function ContactForm() {
 						/>
 					</div>
 
+					{/* SUBJECT */}
+					<div className='mb-6 w-full'>
+						<label
+							htmlFor='subject'
+							className='text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300'>
+							Subject
+						</label>
+						<input
+							required
+							type='text'
+							name='subject'
+							id='subject'
+							className='
+                    bg-gray-50 border border-gray-300 text-gray-900 
+                    sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
+                    block p-2.5 w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
+                    dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 '
+						/>
+					</div>
+
 					{/* TEXT */}
 					<div className='mb-6 w-full'>
 						<label
@@ -117,11 +147,24 @@ export default function ContactForm() {
                 focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 
                 dark:border-gray-600 dark:placeholder-gray-400 p-2 dark:text-white 
                 dark:focus:ring-blue-500 dark:focus:border-blue-500'
-							placeholder='Leave a comment...'
+							placeholder='Write your message here...'
 						/>
 					</div>
 
+					<ToastContainer
+						position='top-center'
+						autoClose={5000}
+						hideProgressBar={true}
+						newestOnTop={false}
+						closeOnClick
+						rtl={false}
+						pauseOnFocusLoss
+						draggable
+						pauseOnHover
+					/>
+
 					<button
+						onClick={notify}
 						type='submit'
 						className=' w-auto self-center px-6 py-3 mt-10 font-heading1 tracking-wider
                            font-black text-xl rounded-md

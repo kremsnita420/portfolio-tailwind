@@ -28,7 +28,7 @@ export default function IndexPage({ projects }) {
 
 			<HeadTitle id='projects' title='Featured Projects' />
 
-			<p className='text-2xl my-10'>
+			<p className='text-2xl mb-10'>
 				Some of my selected projects that I'm working on. <br /> For all
 				projects visit{' '}
 				{
