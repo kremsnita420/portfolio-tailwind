@@ -7,7 +7,7 @@ export default function ContactForm() {
 
 	const sendEmail = (e) => {
 		e.preventDefault()
-
+		e.target.reset()
 		emailjs
 			.sendForm(
 				process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -18,6 +18,7 @@ export default function ContactForm() {
 			.then(
 				(result) => {
 					console.log(result.text)
+
 					alert('Message sent successfully. You will hear from very soon. :)')
 				},
 				(error) => {
