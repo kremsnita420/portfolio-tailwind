@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SocialIcons from '../contact-form/SocialIcons.jsx'
 import DarkmodeButton from './DarkmodeButton.jsx.jsx'
 
 import HeaderLogo from './HeaderLogo.jsx'
@@ -88,6 +89,7 @@ export default function Header() {
 							<DrawerNavigationItem href='/about' text='About' />
 						</nav>
 					</div>
+					<SocialIcons />
 				</div>
 			</div>
 		</header>
