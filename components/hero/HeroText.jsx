@@ -2,8 +2,8 @@ import NextLink from 'next/link'
 
 export default function HeroText() {
 	return (
-		<div className='flex flex-col items-start justify-around min-h-[calc(100vh-76px)] relative'>
-			<h2 className=' text-xl md:text-2xl xl:text- animate-moveRight1'>
+		<div className='flex flex-col items-start justify-center min-h-[calc(100vh-76px)] relative'>
+			<h2 className=' text-xl md:text-2xl xl:text- animate-moveRight1 mb-14'>
 				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200'>
 					Hi,
 				</span>
@@ -18,14 +18,14 @@ export default function HeroText() {
 				</span>
 			</h2>
 			<h1
-				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-left
+				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-left mb-14
 								      text-gray-800 dark:text-gray-100 font-heading1 font-black animate-moveRight2'>
 				Safet
 				<br />
 				<span className='font-extralight'> Duranović</span>
 			</h1>
 
-			<h2 className='text-1xl md:text-2xl xl:text-3xl animate-moveRight3'>
+			<h2 className='text-1xl md:text-2xl xl:text-3xl animate-moveRight3 mb-20'>
 				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200'>
 					and
 				</span>

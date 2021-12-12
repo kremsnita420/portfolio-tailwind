@@ -1,11 +1,37 @@
 import NextImage from 'next/image'
-import SecondaryTitle from '../layout/typography/SecondaryTitle'
+import React, { useRef } from 'react'
+import emailjs from 'emailjs-com'
 
 export default function ContactForm() {
+	const form = useRef()
+
+	const sendEmail = (e) => {
+		e.preventDefault()
+
+		emailjs
+			.sendForm(
+				process.env.NEXT_PUBLIC_SERVICE_ID,
+				process.env.NEXT_PUBLIC_TEMPLATE_ID,
+				form.current,
+				process.env.NEXT_PUBLIC_USER_ID
+			)
+			.then(
+				(result) => {
+					console.log(result.text)
+					alert('Message sent successfully. You will hear from very soon. :)')
+				},
+				(error) => {
+					console.log(error.text)
+					alert(
+						'Something went wrong! Please try again or write to duranovic.safet@gmail.com'
+					)
+				}
+			)
+	}
 	return (
 		<>
 			<div className='flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-10'>
-				<div className='w-full lg:pr-10 flex flex-col mb-10'>
+				<div className='w-full lg:pr-10 flex flex-col mb-10 items-center'>
 					<h2 className='font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5'>
 						Send me a message.
 					</h2>
@@ -27,7 +53,10 @@ export default function ContactForm() {
 				</div>
 
 				{/* FORM */}
-				<div className='flex flex-col items-start justify-end w-full'>
+				<form
+					ref={form}
+					onSubmit={sendEmail}
+					className='flex flex-col items-center justify-end w-full'>
 					<h2 className='font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5'>
 						Contact Form
 					</h2>
@@ -39,7 +68,9 @@ export default function ContactForm() {
 							Name
 						</label>
 						<input
+							required
 							type='text'
+							name='user_name'
 							id='name'
 							className='
                     bg-gray-50 border border-gray-300 text-gray-900 
@@ -56,7 +87,9 @@ export default function ContactForm() {
 							Email
 						</label>
 						<input
+							required
 							type='email'
+							name='user_email'
 							id='email'
 							className='
                     bg-gray-50 border border-gray-300 text-gray-900 
@@ -74,7 +107,9 @@ export default function ContactForm() {
 							Your message
 						</label>
 						<textarea
+							required
 							id='message'
+							name='message'
 							rows='10'
 							className='
                 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm md:text-base lg:text-lg rounded-md 
@@ -84,15 +119,16 @@ export default function ContactForm() {
 							placeholder='Leave a comment...'
 						/>
 					</div>
+
 					<button
 						type='submit'
 						className=' w-auto self-center px-6 py-3 mt-10 font-heading1 tracking-wider
                            font-black text-xl rounded-md
 						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:bg-gray-600 
 						 dark:text-gray-800 dark:hover:bg-gray-400'>
-						Submit
+						Send
 					</button>
-				</div>
+				</form>
 			</div>
 		</>
 	)
