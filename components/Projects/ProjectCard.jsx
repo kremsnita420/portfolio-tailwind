@@ -19,7 +19,7 @@ export default function ProjectCard({ id, image, title }) {
 						rel='preload'
 						as='image'
 					/>
-					<p className='text-xl text-gray-800 dark:text-gray-200 text-center p-2 mt-3'>
+					<p className='text-xl font-semibold font-heading1 text-gray-800 dark:text-gray-200 text-center p-2 mt-3'>
 						{title}
 					</p>
 				</div>

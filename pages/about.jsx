@@ -12,7 +12,7 @@ export default function AboutPage() {
 		<Layout>
 			<HeadTitle title='About Page' />
 
-			<div className='flex flex-col md:flex-row items-center justify-start'>
+			<div className='flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400'>
 				<div className='flex items-center  justify-center pb-10'>
 					<NextImage src='/images/portrait.png' width={550} height={600} />
 				</div>
@@ -72,6 +72,12 @@ export default function AboutPage() {
 			</div>
 
 			<SecondaryTitle title='Courses & Certifications' />
+
+			<p className='text-lg md:text-xl mb-10 px-10 w-3/4 mx-auto'>
+				Here is a list of completed courses and certifications so far. If you
+				wish to know more about specific course click the card and it will take
+				you to course provider's website.
+			</p>
 
 			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-20 w-full items-start justify-between'>
 				{courses.map((course) => (

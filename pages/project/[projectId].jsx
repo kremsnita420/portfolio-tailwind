@@ -59,7 +59,9 @@ export default function ProjectPage(props) {
 				{/* built with */}
 				<div className='flex flex-col lg:flex-row items-center lg:items-start justify-around w-full'>
 					<div className='flex flex-col items-start justify-start'>
-						<h2 className='text-2xl mx-auto mb-5'>Built with </h2>
+						<h2 className='text-2xl font-heading1 md:text-3xl mx-auto mb-5'>
+							Built with{' '}
+						</h2>
 						<div className='flex md:flex-col items-center justify-center'>
 							<ul className='flex flex-wrap mb-10 items-start justify-start'>
 								{filteredProject.builtWith.map((tech, i) => (
@@ -68,7 +70,7 @@ export default function ProjectPage(props) {
 										key={i}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
-											className='h-6 w-6'
+											className='h-6 w-6 mr-1'
 											fill='none'
 											viewBox='0 0 24 24'
 											stroke='currentColor'>
@@ -93,11 +95,13 @@ export default function ProjectPage(props) {
 					</div>
 
 					{/* repository and live website */}
-					<div className='flex flex-col items-start justify-start'>
-						<h2 className='text-2xl mb-5'>Github repository & Live Website </h2>
+					<div className='flex flex-col items-start'>
+						<h2 className='text-2xl w-full font-heading1 md:text-3xl mb-5 text-center'>
+							Github & Website{' '}
+						</h2>
 
-						<div className='flex items-center justify-between w-full'>
-							<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
+						<div className='flex items-center justify-center w-full'>
+							<button className='bg-gray-800 text-gray-200 mr-5 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
 								<a
 									href={filteredProject.gitLink}
 									target='_blank'
@@ -105,7 +109,7 @@ export default function ProjectPage(props) {
 									Github
 								</a>
 							</button>
-							<button className='bg-gray-800 text-gray-200 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 min-w-[6.5rem] rounded-md'>
+							<button className='bg-gray-800 text-gray-200 ml-5 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 min-w-[6.5rem] rounded-md'>
 								<a
 									href={filteredProject.webLink}
 									target='_blank'
@@ -118,9 +122,26 @@ export default function ProjectPage(props) {
 				</div>
 
 				{/* project description */}
-				<p className='text-lg md:text-xl my-10 md:p-0'>
-					{filteredProject.description}
-				</p>
+				<div className='flex-col md:flex-row w-full items-center text-center justify-center mx-auto mt-10'>
+					<h2 className='text-2xl font-heading1 md:text-3xl my-5'>
+						Description{' '}
+					</h2>
+					<p className='text-lg md:text-xl'>{filteredProject.description}</p>
+
+					<h2 className='text-2xl font-heading1 md:text-3xl mb-5 mt-10'>
+						Technologies{' '}
+					</h2>
+					<div>
+						<ul className='grid grid-cols-1 md:grid-cols-4 gap-5 pb-10 text-gray-800 dark:text-gray-200'>
+							{filteredProject.features.map((feature, i) => (
+								<li className='glassmorph p-2 text-left' key={i}>
+									<h4 className=' font-heading1 font-black'>{feature.name}</h4>
+									<p className='mt-2 mb-5'>{feature.description}</p>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<ScrollToBottomButton />
