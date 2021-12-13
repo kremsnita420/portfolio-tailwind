@@ -47,7 +47,7 @@ export default function ContactForm() {
 						If you wish to contact me just fill the form and I will reply very
 						fast.
 					</p>
-					<div className='w-2/3 lg:w-full xl:w-2/3 m-auto'>
+					<div className='w-3/4  m-auto'>
 						<NextImage
 							src='/images/mail.png'
 							width={1000}
@@ -141,7 +141,7 @@ export default function ContactForm() {
 							required
 							id='message'
 							name='message'
-							rows='10'
+							rows='6'
 							className='
                 bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm md:text-base lg:text-lg rounded-md 
                 focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 
