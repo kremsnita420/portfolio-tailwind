@@ -39,7 +39,7 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Tech Stack' />
 
-			<div className='flex flex-wrap w-full items-start justify-around glassmorph rounded-lg'>
+			<div className='flex flex-wrap w-full items-start justify-around glassmorph mb-5 rounded-lg'>
 				{/* skills */}
 				{skills.map((skillGroup, i) => (
 					<div
@@ -73,13 +73,12 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Courses & Certifications' />
 
-			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10  w-full items-start justify-between'>
+			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-20 w-full items-start justify-between'>
 				{courses.map((course) => (
 					<Course
 						key={course.id}
 						date={course.date}
 						title={course.title}
-						description={course.description}
 						link={course.link}
 						platform={course.platform}
 					/>

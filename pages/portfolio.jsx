@@ -22,6 +22,7 @@ export default function IndexPage({ projects, href }) {
 	return (
 		<Layout title='Portfolio Page' description='First Page'>
 			<HeadTitle title='Portfolio' />
+
 			<p className='text-2xl my-10'>All my projects.</p>
 			{/* categories filter */}
 			<div className='flex mb-10 mx-auto'>

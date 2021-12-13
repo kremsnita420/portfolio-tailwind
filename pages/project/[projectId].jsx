@@ -10,7 +10,7 @@ import ScrollToBottomButton from '../../components/layout/ScrollBottomButton'
 
 export default function ProjectPage(props) {
 	const { filteredProject } = props
-	const [selectedImage, setSelectedImage] = useState(filteredProject.image[2])
+	const [selectedImage, setSelectedImage] = useState(filteredProject.image[0])
 
 	return (
 		<Layout
@@ -19,11 +19,11 @@ export default function ProjectPage(props) {
 			<HeadTitle title={filteredProject.title} />
 
 			{/* selected image */}
-			<div className='container'>
+			<div className='w-full'>
 				<NextImage
 					src={selectedImage}
-					width={1600}
-					height={800}
+					width={1400}
+					height={700}
 					layout='responsive'
 					alt={filteredProject.title}
 					placeholder='blur'
@@ -32,7 +32,7 @@ export default function ProjectPage(props) {
 			</div>
 
 			{/* image thumbnails */}
-			<div className='flex flex-wrap mx-auto my-10'>
+			<div className='flex flex-wrap mx-auto justify-center my-10'>
 				{filteredProject.image.map((img, i) => (
 					<div
 						key={i}
@@ -55,16 +55,16 @@ export default function ProjectPage(props) {
 				))}
 			</div>
 
-			<div className='flex flex-col items-start justify-start  lg:justify-between'>
+			<div className='flex flex-col items-center justify-center  lg:justify-around'>
 				{/* built with */}
-				<div className='flex flex-col lg:flex-row items-start justify-between w-full'>
-					<div className='flex flex-col'>
-						<h2 className='text-2xl  mb-5'>Built with </h2>
+				<div className='flex flex-col lg:flex-row items-center lg:items-start justify-around w-full'>
+					<div className='flex flex-col items-start justify-start'>
+						<h2 className='text-2xl mx-auto mb-5'>Built with </h2>
 						<div className='flex md:flex-col items-center justify-center'>
-							<ul className='flex flex-wrap mb-10'>
+							<ul className='flex flex-wrap mb-10 items-start justify-start'>
 								{filteredProject.builtWith.map((tech, i) => (
 									<li
-										className='flex items-start justify-center cursor-pointer'
+										className='flex items-center justify-center cursor-pointer'
 										key={i}>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
@@ -93,7 +93,7 @@ export default function ProjectPage(props) {
 					</div>
 
 					{/* repository and live website */}
-					<div className='flex flex-col'>
+					<div className='flex flex-col items-start justify-start'>
 						<h2 className='text-2xl mb-5'>Github repository & Live Website </h2>
 
 						<div className='flex items-center justify-between w-full'>

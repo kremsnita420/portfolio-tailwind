@@ -18,7 +18,7 @@ export default function IndexPage({ projects }) {
 		<Layout title='Home Page' description='Home Page'>
 			{/* hero section */}
 
-			<div className='relative flex items-start w-full justify-start '>
+			<div className='relative flex items-start w-full justify-start'>
 				<HeroText />
 				<HeroBgSvg />
 			</div>
