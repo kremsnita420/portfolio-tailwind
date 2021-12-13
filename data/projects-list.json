@@ -14,7 +14,8 @@
 				"/images/project-1/project-1-5.JPG",
 				"/images/project-1/project-1-6.JPG",
 				"/images/project-1/project-1-7.JPG",
-				"/images/project-1/project-1-8.JPG"
+				"/images/project-1/project-1-8.JPG",
+				"/images/project-1/project-1-9.JPG"
 			],
 			"stack": "React, Next.js, MongoDb",
 			"languages": ["Html", "CSS", "Javascript"],
