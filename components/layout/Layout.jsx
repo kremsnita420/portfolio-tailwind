@@ -3,7 +3,6 @@ import Header from '../header/Header'
 import ScrollToButton from './ScrollTopButton'
 
 export default function Layout({ title, description, children }) {
-	const previewImage = '/images/preview.jpg'
 	return (
 		<>
 			<Head>
@@ -11,7 +10,7 @@ export default function Layout({ title, description, children }) {
 				{description && <meta name='description' content={description} />}
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta charSet='utf-8' />
-				<meta property='og:image' content={previewImage} key='ogimage' />
+				<meta property='og:image' content='/images/preview.jpg' key='ogimage' />
 			</Head>
 			<Header />
 			<main
