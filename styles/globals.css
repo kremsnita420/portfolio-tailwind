@@ -5,7 +5,7 @@
 
 @layer components {
     p {
-        @apply text-gray-600
+        @apply text-gray-600 dark:text-gray-400
     }
 }
 

@@ -64,16 +64,15 @@ export default function ProjectPage(props) {
 					</h2>
 
 					<div className='flex items-center justify-center w-full mb-10'>
-						<button className='bg-gray-800 text-gray-200 mr-5 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
-							<a href={filteredProject.gitLink} target='_blank' rel='noopener'>
-								Github
-							</a>
-						</button>
-						<button className='bg-gray-800 text-gray-200 ml-5 dark:bg-gray-200 dark:text-gray-800 px-5 py-2 min-w-[6.5rem] rounded-md'>
-							<a href={filteredProject.webLink} target='_blank' rel='noopener'>
-								Website
-							</a>
-						</button>
+						{filteredProject.links.map((l, i) => (
+							<button
+								key={i}
+								className='bg-gray-800 text-gray-200 mr-5 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
+								<a href={l.link} target='_blank' rel='noopener'>
+									{l.name}
+								</a>
+							</button>
+						))}
 					</div>
 				</div>
 
@@ -82,9 +81,7 @@ export default function ProjectPage(props) {
 					<h2 className='text-2xl font-heading1 md:text-3xl mb-10'>
 						Description{' '}
 					</h2>
-					<p className='text-lg md:text-xl text-left'>
-						{filteredProject.description}
-					</p>
+					<p className='text-lg md:text-xl'>{filteredProject.description}</p>
 
 					<div className='flex flex-col justify-start items-start md:flex-row w-full mt-10'>
 						<div className='flex flex-col pr-5'>
@@ -128,7 +125,7 @@ export default function ProjectPage(props) {
 						add in the future
 					</p>
 
-					<ul className=' pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-center dark:text-gray-200'>
+					<ul className=' pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-start dark:text-gray-200'>
 						{filteredProject.todos.map((todo, i) => (
 							<li className='md:ml-5 py-2 text-left' key={i}>
 								<h4 className=' font-heading1 font-black mb-2'>

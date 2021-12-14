@@ -23,15 +23,15 @@ export default function AboutPage() {
 						<span className=' font-normal'> Developer</span> living in
 						Ljubljana.
 					</h2>
-					<p className='mb-5 text-lg'>
+					<p className='mb-5 text-lg md:text-xl'>
 						In January 2021 I have quit my job to learn web development. Since
 						then I spend all my time learning fundamentals of frontend and
 						backend web technologies and I'm loving every second of it.
 					</p>
-					<p className='mb-5 text-lg'>
+					<p className='mb-5 text-lg md:text-xl'>
 						I love building apps that are simple and user-friendly.
 					</p>
-					<p className='mb-5 text-lg'>
+					<p className='mb-5 text-lg md:text-xl'>
 						I'm looking for junior web developer position.
 					</p>
 				</div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Courses & Certifications' />
 
-			<p className='text-lg md:text-xl mb-10 px-20  mx-auto'>
+			<p className='text-lg md:text-xl mb-10 px-20 text-center'>
 				Here is a list of completed courses and certifications so far. If you
 				wish to know more about specific course click the card and it will take
 				you to course provider's website.

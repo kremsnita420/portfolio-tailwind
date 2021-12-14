@@ -16,7 +16,7 @@
 				"/images/project-1/project-1-8.JPG",
 				"/images/project-1/project-1-9.JPG"
 			],
-			"stack": "React, Next.js, MongoDb, MaterialUI",
+
 			"languages": ["Html", "CSS", "Javascript"],
 			"builtWith": [
 				{ "name": "React", "link": "https://reactjs.org/" },
@@ -24,8 +24,14 @@
 				{ "name": "MongoDB", "link": "https://www.mongodb.com/" },
 				{ "name": "MaterialUI", "link": "https://mui.com/" }
 			],
-			"gitLink": "https://github.com/kremsnita420/about-me",
-			"webLink": "https://about-me-rho-weld.vercel.app/",
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/about-me"
+				},
+
+				{ "name": "website", "link": "https://about-me-rho-weld.vercel.app/" }
+			],
 			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments. Users can search and filter products, add them to cart and make purchase with online payment. Admins can edit and list new products, manage sales and users. If you wish to test website as admin login with this credentials: email: admin@admin.com, password: '123456'",
 			"technologies": [
 				{
@@ -49,7 +55,6 @@
 					"name": "Material UI",
 					"description": "For building responsive website using custom theme, animation, carousel and more"
 				},
-				{ "name": "PayPal developer api", "description": "For online payment" },
 				{
 					"name": "Deployment",
 					"description": "Hosted on Vercel with continuous deployment from Github"
@@ -98,72 +103,71 @@
 			"category": "React",
 			"isFeatured": true,
 			"image": [
-				"/images/project-1/project-1-1.JPG",
-				"/images/project-1/project-1-2.JPG",
-				"/images/project-1/project-1-3.JPG",
-				"/images/project-1/project-1-4.JPG",
-				"/images/project-1/project-1-5.JPG",
-				"/images/project-1/project-1-6.JPG",
-				"/images/project-1/project-1-7.JPG",
-				"/images/project-1/project-1-8.JPG",
-				"/images/project-1/project-1-9.JPG"
+				"/images/project-2/project-2-1.JPG",
+				"/images/project-2/project-2-2.JPG",
+				"/images/project-2/project-2-3.JPG",
+				"/images/project-2/project-2-4.JPG",
+				"/images/project-2/project-2-5.JPG",
+				"/images/project-2/project-2-6.JPG"
 			],
-			"stack": "React, Next.js, Strapi CMS",
+
 			"languages": ["Html", "CSS", "Javascript"],
 			"builtWith": [
 				{ "name": "React", "link": "https://reactjs.org/" },
 				{ "name": "NextJS", "link": "https://nextjs.org/" },
-				{ "name": "MongoDB", "link": "https://www.mongodb.com/" },
-				{ "name": "MaterialUI", "link": "https://mui.com/" }
+				{ "name": "StrapiCMS", "link": "https://strapi.io/" }
 			],
-			"gitLink": "https://github.com/kremsnita420/events-next-frontend",
-			"backendLink": "https://github.com/kremsnita420/events-next-backend",
-			"webLink": "https://eventsnextfrontend.vercel.app/",
-			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments. Users can search and filter products, add them to cart and make purchase with online payment. Admins can edit and list new products, manage sales and users. If you wish to test website as admin login with this credentials: email: admin@admin.com, password: '123456'",
+			"links": [
+				{
+					"name": "frontend",
+					"link": "https://github.com/kremsnita420/events-next-frontend"
+				},
+				{
+					"name": "backend",
+					"link": "https://github.com/kremsnita420/events-next-backend"
+				},
+				{ "name": "website", "link": "https://eventsnextfrontend.vercel.app/" }
+			],
+
+			"description": "Fullstack events website. For backend is used Strapi CMS. Users are able to register and post events.",
 			"technologies": [
 				{
 					"name": "ReactJS",
-					"description": "Reusable components, context API, hooks and more"
+					"description": "Reusable components, hooks and more"
 				},
 				{
 					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
+					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, pagination "
 				},
 				{
-					"name": "MongoDB / Mongoose",
-					"description": "Save and retrieve data like products, orders and users"
+					"name": "Strapi CMS",
+					"description": "Open source headless CMS and fully customizable. Used for admin to manage users and events"
 				},
 				{
-					"name": "Next Connect",
-					"description": "Backend API"
+					"name": "Security",
+					"description": "JWT (JSON Web Tokens), storing HttpOnly Cookies on the server, authorization and access control"
 				},
-				{ "name": "PayPal developer api", "description": "For online payment" },
 				{
-					"name": "Material UI",
-					"description": "For building responsive website using custom theme, animation, carousel and more"
+					"name": "Cloudinary",
+					"description": "Image uploading with Cloudinary integration"
 				},
-				{ "name": "PayPal developer api", "description": "For online payment" },
 				{
 					"name": "Deployment",
-					"description": "Hosted on Vercel with continuous deployment from Github"
+					"description": "Frontend hosted on Vercel and backend on Heroku with continuous deployment from Github"
 				}
 			],
 			"features": [
 				{
-					"name": "User Registration and Authentication",
-					"description": "Users can register to make future purchase faster. Pages are protected so only authenticated users have access"
-				},
-				{
-					"name": "Shopping Cart",
-					"description": "Users can add products to cart, update or remove items and make online payment with Paypal and credit card"
+					"name": "User Registration and Authorization",
+					"description": "Users can register to post events. Pages are protected so only authenticated users have access to own content"
 				},
 				{
 					"name": "User",
-					"description": "Users can visit Order history page to check past purchases. They can rate and review products. On profile page they can change their username, email and password"
+					"description": "Users can visit dashboard page to check, edit or delete posted events"
 				},
 				{
-					"name": "Admin Dashboard",
-					"description": "In admin dashboard is possible to see details of past purchases, check and change status of delivery and payment. Admins can add new products or update existing. Admins can also manage and delete users and create new admins."
+					"name": "Map",
+					"description": "Automatic map generation with marked location of event that is visible on website"
 				},
 				{
 					"name": "SEO",
@@ -171,6 +175,10 @@
 				}
 			],
 			"todos": [
+				{
+					"name": "Comment and rate events",
+					"description": "Need to implement ability to comment and rate events by users"
+				},
 				{
 					"name": "Reset Password",
 					"description": "Need to implement ability to reset forgotten password"
@@ -180,8 +188,8 @@
 					"description": "Users will recieve email with specific information when they register, reset password, make purchase"
 				},
 				{
-					"name": "PDF Receipt",
-					"description": "When purchase is made user will receive PDF receipt. And in dashboard they can download recepit"
+					"name": "Chat Room",
+					"description": "Where visitors can talk and comment about events"
 				}
 			]
 		}
