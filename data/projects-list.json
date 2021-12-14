@@ -2,7 +2,6 @@
 	"projectsData": [
 		{
 			"id": "pp1",
-			"date": "May 2021 - Sep 2021",
 			"title": "Fullstack E-commerce webshop",
 			"category": "Html",
 			"isFeatured": true,
@@ -17,59 +16,86 @@
 				"/images/project-1/project-1-8.JPG",
 				"/images/project-1/project-1-9.JPG"
 			],
-			"stack": "React, Next.js, MongoDb",
+			"stack": "React, Next.js, MongoDb, MaterialUI",
 			"languages": ["Html", "CSS", "Javascript"],
 			"builtWith": [
-				{ "name": "React", "link": "https://www.google.si" },
-				{ "name": "NextJS", "link": "https://www.google.si" },
-				{ "name": "MongoDB", "link": "https://www.google.si" }
+				{ "name": "React", "link": "https://reactjs.org/" },
+				{ "name": "NextJS", "link": "https://nextjs.org/" },
+				{ "name": "MongoDB", "link": "https://www.mongodb.com/" },
+				{ "name": "MaterialUI", "link": "https://mui.com/" }
 			],
-			"gitLink": "https://github.com/kremsnita420/events-next-frontend",
-			"webLink": "https://eventsnextfrontend.vercel.app/",
-			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments.",
-			"features": [
+			"gitLink": "https://github.com/kremsnita420/about-me",
+			"webLink": "https://about-me-rho-weld.vercel.app/",
+			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments. Users can search and filter products, add them to cart and make purchase with online payment. Admins can edit and list new products, manage sales and users. If you wish to test website as admin login with this credentials: email: admin@admin.com, password: '123456'",
+			"technologies": [
 				{
 					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
+					"description": "Reusable components, context API, hooks and more"
 				},
 				{
 					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
+					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
 				},
 				{
-					"name": "MongoDB and Mongoose",
+					"name": "MongoDB / Mongoose",
 					"description": "Save and retrieve data like products, orders and users"
 				},
 				{
 					"name": "Next Connect",
-					"description": "Package to build backend API"
+					"description": "Backend API"
 				},
 				{ "name": "PayPal developer api", "description": "For online payment" },
 				{
 					"name": "Material UI",
-					"description": "For building responsive website using custom theme, animation, carousel and more."
+					"description": "For building responsive website using custom theme, animation, carousel and more"
+				},
+				{ "name": "PayPal developer api", "description": "For online payment" },
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "User Registration and Authentication",
+					"description": "Users can register to make future purchase faster. Pages are protected so only authenticated users have access"
+				},
+				{
+					"name": "Shopping Cart",
+					"description": "Users can add products to cart, update or remove items and make online payment with Paypal and credit card"
+				},
+				{
+					"name": "User",
+					"description": "Users can visit Order history page to check past purchases. They can rate and review products. On profile page they can change their username, email and password"
+				},
+				{
+					"name": "Admin Dashboard",
+					"description": "In admin dashboard is possible to see details of past purchases, check and change status of delivery and payment. Admins can add new products or update existing. Admins can also manage and delete users and create new admins."
 				},
 				{
 					"name": "SEO",
-					"description": "Dynamic meta tags based on dynamic pages and content."
+					"description": "Dynamic meta tags based on dynamic pages and content"
 				}
 			],
-			"components": [
+			"todos": [
 				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
+					"name": "Reset Password",
+					"description": "Need to implement ability to reset forgotten password"
 				},
 				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
+					"name": "Email notifications",
+					"description": "Users will recieve email with specific information when they register, reset password, make purchase"
+				},
+				{
+					"name": "PDF Receipt",
+					"description": "When purchase is made user will receive PDF receipt. And in dashboard they can download recepit"
 				}
 			]
 		},
 		{
 			"id": "pp2",
-			"date": "May 2021 - Sep 2021",
-			"title": "Fullstack E-commerce webshop",
-			"category": "Html",
+			"title": "Music Events",
+			"category": "React",
 			"isFeatured": true,
 			"image": [
 				"/images/project-1/project-1-1.JPG",
@@ -82,246 +108,80 @@
 				"/images/project-1/project-1-8.JPG",
 				"/images/project-1/project-1-9.JPG"
 			],
-			"stack": "React, Next.js, MongoDb",
+			"stack": "React, Next.js, Strapi CMS",
 			"languages": ["Html", "CSS", "Javascript"],
 			"builtWith": [
-				{ "name": "React", "link": "https://www.google.si" },
-				{ "name": "NextJS", "link": "https://www.google.si" },
-				{ "name": "MongoDB", "link": "https://www.google.si" }
+				{ "name": "React", "link": "https://reactjs.org/" },
+				{ "name": "NextJS", "link": "https://nextjs.org/" },
+				{ "name": "MongoDB", "link": "https://www.mongodb.com/" },
+				{ "name": "MaterialUI", "link": "https://mui.com/" }
 			],
 			"gitLink": "https://github.com/kremsnita420/events-next-frontend",
+			"backendLink": "https://github.com/kremsnita420/events-next-backend",
 			"webLink": "https://eventsnextfrontend.vercel.app/",
-			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments.",
-			"features": [
+			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments. Users can search and filter products, add them to cart and make purchase with online payment. Admins can edit and list new products, manage sales and users. If you wish to test website as admin login with this credentials: email: admin@admin.com, password: '123456'",
+			"technologies": [
 				{
 					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
+					"description": "Reusable components, context API, hooks and more"
 				},
 				{
 					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
+					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
 				},
 				{
-					"name": "MongoDB and Mongoose",
+					"name": "MongoDB / Mongoose",
 					"description": "Save and retrieve data like products, orders and users"
 				},
 				{
 					"name": "Next Connect",
-					"description": "Package to build backend API"
+					"description": "Backend API"
 				},
 				{ "name": "PayPal developer api", "description": "For online payment" },
 				{
 					"name": "Material UI",
-					"description": "For building responsive website using custom theme, animation, carousel and more."
+					"description": "For building responsive website using custom theme, animation, carousel and more"
 				},
+				{ "name": "PayPal developer api", "description": "For online payment" },
 				{
-					"name": "SEO",
-					"description": "Dynamic meta tags based on dynamic pages and content."
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
 				}
 			],
-			"components": [
-				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
-				},
-				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
-				}
-			]
-		},
-		{
-			"id": "pp3",
-			"date": "May 2021 - Sep 2021",
-			"title": "Fullstack E-commerce webshop",
-			"category": "Html",
-			"isFeatured": true,
-			"image": [
-				"/images/project-1/project-1-1.JPG",
-				"/images/project-1/project-1-2.JPG",
-				"/images/project-1/project-1-3.JPG",
-				"/images/project-1/project-1-4.JPG",
-				"/images/project-1/project-1-5.JPG",
-				"/images/project-1/project-1-6.JPG",
-				"/images/project-1/project-1-7.JPG",
-				"/images/project-1/project-1-8.JPG",
-				"/images/project-1/project-1-9.JPG"
-			],
-			"stack": "React, Next.js, MongoDb",
-			"languages": ["Html", "CSS", "Javascript"],
-			"builtWith": [
-				{ "name": "React", "link": "https://www.google.si" },
-				{ "name": "NextJS", "link": "https://www.google.si" },
-				{ "name": "MongoDB", "link": "https://www.google.si" }
-			],
-			"gitLink": "https://github.com/kremsnita420/events-next-frontend",
-			"webLink": "https://eventsnextfrontend.vercel.app/",
-			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments.",
 			"features": [
 				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
+					"name": "User Registration and Authentication",
+					"description": "Users can register to make future purchase faster. Pages are protected so only authenticated users have access"
 				},
 				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
+					"name": "Shopping Cart",
+					"description": "Users can add products to cart, update or remove items and make online payment with Paypal and credit card"
 				},
 				{
-					"name": "MongoDB and Mongoose",
-					"description": "Save and retrieve data like products, orders and users"
+					"name": "User",
+					"description": "Users can visit Order history page to check past purchases. They can rate and review products. On profile page they can change their username, email and password"
 				},
 				{
-					"name": "Next Connect",
-					"description": "Package to build backend API"
-				},
-				{ "name": "PayPal developer api", "description": "For online payment" },
-				{
-					"name": "Material UI",
-					"description": "For building responsive website using custom theme, animation, carousel and more."
+					"name": "Admin Dashboard",
+					"description": "In admin dashboard is possible to see details of past purchases, check and change status of delivery and payment. Admins can add new products or update existing. Admins can also manage and delete users and create new admins."
 				},
 				{
 					"name": "SEO",
-					"description": "Dynamic meta tags based on dynamic pages and content."
+					"description": "Dynamic meta tags based on dynamic pages and content"
 				}
 			],
-			"components": [
+			"todos": [
 				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
+					"name": "Reset Password",
+					"description": "Need to implement ability to reset forgotten password"
 				},
 				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
-				}
-			]
-		},
-		{
-			"id": "pp4",
-			"date": "May 2021 - Sep 2021",
-			"title": "Fullstack E-commerce webshop",
-			"category": "Html",
-			"isFeatured": false,
-			"image": [
-				"/images/project-1/project-1-1.JPG",
-				"/images/project-1/project-1-2.JPG",
-				"/images/project-1/project-1-3.JPG",
-				"/images/project-1/project-1-4.JPG",
-				"/images/project-1/project-1-5.JPG",
-				"/images/project-1/project-1-6.JPG",
-				"/images/project-1/project-1-7.JPG",
-				"/images/project-1/project-1-8.JPG",
-				"/images/project-1/project-1-9.JPG"
-			],
-			"stack": "React, Next.js, MongoDb",
-			"languages": ["Html", "CSS", "Javascript"],
-			"builtWith": [
-				{ "name": "React", "link": "https://www.google.si" },
-				{ "name": "NextJS", "link": "https://www.google.si" },
-				{ "name": "MongoDB", "link": "https://www.google.si" }
-			],
-			"gitLink": "https://github.com/kremsnita420/events-next-frontend",
-			"webLink": "https://eventsnextfrontend.vercel.app/",
-			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments.",
-			"features": [
-				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
+					"name": "Email notifications",
+					"description": "Users will recieve email with specific information when they register, reset password, make purchase"
 				},
 				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
-				},
-				{
-					"name": "MongoDB and Mongoose",
-					"description": "Save and retrieve data like products, orders and users"
-				},
-				{
-					"name": "Next Connect",
-					"description": "Package to build backend API"
-				},
-				{ "name": "PayPal developer api", "description": "For online payment" },
-				{
-					"name": "Material UI",
-					"description": "For building responsive website using custom theme, animation, carousel and more."
-				},
-				{
-					"name": "SEO",
-					"description": "Dynamic meta tags based on dynamic pages and content."
-				}
-			],
-			"components": [
-				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
-				},
-				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
-				}
-			]
-		},
-		{
-			"id": "pp5",
-			"date": "May 2021 - Sep 2021",
-			"title": "Fullstack E-commerce webshop",
-			"category": "Html",
-			"isFeatured": false,
-			"image": [
-				"/images/project-1/project-1-1.JPG",
-				"/images/project-1/project-1-2.JPG",
-				"/images/project-1/project-1-3.JPG",
-				"/images/project-1/project-1-4.JPG",
-				"/images/project-1/project-1-5.JPG",
-				"/images/project-1/project-1-6.JPG",
-				"/images/project-1/project-1-7.JPG",
-				"/images/project-1/project-1-8.JPG",
-				"/images/project-1/project-1-9.JPG"
-			],
-			"stack": "React, Next.js, MongoDb",
-			"languages": ["Html", "CSS", "Javascript"],
-			"builtWith": [
-				{ "name": "React", "link": "https://www.google.si" },
-				{ "name": "NextJS", "link": "https://www.google.si" },
-				{ "name": "MongoDB", "link": "https://www.google.si" }
-			],
-			"gitLink": "https://github.com/kremsnita420/events-next-frontend",
-			"webLink": "https://eventsnextfrontend.vercel.app/",
-			"description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments.",
-			"features": [
-				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
-				},
-				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
-				},
-				{
-					"name": "MongoDB and Mongoose",
-					"description": "Save and retrieve data like products, orders and users"
-				},
-				{
-					"name": "Next Connect",
-					"description": "Package to build backend API"
-				},
-				{ "name": "PayPal developer api", "description": "For online payment" },
-				{
-					"name": "Material UI",
-					"description": "For building responsive website using custom theme, animation, carousel and more."
-				},
-				{
-					"name": "SEO",
-					"description": "Dynamic meta tags based on dynamic pages and content."
-				}
-			],
-			"components": [
-				{
-					"name": "ReactJS",
-					"description": "decomposing components, context API, hooks and more."
-				},
-				{
-					"name": "NextJS",
-					"description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR, "
+					"name": "PDF Receipt",
+					"description": "When purchase is made user will receive PDF receipt. And in dashboard they can download recepit"
 				}
 			]
 		}

@@ -19,11 +19,12 @@ export default function ProjectPage(props) {
 			<HeadTitle title={filteredProject.title} />
 
 			{/* selected image */}
-			<div className='w-full'>
+			<div className='w-full mb-5'>
 				<NextImage
+					objectFit='cover'
 					src={selectedImage}
-					width={1400}
-					height={700}
+					width={1100}
+					height={600}
 					layout='responsive'
 					alt={filteredProject.title}
 					placeholder='blur'
@@ -32,14 +33,14 @@ export default function ProjectPage(props) {
 			</div>
 
 			{/* image thumbnails */}
-			<div className='flex flex-wrap mx-auto justify-center my-10'>
+			<div className='flex flex-wrap items-center justify-center pb-10'>
 				{filteredProject.image.map((img, i) => (
 					<div
 						key={i}
 						className={
 							selectedImage === img
-								? ' border-4 border-gray-200 dark:border-gray-400 h-[100px] w-[100px]'
-								: 'border-4 border-transparent h-[100px] w-[100px]'
+								? ' border-4 border-gray-200 dark:border-gray-400 h-[100px] w-[100px] overflow-hidden'
+								: 'border-4 border-transparent h-[100px] w-[100px] overflow-hidden'
 						}>
 						<NextImage
 							onClick={() => setSelectedImage(img)}
@@ -58,7 +59,7 @@ export default function ProjectPage(props) {
 			<div className='flex flex-col items-center justify-center  lg:justify-around mb-10'>
 				{/* repository and live website */}
 				<div className='flex flex-col items-start'>
-					<h2 className='text-2xl w-full font-heading1 md:text-3xl my-10 text-center'>
+					<h2 className='text-2xl w-full font-heading1  md:text-3xl my-10 text-center'>
 						Github & Website{' '}
 					</h2>
 
@@ -77,25 +78,66 @@ export default function ProjectPage(props) {
 				</div>
 
 				{/* project description */}
-				<div className='flex-col md:flex-row w-full items-center text-center justify-center mx-auto mt-10'>
+				<div className='flex-col w-full items-center text-center justify-center mx-auto mt-10'>
 					<h2 className='text-2xl font-heading1 md:text-3xl mb-10'>
 						Description{' '}
 					</h2>
-					<p className='text-lg md:text-xl'>{filteredProject.description}</p>
+					<p className='text-lg md:text-xl text-left'>
+						{filteredProject.description}
+					</p>
 
-					<h2 className='text-2xl font-heading1 md:text-3xl mt-20 mb-10'>
-						Technologies{' '}
-					</h2>
-					<div>
-						<ul className='grid grid-cols-1 md:grid-cols-4 gap-5 pb-10 text-gray-800 dark:text-gray-200'>
-							{filteredProject.features.map((feature, i) => (
-								<li className='glassmorph p-2 text-left' key={i}>
-									<h4 className=' font-heading1 font-black'>{feature.name}</h4>
-									<p className='mt-2 mb-5'>{feature.description}</p>
-								</li>
-							))}
-						</ul>
+					<div className='flex flex-col justify-start items-start md:flex-row w-full mt-10'>
+						<div className='flex flex-col pr-5'>
+							<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
+								Technologies
+							</h2>
+							<ul className=' pb-10 text-gray-800 dark:text-gray-200'>
+								{filteredProject.technologies.map((tech, i) => (
+									<li className=' py-2 text-left glassmorph mb-5 px-2' key={i}>
+										<h4 className=' font-heading1 font-black mb-2'>
+											{i + 1}. {tech.name}
+										</h4>
+										<p className='pb-2'>{tech.description}</p>
+									</li>
+								))}
+							</ul>
+						</div>
+
+						<div className='flex flex-col pl-5'>
+							<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
+								Features
+							</h2>
+							<ul className=' pb-10 text-gray-800 dark:text-gray-200'>
+								{filteredProject.features.map((feature, i) => (
+									<li className=' py-2 text-left' key={i}>
+										<h4 className=' font-heading1 font-black mb-2'>
+											{i + 1}. {feature.name}
+										</h4>
+										<p className='pb-2'>{feature.description}</p>
+									</li>
+								))}
+							</ul>
+						</div>
 					</div>
+					<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
+						Todo List
+					</h2>
+
+					<p className='text-lg md:text-xl mb-5'>
+						Here is a list of some major functionalities that I'm planning to
+						add in the future
+					</p>
+
+					<ul className=' pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-center dark:text-gray-200'>
+						{filteredProject.todos.map((todo, i) => (
+							<li className='md:ml-5 py-2 text-left' key={i}>
+								<h4 className=' font-heading1 font-black mb-2'>
+									{i + 1}. {todo.name}
+								</h4>
+								<p className='pb-2'>{todo.description}</p>
+							</li>
+						))}
+					</ul>
 				</div>
 			</div>
 

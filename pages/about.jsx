@@ -18,7 +18,7 @@ export default function AboutPage() {
 				</div>
 
 				<div className='flex flex-col items-start justify-between md:pl-10 md:w-2/3 xl:w-1/2 '>
-					<h2 className='font-heading1 font-black text-xl md:text-2xl mb-5'>
+					<h2 className='font-heading1 font-black text-gray-800 dark:text-gray-200 text-xl md:text-2xl mb-5'>
 						Hello, my name Is <span className=' font-normal'>Safet</span>, Web
 						<span className=' font-normal'> Developer</span> living in
 						Ljubljana.
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Courses & Certifications' />
 
-			<p className='text-lg md:text-xl mb-10 px-10 w-3/4 mx-auto'>
+			<p className='text-lg md:text-xl mb-10 px-20  mx-auto'>
 				Here is a list of completed courses and certifications so far. If you
 				wish to know more about specific course click the card and it will take
 				you to course provider's website.

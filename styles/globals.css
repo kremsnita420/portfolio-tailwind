@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    p {
+        @apply text-gray-600
+    }
+}
 
 html {
     scroll-behavior: smooth;
