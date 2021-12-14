@@ -59,15 +59,15 @@ export default function ProjectPage(props) {
 			<div className='flex flex-col items-center justify-center  lg:justify-around mb-10'>
 				{/* repository and live website */}
 				<div className='flex flex-col items-start'>
-					<h2 className='text-2xl w-full font-heading1  md:text-3xl my-10 text-center'>
+					<h2 className='text-2xl w-full font-heading1  md:text-3xl mt-10 text-center'>
 						Github & Website{' '}
 					</h2>
 
-					<div className='flex items-center justify-center w-full mb-10'>
+					<div className='flex items-center justify-center mx-auto w-full mb-10'>
 						{filteredProject.links.map((l, i) => (
 							<button
 								key={i}
-								className='bg-gray-800 text-gray-200 mr-5 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 min-w-[6.5rem] rounded-md'>
+								className='bg-gray-800 text-gray-200 m-2 lg:m-5 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 rounded-md'>
 								<a href={l.link} target='_blank' rel='noopener'>
 									{l.name}
 								</a>
@@ -77,14 +77,14 @@ export default function ProjectPage(props) {
 				</div>
 
 				{/* project description */}
-				<div className='flex-col w-full items-center text-center justify-center mx-auto mt-10'>
+				<div className='flex-col w-full items-center text-center justify-center mx-auto'>
 					<h2 className='text-2xl font-heading1 md:text-3xl mb-10'>
 						Description{' '}
 					</h2>
 					<p className='text-lg md:text-xl'>{filteredProject.description}</p>
 
 					<div className='flex flex-col justify-start items-start md:flex-row w-full mt-10'>
-						<div className='flex flex-col pr-5'>
+						<div className='flex flex-col mx-5'>
 							<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
 								Technologies
 							</h2>
@@ -100,7 +100,7 @@ export default function ProjectPage(props) {
 							</ul>
 						</div>
 
-						<div className='flex flex-col pl-5'>
+						<div className='flex flex-col md:pl-5'>
 							<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
 								Features
 							</h2>

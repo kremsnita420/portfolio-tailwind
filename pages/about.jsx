@@ -73,7 +73,7 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Courses & Certifications' />
 
-			<p className='text-lg md:text-xl mb-10 px-20 text-center'>
+			<p className='text-lg md:text-xl mb-10 md:px-20 text-center'>
 				Here is a list of completed courses and certifications so far. If you
 				wish to know more about specific course click the card and it will take
 				you to course provider's website.

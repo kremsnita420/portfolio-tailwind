@@ -18,12 +18,6 @@
 			],
 
 			"languages": ["Html", "CSS", "Javascript"],
-			"builtWith": [
-				{ "name": "React", "link": "https://reactjs.org/" },
-				{ "name": "NextJS", "link": "https://nextjs.org/" },
-				{ "name": "MongoDB", "link": "https://www.mongodb.com/" },
-				{ "name": "MaterialUI", "link": "https://mui.com/" }
-			],
 			"links": [
 				{
 					"name": "github",
@@ -112,11 +106,6 @@
 			],
 
 			"languages": ["Html", "CSS", "Javascript"],
-			"builtWith": [
-				{ "name": "React", "link": "https://reactjs.org/" },
-				{ "name": "NextJS", "link": "https://nextjs.org/" },
-				{ "name": "StrapiCMS", "link": "https://strapi.io/" }
-			],
 			"links": [
 				{
 					"name": "frontend",
@@ -185,7 +174,7 @@
 				},
 				{
 					"name": "Email notifications",
-					"description": "Users will recieve email with specific information when they register, reset password, make purchase"
+					"description": "Users will recieve email with specific information when they register, reset password"
 				},
 				{
 					"name": "Chat Room",
