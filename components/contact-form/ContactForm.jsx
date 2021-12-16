@@ -39,7 +39,7 @@ export default function ContactForm() {
 
 	return (
 		<>
-			<div className='flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-10'>
+			<div className='flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-5'>
 				<div className='w-full lg:pr-10 flex flex-col mb-10 items-center'>
 					<h2 className='font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5'>
 						Send me a message.

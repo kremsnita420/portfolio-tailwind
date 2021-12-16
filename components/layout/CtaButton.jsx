@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 
 export default function CtaButton({ title, link }) {
 	return (
-		<div className='wrapper my-10'>
+		<div className='wrapper mt-5'>
 			{link ? (
 				<NextLink href={link}>
 					<div className='cta'>

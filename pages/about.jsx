@@ -76,13 +76,18 @@ export default function AboutPage() {
 
 			<SecondaryTitle title='Courses & Certifications' />
 
-			<p className='text-lg md:text-xl mb-10 md:px-20 text-center'>
-				Here is a list of completed courses and certifications so far. If you
-				wish to know more about specific course click the card and it will take
-				you to course provider's website.
-			</p>
+			<div className='flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400'>
+				<p className='text-lg md:text-xl mb-10 md:px-2 w-full text-center'>
+					Here is a list of completed courses and certifications so far. If you
+					wish to know more about specific course click the card and it will
+					take you to course provider's website.
+				</p>
+				<div className='flex items-center w-full justify-center mb-20'>
+					<NextImage src='/images/thinking.png' width={350} height={350} />
+				</div>
+			</div>
 
-			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-20 w-full items-start justify-between'>
+			<div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-20 items-center justify-between'>
 				{courses.map((course) => (
 					<Course
 						key={course.id}
