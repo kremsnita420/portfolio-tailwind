@@ -64,7 +64,7 @@ export default function ProjectPage(props) {
 					<div className='flex flex-col justify-center items-center w-full mt-10'>
 						<SecondaryTitle title='Github & Website' />
 						<p className='text-lg md:text-xl mb-10'>
-							You can check code by visiting Github link. Or check how wiebsite
+							You can check code by visiting Github link. Or check how website
 							looks in action
 						</p>
 					</div>

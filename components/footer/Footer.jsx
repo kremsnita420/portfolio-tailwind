@@ -7,7 +7,7 @@ export default function Footer() {
             w-full flex flex-col items-center justify-center
             bg-gray-800 dark:bg-gray-300 text-gray-400 dark:text-gray-800 
             rounded-none min-h-[5rem]'>
-			<div className='pb-5 w-full lg:w-1/3 flex flex-col items-center justify-around '>
+			<div className='pb-5 w-full lg:w-1/3 flex flex-col items-center justify-around mb-5 '>
 				<SocialIcons />
 				<span className='mt-5'>Email: duranovic.safet@gmail.com</span>
 				<span className='mt-5'>Telephone: +386 40867888</span>

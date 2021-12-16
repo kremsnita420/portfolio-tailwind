@@ -171,10 +171,13 @@ img {
 /*! BUTTON STYLING */
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 256px;
-    height: 64px;
-    line-height: 64px;
+    width: 60px;
+    height: 60px;
+    line-height: 0px;
     transition: all 0.3s;
     
   }
@@ -218,8 +221,8 @@ img {
     animation-duration: 6s;
   }
   .btn-two::after, .btn-two::before {
-    left: 96px;
-    width: 64px;
+    left: 0;
+    width: 60px;
     
     animation-iteration-count: infinite;
     animation-timing-function: linear;

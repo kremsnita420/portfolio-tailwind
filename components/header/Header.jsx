@@ -20,7 +20,7 @@ export default function Header() {
 	}
 
 	return (
-		<header className='container mx-auto flex items-center px-5 z-20'>
+		<header className='container mx-auto flex items-center px-5 pt-2 z-20'>
 			{/* header logo */}
 			<HeaderLogo />
 			<div className='flex-1'></div>
@@ -59,8 +59,8 @@ export default function Header() {
 			<div
 				className={
 					!sidebarVisible
-						? 'top-0 absolute right-[-100%]  w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-500'
-						: 'top-0  absolute  right-0 w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-500 '
+						? 'top-0 fixed right-[-100%]  w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-1000'
+						: 'top-0 fixed  right-0 w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-1000'
 				}>
 				<div className='flex justify-end ml-10 w-4/5'>
 					<button
@@ -90,7 +90,7 @@ export default function Header() {
 						<CtaButton link='/about' title='About' />
 					</nav>
 
-					<div className='pb-5 w-full lg:w-1/3 flex flex-col items-center justify-around '>
+					<div className='pb-5 w-full lg:w-1/3 flex flex-col items-center justify-around mb-10'>
 						<SocialIcons />
 						<span className='mt-5'>Email: duranovic.safet@gmail.com</span>
 						<span className='mt-5'>Telephone: +386 40867888</span>
