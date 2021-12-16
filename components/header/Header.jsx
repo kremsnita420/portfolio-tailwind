@@ -59,8 +59,8 @@ export default function Header() {
 			<div
 				className={
 					!sidebarVisible
-						? 'top-0 absolute right-[-100%]  w-full h-full bg-gray-200 dark:bg-gray-800 z-20 transition-all duration-500'
-						: 'top-0  absolute  right-0 w-full h-full bg-gray-200 dark:bg-gray-800 z-20 transition-all duration-500 '
+						? 'top-0 absolute right-[-100%]  w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-500'
+						: 'top-0  absolute  right-0 w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-500 '
 				}>
 				<div className='flex justify-end ml-10 w-4/5'>
 					<button

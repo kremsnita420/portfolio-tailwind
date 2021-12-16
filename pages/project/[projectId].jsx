@@ -73,7 +73,7 @@ export default function ProjectPage(props) {
 						{filteredProject.links.map((l, i) => (
 							<button
 								key={i}
-								className='text-gray-200 m-2 lg:m-5  dark:text-gray-800 px-5 my-10 sm:my-0 py-2 rounded-md'>
+								className='text-gray-800 m-2 lg:m-5  dark:text-gray-400 px-5 my-10 sm:my-0 py-2 rounded-md'>
 								<a href={l.link} target='_blank' rel='noopener'>
 									<ButtonStyled title={l.name} />
 								</a>
