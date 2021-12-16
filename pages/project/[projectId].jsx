@@ -7,6 +7,7 @@ import HeadTitle from '../../components/layout/typography/HeadTitle'
 import Layout from '../../components/layout/Layout'
 import { useState } from 'react'
 import ScrollToBottomButton from '../../components/layout/ScrollBottomButton'
+import SecondaryTitle from '../../components/layout/typography/SecondaryTitle'
 
 export default function ProjectPage(props) {
 	const { filteredProject } = props
@@ -59,9 +60,7 @@ export default function ProjectPage(props) {
 			<div className='flex flex-col items-center justify-center  lg:justify-around mb-10'>
 				{/* repository and live website */}
 				<div className='flex flex-col items-start'>
-					<h2 className='text-2xl w-full font-heading1  md:text-3xl mt-10 text-center'>
-						Github & Website{' '}
-					</h2>
+					<SecondaryTitle title='Github & Website' />
 
 					<div className='flex items-center justify-center mx-auto w-full mb-10'>
 						{filteredProject.links.map((l, i) => (
@@ -78,16 +77,12 @@ export default function ProjectPage(props) {
 
 				{/* project description */}
 				<div className='flex-col w-full items-center text-center justify-center mx-auto'>
-					<h2 className='text-2xl font-heading1 md:text-3xl mb-10'>
-						Description{' '}
-					</h2>
+					<SecondaryTitle title='Description' />
 					<p className='text-lg md:text-xl'>{filteredProject.description}</p>
 
 					<div className='flex flex-col justify-start items-start md:flex-row w-full mt-10'>
 						<div className='flex flex-col mx-5'>
-							<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
-								Technologies
-							</h2>
+							<SecondaryTitle title='Technologies' />
 							<ul className=' pb-10 text-gray-800 dark:text-gray-200'>
 								{filteredProject.technologies.map((tech, i) => (
 									<li className=' py-2 text-left glassmorph mb-5 px-2' key={i}>
@@ -101,9 +96,7 @@ export default function ProjectPage(props) {
 						</div>
 
 						<div className='flex flex-col md:pl-5'>
-							<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
-								Features
-							</h2>
+							<SecondaryTitle title='Features' />
 							<ul className=' pb-10 text-gray-800 dark:text-gray-200'>
 								{filteredProject.features.map((feature, i) => (
 									<li className=' py-2 text-left' key={i}>
@@ -116,11 +109,9 @@ export default function ProjectPage(props) {
 							</ul>
 						</div>
 					</div>
-					<h2 className='text-2xl font-heading1 md:text-3xl my-10'>
-						Todo List
-					</h2>
+					<SecondaryTitle title='Todo List' />
 
-					<p className='text-lg md:text-xl mb-5'>
+					<p className='text-lg md:text-xl mb-10'>
 						Here is a list of some major functionalities that I'm planning to
 						add in the future
 					</p>

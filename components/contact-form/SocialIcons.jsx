@@ -9,22 +9,22 @@ export default function SocialIcons() {
 					href='https://www.linkedin.com/in/safet-duranovic/'
 					target='_blank'
 					rel='noopener'>
-					<AiFillLinkedin />
+					<AiFillLinkedin className='hover:scale-125 hover:bg-gradient-to-br from-pink-400 to-red-600 dark:from-blue-600 dark:to-pink-900 transition-all rounded-md' />
 				</a>
 
 				<a
 					href='https://github.com/kremsnita420?tab=repositories'
 					target='_blank'
 					rel='noopener'>
-					<AiFillGithub />
+					<AiFillGithub className='hover:scale-125 hover:bg-gradient-to-br from-pink-400 to-red-600 dark:from-blue-600 dark:to-pink-900 transition-all rounded-md' />
 				</a>
 
 				<a href='mailto:duranovic.safet@gmail.com'>
-					<AiOutlineMail />
+					<AiOutlineMail className='hover:scale-125 hover:bg-gradient-to-br from-pink-400 to-red-600 dark:from-blue-600 dark:to-pink-900 transition-all rounded-md' />
 				</a>
 
 				<a href='tel:0038640867888'>
-					<GiRotaryPhone />
+					<GiRotaryPhone className='hover:scale-125 hover:bg-gradient-to-br from-pink-400 to-red-600 dark:from-blue-600 dark:to-pink-900 transition-all rounded-md' />
 				</a>
 			</div>
 		</>

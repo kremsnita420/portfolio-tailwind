@@ -98,7 +98,7 @@ export const skills = [
     },
     {
         title: 'frameworks',
-        skills: ['NextJS', 'TailwindCSS', 'Styled Components', 'MaterialUI'],
+        skills: ['NextJS', 'TailwindCSS', 'Styled Components', 'Bootstrap', 'MaterialUI'],
     },
     {
         title: 'tools',

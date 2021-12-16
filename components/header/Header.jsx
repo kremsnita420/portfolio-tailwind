@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import SocialIcons from '../contact-form/SocialIcons.jsx'
+import CtaButton from '../layout/CtaButton.jsx'
 import DarkmodeButton from './DarkmodeButton.jsx.jsx'
 
 import HeaderLogo from './HeaderLogo.jsx'
@@ -81,14 +82,13 @@ export default function Header() {
 						? 'top-0 absolute right-[100%] w-full h-full bg-gray-200 dark:bg-gray-800 '
 						: 'top-0 absolute right-0 w-full h-full bg-gray-200 dark:bg-gray-800 z-10 '
 				}>
-				<div className='flex flex-col h-full w-full items-center justify-center'>
-					<div>
-						<nav className='flex font-heading1 flex-col items-center justify-center text-gray-800 dark:text-gray-200'>
-							<DrawerNavigationItem href='/' text='Home' />
-							<DrawerNavigationItem href='/portfolio' text='Portfolio' />
-							<DrawerNavigationItem href='/about' text='About' />
-						</nav>
-					</div>
+				<div className='flex flex-col h-full w-full items-center justify-around '>
+					<nav className='flex font-heading1 flex-col h-1/2 items-center justify-around text-gray-800 dark:text-gray-200'>
+						<CtaButton link='/' title='Home' />
+						<CtaButton link='/portfolio' title='Portfolio' />
+						<CtaButton link='/about' title='About' />
+					</nav>
+
 					<SocialIcons />
 				</div>
 			</div>

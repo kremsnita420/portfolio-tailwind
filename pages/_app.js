@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider attribute="class">
-      <NextNprogress height={6} color='#1E40AF' options={{ easing: 'ease', speed: 500, }, { showSpinner: false }}
+      <NextNprogress height={6} color='#3457CF' options={{ easing: 'ease', speed: 500, }, { showSpinner: false }}
       />
       <Component {...pageProps} />
     </ThemeProvider>

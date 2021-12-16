@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import SocialIcons from './SocialIcons'
+import CtaButton from '../layout/CtaButton'
 
 export default function ContactForm() {
 	const form = useRef()
@@ -163,14 +164,8 @@ export default function ContactForm() {
 						pauseOnHover
 					/>
 
-					<button
-						onClick={notify}
-						type='submit'
-						className=' w-auto self-center px-6 py-3 mt-10 font-heading1 tracking-wider
-                           font-black text-xl rounded-md
-						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:bg-gray-600 
-						 dark:text-gray-800 dark:hover:bg-gray-400'>
-						Send
+					<button onClick={notify} type='submit'>
+						<CtaButton title='Send' />
 					</button>
 				</form>
 			</div>

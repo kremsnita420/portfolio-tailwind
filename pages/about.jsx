@@ -19,9 +19,12 @@ export default function AboutPage() {
 
 				<div className='flex flex-col items-start justify-between md:pl-10 md:w-2/3 xl:w-1/2 '>
 					<h2 className='font-heading1 font-black text-gray-800 dark:text-gray-200 text-xl md:text-2xl mb-5'>
-						Hello, my name Is <span className=' font-normal'>Safet</span>, Web
-						<span className=' font-normal'> Developer</span> living in
-						Ljubljana.
+						Hello, my name Is{' '}
+						<span className='text-4xl font-normal'>Safet</span>, <br />
+						<span className='text-4xl font-normal'>
+							{' '}
+							Web Developer
+						</span> living <br /> in Ljubljana.
 					</h2>
 					<p className='mb-5 text-lg md:text-xl'>
 						In January 2021 I have quit my job to learn web development. Since

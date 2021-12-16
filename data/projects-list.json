@@ -2,7 +2,7 @@
 	"projectsData": [
 		{
 			"id": "pp1",
-			"title": "Fullstack E-commerce webshop",
+			"title": "E-commerce webshop",
 			"category": "Html",
 			"isFeatured": true,
 			"image": [
@@ -179,6 +179,65 @@
 				{
 					"name": "Chat Room",
 					"description": "Where visitors can talk and comment about events"
+				}
+			]
+		},
+		{
+			"id": "pp3",
+			"title": "Javascript Weather App",
+			"category": "Javascript",
+			"isFeatured": true,
+			"image": [
+				"/images/project-3/project-3-1.JPG",
+				"/images/project-3/project-3-2.JPG",
+				"/images/project-3/project-3-3.JPG",
+				"/images/project-3/project-3-4.JPG",
+				"/images/project-3/project-3-5.JPG",
+				"/images/project-3/project-3-6.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/animated-weather-pureJS-bootstrap"
+				},
+				{ "name": "website", "link": "https://weathe-app-pure-js.netlify.app/" }
+			],
+
+			"description": "Weather App that shows hourly and daily forecast based on device's geolocation. Background is animated and changes based on weather condition",
+			"technologies": [
+				{
+					"name": "Openweather API",
+					"description": "For fetching weather information with api calls"
+				},
+				{
+					"name": "Javascript",
+					"description": "For interactivity and DOM manipulation"
+				},
+				{
+					"name": "Styling",
+					"description": "For styling is use Material Design for Bootstrap"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Netlify with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Weather Information",
+					"description": "You can check weather forecast for your device's current loaction. There is hourly and daily forecast. "
+				}
+			],
+			"todos": [
+				{
+					"name": "Search",
+					"description": "Search bar for looking up other locations"
+				},
+				{
+					"name": "Local storage",
+					"description": "Save favorite locations to local storage and alwasy display theirs weather info"
 				}
 			]
 		}

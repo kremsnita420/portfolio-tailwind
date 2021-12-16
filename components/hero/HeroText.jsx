@@ -1,8 +1,9 @@
 import NextLink from 'next/link'
+import CtaButton from '../layout/CtaButton'
 
 export default function HeroText() {
 	return (
-		<div className='flex flex-col items-start justify-center min-h-[calc(100vh-76px)] relative'>
+		<div className='flex flex-col items-center justify-center w-full min-h-[calc(100vh-76px)] relative'>
 			<h2 className=' text-xl md:text-2xl xl:text- animate-moveRight1 mb-14'>
 				<span className='p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200'>
 					Hi,
@@ -18,7 +19,7 @@ export default function HeroText() {
 				</span>
 			</h2>
 			<h1
-				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-left mb-14
+				className=' text-6xl md:text-[8rem] xl:text-[10rem] text-center mb-14
 								      text-gray-800 dark:text-gray-100 font-heading1 font-black animate-moveRight2'>
 				Safet
 				<br />
@@ -42,15 +43,8 @@ export default function HeroText() {
 					Developer
 				</span>
 			</h2>
-			<NextLink href='/portfolio'>
-				<button
-					className=' w-auto px-10 py-5 font-heading1 tracking-wider
-                           font-black text-xl rounded-md animate-moveRight4
-						 bg-gray-800 dark:bg-gray-200 text-gray-200 hover:bg-gray-600 
-						 dark:text-gray-800 dark:hover:bg-gray-400'>
-					Portfolio
-				</button>
-			</NextLink>
+
+			<CtaButton title='Portfolio' link='/portfolio' />
 		</div>
 	)
 }

@@ -30,8 +30,8 @@ export default function IndexPage({ projects, href }) {
 					onClick={() => setProjectCategory('')}
 					className={
 						projectCategory === ''
-							? 'rounded-md ring-1 m-2 px-2 py-1 bg-blue-400'
-							: 'rounded-md ring-1 m-2 px-2 py-1'
+							? 'ring-1 m-2 px-2 py-1 bg-blue-400'
+							: 'ring-1 m-2 px-2 py-1'
 					}>
 					All
 				</button>
@@ -43,8 +43,8 @@ export default function IndexPage({ projects, href }) {
 						}}
 						className={
 							category === projectCategory
-								? 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 bg-red-400'
-								: 'rounded-md ring-1 m-2 px-2 py-1 hover:opacity-70 '
+								? 'ring-1 m-2 px-2 py-1 hover:opacity-70 bg-red-400'
+								: 'ring-1 m-2 px-2 py-1 hover:opacity-70 '
 						}
 						key={i}>
 						{category}
