@@ -23,6 +23,9 @@ module.exports = {
         moveRight2: 'moveRight 2s ease-in ',
         moveRight3: 'moveRight 3s ease-in ',
         moveRight4: 'moveRight 4s ease-in',
+        moveRight5: 'moveRight 5s ease-in',
+        moveLeftNav: 'moveLeftNav 2s ease',
+        moveRightNav: 'moveRightNav 2s ease',
         // general animations
         spinSlow: 'spin 15s linear infinite',
         bounceSlow: 'bounce 5s linear infinite',
@@ -30,12 +33,18 @@ module.exports = {
       keyframes: {
         //hero text animations
         moveRight: {
-          '0%': { transform: 'translateY(-2000px)', opacity: 0 },
-          '90%': { transform: 'translateY(-5px)', opacity: 0 },
-          '100%': { transform: 'translatateY(0px)', opacity: 1 },
+          '0%': { transform: 'translateX(-2000px)', opacity: 0 },
+          '90%': { transform: 'translateX(-5px)', opacity: 0 },
+          '100%': { transform: 'translateX(0px)', opacity: 1 },
         },
-
-
+        moveLeftNav: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)', },
+        },
+        moveRightNav: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)', },
+        },
       },
       transitionDelay: {
         '0': '0ms',

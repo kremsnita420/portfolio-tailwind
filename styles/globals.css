@@ -72,6 +72,9 @@ img {
     
 }
 
+/*! HAMBURGER ICON */
+
+
 /*! CTA BUTTON */
 
 .wrapper {
@@ -164,3 +167,71 @@ img {
           fill: white;
       }
   }
+
+/*! BUTTON STYLING */
+
+.btn {
+    position: relative;
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+    
+  }
+
+.btn span {
+    padding: 20px;
+    transition: all 0.3s;
+    transform: scale(1, 1);
+  }
+
+
+.btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-two::before, .btn-two::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    border: 1px solid;
+  }
+  
+  .btn-two::after {
+    animation-name: rotatecw;
+    animation-duration: 4s;
+  }
+  .btn-two::before {
+    animation-name: rotateccw; 
+    animation-duration: 6s;
+  }
+  .btn-two::after, .btn-two::before {
+    left: 96px;
+    width: 64px;
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes rotatecw {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+  
+  @keyframes rotateccw {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(-360deg);}
+  }
+  

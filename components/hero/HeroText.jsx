@@ -44,7 +44,9 @@ export default function HeroText() {
 				</span>
 			</h2>
 
-			<CtaButton title='Portfolio' link='/portfolio' />
+			<div className='flex animate-moveRight4'>
+				<CtaButton title='Portfolio' link='/portfolio' />
+			</div>
 		</div>
 	)
 }

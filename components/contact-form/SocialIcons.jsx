@@ -4,7 +4,7 @@ import { GiRotaryPhone } from 'react-icons/gi'
 export default function SocialIcons() {
 	return (
 		<>
-			<div className='flex items-center w-2/3 justify-around mt-5 text-4xl'>
+			<div className='flex items-center w-2/3 justify-around mt-10 text-4xl'>
 				<a
 					href='https://www.linkedin.com/in/safet-duranovic/'
 					target='_blank'

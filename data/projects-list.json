@@ -237,7 +237,7 @@
 				},
 				{
 					"name": "Local storage",
-					"description": "Save favorite locations to local storage and alwasy display theirs weather info"
+					"description": "Save favorite locations to local storage and always display theirs weather information"
 				}
 			]
 		}

@@ -8,6 +8,7 @@ import Layout from '../../components/layout/Layout'
 import { useState } from 'react'
 import ScrollToBottomButton from '../../components/layout/ScrollBottomButton'
 import SecondaryTitle from '../../components/layout/typography/SecondaryTitle'
+import ButtonStyled from '../../components/layout/ButtonStyled'
 
 export default function ProjectPage(props) {
 	const { filteredProject } = props
@@ -60,15 +61,21 @@ export default function ProjectPage(props) {
 			<div className='flex flex-col items-center justify-center  lg:justify-around mb-10'>
 				{/* repository and live website */}
 				<div className='flex flex-col items-start'>
-					<SecondaryTitle title='Github & Website' />
+					<div className='flex flex-col justify-center items-center w-full mt-10'>
+						<SecondaryTitle title='Github & Website' />
+						<p className='text-lg md:text-xl mb-10'>
+							You can check code by visiting Github link. Or check how wiebsite
+							looks in action
+						</p>
+					</div>
 
 					<div className='flex items-center justify-center mx-auto w-full mb-10'>
 						{filteredProject.links.map((l, i) => (
 							<button
 								key={i}
-								className='bg-gray-800 text-gray-200 m-2 lg:m-5 dark:bg-gray-200 dark:text-gray-800 px-5 my-10 sm:my-0 py-2 rounded-md'>
+								className='text-gray-200 m-2 lg:m-5  dark:text-gray-800 px-5 my-10 sm:my-0 py-2 rounded-md'>
 								<a href={l.link} target='_blank' rel='noopener'>
-									{l.name}
+									<ButtonStyled title={l.name} />
 								</a>
 							</button>
 						))}
@@ -76,12 +83,13 @@ export default function ProjectPage(props) {
 				</div>
 
 				{/* project description */}
-				<div className='flex-col w-full items-center text-center justify-center mx-auto'>
-					<SecondaryTitle title='Description' />
-					<p className='text-lg md:text-xl'>{filteredProject.description}</p>
-
+				<div className='flex-col items-center w-full text-center justify-center'>
+					<div className='flex flex-col justify-center items-center w-full mt-10'>
+						<SecondaryTitle title='Description' />
+						<p className='text-lg md:text-xl'>{filteredProject.description}</p>
+					</div>
 					<div className='flex flex-col justify-start items-start md:flex-row w-full mt-10'>
-						<div className='flex flex-col mx-5'>
+						<div className='flex flex-col justify-center items-center w-full md:mr-10'>
 							<SecondaryTitle title='Technologies' />
 							<ul className=' pb-10 text-gray-800 dark:text-gray-200'>
 								{filteredProject.technologies.map((tech, i) => (
@@ -95,11 +103,11 @@ export default function ProjectPage(props) {
 							</ul>
 						</div>
 
-						<div className='flex flex-col md:pl-5'>
+						<div className='flex flex-col w-full justify-center items-center md:ml-10'>
 							<SecondaryTitle title='Features' />
-							<ul className=' pb-10 text-gray-800 dark:text-gray-200'>
+							<ul className=' glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200'>
 								{filteredProject.features.map((feature, i) => (
-									<li className=' py-2 text-left' key={i}>
+									<li className=' py-2 border-b-[1px] text-left' key={i}>
 										<h4 className=' font-heading1 font-black mb-2'>
 											{i + 1}. {feature.name}
 										</h4>
@@ -109,7 +117,10 @@ export default function ProjectPage(props) {
 							</ul>
 						</div>
 					</div>
-					<SecondaryTitle title='Todo List' />
+
+					<div className='flex flex-col justify-center items-center w-full mt-10'>
+						<SecondaryTitle title='Todo List' />
+					</div>
 
 					<p className='text-lg md:text-xl mb-10'>
 						Here is a list of some major functionalities that I'm planning to
