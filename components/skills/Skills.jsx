@@ -110,7 +110,7 @@ export default function Skills() {
 
         <ul className="flex flex-col items-center md:items-start  justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <SiNextdotjs /> Github
+            <SiGithub /> Github
           </li>
           <li className="flex items-center justify-center">
             <DiGit /> Git

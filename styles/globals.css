@@ -247,13 +247,13 @@ img {
 }
 @keyframes color_anim {
     0% {
-        color: lightgrey;
+        color: #F87171;
     }
     50% {
         color: #34D399;
     }
     100% {
-        color: lightgray;
+        color: #F87171;
     }
 }
 
