@@ -1,3 +1,26 @@
+//icons
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3, DiMongodb, DiGit, DiNpm, DiReact } from "react-icons/di";
+import {
+    IoLogoJavascript,
+    IoLogoNodejs,
+    IoIosCodeWorking,
+} from "react-icons/io";
+import {
+    SiExpress,
+    SiVercel,
+    SiFirebase,
+    SiHeroku,
+    SiNextdotjs,
+    SiTailwindcss,
+    SiStyledcomponents,
+    SiBootstrap,
+    SiMaterialui,
+    SiGithub,
+    SiVisualstudiocode,
+    SiGooglechrome,
+} from "react-icons/si";
+
 export const courses = [
 
     {
@@ -87,21 +110,3 @@ export const courses = [
     }
 ]
 
-export const skills = [
-    {
-        title: 'frontend',
-        skills: ['HTML', 'CSS', 'Javascript', 'React'],
-    },
-    {
-        title: 'backend',
-        skills: ['Node', 'Express', 'MongoDB', 'RestAPI', 'Vercel', 'Firebase'],
-    },
-    {
-        title: 'frameworks',
-        skills: ['NextJS', 'TailwindCSS', 'Styled Components', 'Bootstrap', 'MaterialUI'],
-    },
-    {
-        title: 'tools',
-        skills: ['Github', 'Git', 'npm', 'Chrome', 'VSCode'],
-    },
-]

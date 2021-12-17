@@ -4,8 +4,10 @@ import HeadTitle from "../components/layout/typography/HeadTitle";
 import Layout from "../components/layout/Layout";
 import SecondaryTitle from "../components/layout/typography/SecondaryTitle";
 //data
-import { skills, courses } from "../data/data";
+import { courses } from "../data/data";
 import Course from "../components/course/Course";
+
+import Skills from "../components/skills/Skills";
 
 export default function AboutPage() {
   return (
@@ -55,7 +57,7 @@ export default function AboutPage() {
               <span className=" animate-moveRight4"> user </span>
             </span>
             <span className="bg-red-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight4">friendly</span>
+              <span className=" animate-moveRight4"> friendly</span>
             </span>
             .
           </p>
@@ -72,39 +74,9 @@ export default function AboutPage() {
 
       <SecondaryTitle title="Tech Stack" />
 
-      <div className="flex flex-wrap w-full items-start justify-around glassmorph mb-5 rounded-lg">
-        {/* skills */}
-        {skills.map((skillGroup, i) => (
-          <div
-            key={i}
-            className="flex flex-col px-10 pt-10 items-center sm:items-start justify-center w-full sm:w-1/2 md:w-auto mb-10"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-              />
-            </svg>
+      {/* skills */}
 
-            <h3 className="text-gray-600 dark:text-gray-400 uppercase my-2">
-              {skillGroup.title}
-            </h3>
-            <ul className="flex flex-col items-center sm:items-start justify-start">
-              {skillGroup.skills.map((singleSkill, i) => (
-                <li key={i}>{singleSkill}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+      <Skills />
 
       <SecondaryTitle title="Courses & Certifications" />
 
@@ -124,7 +96,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-20 items-center justify-between">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-20  items-center justify-between">
         {courses.map((course) => (
           <Course
             key={course.id}
