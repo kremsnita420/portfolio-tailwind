@@ -21,13 +21,11 @@ export default function ProjectPage(props) {
 			<HeadTitle title={filteredProject.title} />
 
 			{/* selected image */}
-			<div className='w-full mb-5'>
+			<div className='h-[80vh] w-full relative mb-5'>
 				<NextImage
-					objectFit='cover'
+					className='object-contain'
 					src={selectedImage}
-					width={1100}
-					height={600}
-					layout='responsive'
+					layout='fill' // required
 					alt={filteredProject.title}
 					placeholder='blur'
 					blurDataURL='https://images.unsplash.com/photo-1613387275674-cb92af1c29d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
@@ -35,14 +33,14 @@ export default function ProjectPage(props) {
 			</div>
 
 			{/* image thumbnails */}
-			<div className='flex flex-wrap items-center justify-center pb-10'>
+			<div className='flex flex-wrap items-center justify-center overflow-x-auto pb-10'>
 				{filteredProject.image.map((img, i) => (
 					<div
 						key={i}
 						className={
 							selectedImage === img
-								? ' border-4 border-gray-200 dark:border-gray-400 h-[100px] w-[100px] overflow-hidden'
-								: 'border-4 border-transparent h-[100px] w-[100px] overflow-hidden'
+								? 'border-4 border-gray-600 dark:border-gray-300 h-[80px] w-[80px]'
+								: 'border-4 border-transparent h-[80px] w-[80px]'
 						}>
 						<NextImage
 							onClick={() => setSelectedImage(img)}
@@ -51,8 +49,8 @@ export default function ProjectPage(props) {
 							onClick={() => setSelectedImage(img)}
 							src={img}
 							alt='thumbnail'
-							width={'100px'}
-							height={'100px'}
+							width={80}
+							height={80}
 						/>
 					</div>
 				))}
@@ -64,7 +62,7 @@ export default function ProjectPage(props) {
 					<div className='flex flex-col justify-center items-center w-full mt-10'>
 						<SecondaryTitle title='Github & Website' />
 						<p className='text-lg md:text-xl mb-10'>
-							You can check code by visiting Github link. Or check how website
+							You can check code by visiting Github link. Or see how website
 							looks in action
 						</p>
 					</div>

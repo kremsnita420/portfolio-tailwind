@@ -5,7 +5,7 @@ import Layout from '../components/layout/Layout'
 import SecondaryTitle from '../components/layout/typography/SecondaryTitle'
 //data
 import { skills, courses } from '../data/data'
-import Course from '../components/Course'
+import Course from '../components/course/Course'
 
 export default function AboutPage() {
 	return (

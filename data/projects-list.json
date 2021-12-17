@@ -3,7 +3,7 @@
 		{
 			"id": "pp1",
 			"title": "E-commerce webshop",
-			"category": "Html",
+			"category": "React",
 			"isFeatured": true,
 			"image": [
 				"/images/project-1/project-1-1.JPG",
@@ -186,7 +186,7 @@
 			"id": "pp3",
 			"title": "Javascript Weather App",
 			"category": "Javascript",
-			"isFeatured": true,
+			"isFeatured": false,
 			"image": [
 				"/images/project-3/project-3-1.JPG",
 				"/images/project-3/project-3-2.JPG",
@@ -238,6 +238,73 @@
 				{
 					"name": "Local storage",
 					"description": "Save favorite locations to local storage and always display theirs weather information"
+				}
+			]
+		},
+		{
+			"id": "pp4",
+			"title": "Markdown Blog",
+			"category": "React",
+			"isFeatured": true,
+			"image": [
+				"/images/project-4/project-4-1.JPG",
+				"/images/project-4/project-4-2.JPG",
+				"/images/project-4/project-4-3.JPG",
+				"/images/project-4/project-4-4.JPG",
+				"/images/project-4/project-4-5.JPG",
+				"/images/project-4/project-4-6.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/nextjs-markdown-blog"
+				},
+				{ "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
+			],
+
+			"description": "Static blog with pagination, search & categories using Markdown",
+			"technologies": [
+				{
+					"name": "NextJS",
+					"description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSG and SSR"
+				},
+				{
+					"name": "ReactJS",
+					"description": "Reusable components, hooks and more"
+				},
+				{
+					"name": "Marked",
+					"description": "Markdown compiler for parsing markdown text"
+				},
+				{
+					"name": "Gray matter",
+					"description": "For front matter from a string or a file"
+				},
+				{
+					"name": "Husky",
+					"description": "Github hook to cache made changes when blog content is updated "
+				},
+				{
+					"name": "TailwindCSS",
+					"description": "Styling and responsive layout"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Weather Information",
+					"description": "You can check weather forecast for your device's current loaction. There is hourly and daily forecast. "
+				}
+			],
+			"todos": [
+				{
+					"name": "No update",
+					"description": "I don't plan to update this website"
 				}
 			]
 		}
