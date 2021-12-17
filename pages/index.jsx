@@ -28,9 +28,8 @@ export default function IndexPage({ projects }) {
 
 			<HeadTitle id='projects' title='Featured Projects' />
 
-			<p className='text-2xl mb-10'>
-				Some of my selected projects that I'm working on. <br /> For all
-				projects visit{' '}
+			<p className='text-2xl text-center mb-10'>
+				Some of my selected projects that I'm working on. For all projects visit{' '}
 				{
 					<NextLink href='/portfolio'>
 						<a className='underline'>portfolio page</a>

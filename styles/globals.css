@@ -238,3 +238,26 @@ img {
       to {transform: rotate(-360deg);}
   }
   
+
+/*! ABOUT PAGE */
+
+.span-safet, 
+.span-developer {
+    animation: color_anim 10s infinite 0.4s;
+}
+@keyframes color_anim {
+    0% {
+        color: lightgrey;
+    }
+    50% {
+        color: #34D399;
+    }
+    100% {
+        color: lightgray;
+    }
+}
+
+.web-developemnt {
+    background: red;
+    display: inline-block;
+}

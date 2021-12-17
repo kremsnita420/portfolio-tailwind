@@ -29,6 +29,8 @@ module.exports = {
         // general animations
         spinSlow: 'spin 15s linear infinite',
         bounceSlow: 'bounce 5s linear infinite',
+        //higlighted text in about
+        rotateText: 'rotate1 10s linear infinite',
       },
       keyframes: {
         //hero text animations
@@ -45,6 +47,13 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)', },
         },
+        rotate1: {
+          '0%': { transform: 'rotateX(0deg)' },
+          '100%': { transform: 'rotateX(1080deg)', },
+
+
+        }
+
       },
       transitionDelay: {
         '0': '0ms',

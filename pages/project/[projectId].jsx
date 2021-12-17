@@ -21,11 +21,13 @@ export default function ProjectPage(props) {
 			<HeadTitle title={filteredProject.title} />
 
 			{/* selected image */}
-			<div className='h-[80vh] w-full relative mb-5'>
+			<div className='h-full m-auto w-full mb-5'>
 				<NextImage
 					className='object-contain'
 					src={selectedImage}
-					layout='fill' // required
+					height={800}
+					width={1400}
+					layout='responsive' // required
 					alt={filteredProject.title}
 					placeholder='blur'
 					blurDataURL='https://images.unsplash.com/photo-1613387275674-cb92af1c29d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
@@ -33,7 +35,7 @@ export default function ProjectPage(props) {
 			</div>
 
 			{/* image thumbnails */}
-			<div className='flex flex-wrap items-center justify-center overflow-x-auto pb-10'>
+			<div className='flex flex-wrap items-center justify-center'>
 				{filteredProject.image.map((img, i) => (
 					<div
 						key={i}
@@ -56,7 +58,7 @@ export default function ProjectPage(props) {
 				))}
 			</div>
 
-			<div className='flex flex-col items-center justify-center  lg:justify-around mb-10'>
+			<div className='flex flex-col items-center justify-center  lg:justify-around'>
 				{/* repository and live website */}
 				<div className='flex flex-col items-start'>
 					<div className='flex flex-col justify-center items-center w-full mt-10'>
@@ -67,7 +69,7 @@ export default function ProjectPage(props) {
 						</p>
 					</div>
 
-					<div className='flex items-center justify-center mx-auto w-full mb-10'>
+					<div className='flex items-center justify-center mx-auto w-full'>
 						{filteredProject.links.map((l, i) => (
 							<button
 								key={i}
