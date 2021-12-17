@@ -31,32 +31,32 @@ export default function AboutPage() {
           </h2>
           <p className="mb-5 text-lg md:text-xl relative">
             In January 2021 I have quit my job to learn{" "}
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight2"> Web</span>
             </span>{" "}
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight2">development</span>
             </span>
             . Since then I spend all my time learning fundamentals of{" "}
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight3">frontend</span>
             </span>{" "}
             and{" "}
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight3">backend</span>
             </span>{" "}
             web technologies and I'm loving every second of it.
           </p>
           <p className="mb-5 text-lg md:text-xl">
             I love building apps that are{" "}
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight4">simple</span>
             </span>{" "}
             and{" "}
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight4"> user </span>
             </span>
-            <span className="bg-red-100 px-1 rounded-bl-xl rounded-tr-xl">
+            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
               <span className=" animate-moveRight4"> friendly</span>
             </span>
             .
