@@ -336,7 +336,7 @@ img {
   .sketch-highlight:before{
     content:"";
     z-index:-1;
-    left:-0.2em;
+    left:-0.135em;
     top:-0.5em;
     border-width:2px;
     border-style:solid;
@@ -386,11 +386,31 @@ img {
   animation-delay: 15s;
 }
 
+.marquee3 span {
+  animation: marquee11 15s linear infinite ;
+  display: inline-block;
+  padding-left: 0%;
+}
+
 @keyframes marquee {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
   }
 }
+
+@keyframes marquee11 {
+  0% {
+    transform: translateX(0%);
+    
+  }
+  100% {
+    transform: translateX(-100%);
+    
+  }
+}
+
+
+

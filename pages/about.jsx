@@ -103,6 +103,13 @@ export default function AboutPage() {
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
           </span>
         </p>
+        <p class="marquee marquee3 py-2">
+          <span>
+            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
+            Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
+            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
+          </span>
+        </p>
       </div>
 
       <SecondaryTitle title="Tech Stack" />
