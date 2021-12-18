@@ -12,7 +12,7 @@ import Skills from "../components/skills/Skills";
 export default function AboutPage() {
   return (
     <Layout>
-      <HeadTitle title="About Page" />
+      <HeadTitle title="About Me" />
       {/* hightlight svg */}
       <svg
         xmlns="//www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <NextImage src="/images/portrait.png" width={550} height={600} />
         </div>
 
-        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-2/3">
+        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-1/2">
           <h2 className="font-heading1 font-black text-gray-800 dark:text-gray-200 text-xl md:text-2xl mb-5 relative">
             Hello, my name Is{" "}
             <span className="text-4xl font-black span-safet">Safet</span>,
@@ -90,21 +90,21 @@ export default function AboutPage() {
 
       <div class="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-10">
         <p class="marquee realistic-marker-highlight py-2">
-          <span>
+          <span className="pt-1">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
             Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
           </span>
         </p>
         <p class="marquee marquee2 py-2">
-          <span>
+          <span className="pt-1">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
             Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
           </span>
         </p>
         <p class="marquee marquee3 py-2">
-          <span>
+          <span className="pt-1">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
             Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
