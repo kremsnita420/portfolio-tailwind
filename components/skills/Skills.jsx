@@ -23,7 +23,7 @@ import {
 
 export default function Skills() {
   return (
-    <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph pt-3">
+    <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph mb-10 pt-3">
       <div className="flex flex-col items-center justify-center">
         {/* FRONTEND */}
         <h3 className="md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">

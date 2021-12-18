@@ -336,15 +336,15 @@ img {
   .sketch-highlight:before{
     content:"";
     z-index:-1;
-    left:-0.135em;
-    top:-0.3em;
+    left:-0.05em;
+    top:-0.35em;
     border-width:2px;
     border-style:solid;
     border-color:darkblue;
     position:absolute;
     border-right-color:transparent;
     width:100%;
-    height:100%;
+    height:120%;
     transform:rotate(2deg);
     opacity:0.5;
     border-radius:0.25em;
@@ -361,8 +361,8 @@ img {
     border-top-color:transparent;
     position:absolute;
     width:100%;
-    height:100%;
-    transform:rotate(-1deg);
+    height:110%;
+    transform:rotate(1deg);
     opacity:0.5;
     border-radius:0.25em;
   }
@@ -380,16 +380,19 @@ img {
   display: inline-block;
   padding-left: 100%;
   animation: marquee 30s linear infinite;
+  overflow: hidden;
 }
 
 .marquee2 span {
   animation-delay: 15s;
+  overflow: hidden;
 }
 
 .marquee3 span {
   animation: marquee11 15s linear infinite ;
   display: inline-block;
   padding-left: 0%;
+  overflow: hidden;
 }
 
 @keyframes marquee {

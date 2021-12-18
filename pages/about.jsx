@@ -59,10 +59,10 @@ export default function AboutPage() {
             <span className="realistic-marker-highlight rotate-[3deg] inline-block">
               <span className=" animate-moveRight2">Web development</span>
             </span>
-            . Since then I spend
+            . Since then I spend{" "}
             <span className="realistic-marker-highlight inline-block rotate-[-3deg] z-[-1]">
               <span className=" animate-moveRight3">all my time</span>
-            </span>
+            </span>{" "}
             learning fundamentals of{" "}
             <span className="realistic-marker-highlight rotate-[3deg]  inline-block z-[-1]">
               <span className=" animate-moveRight4">frontend</span>
@@ -88,7 +88,11 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div class="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-10">
+      <h2 className="font-heading1 relative text-xl md:text-2xl xl:text-3xl font-black my-5">
+        I'm looking for position:
+      </h2>
+
+      <div class="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-20">
         <p class="marquee realistic-marker-highlight py-2">
           <span className="pt-1">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
@@ -121,14 +125,14 @@ export default function AboutPage() {
       <SecondaryTitle title="Courses & Certifications" />
 
       <div className="flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
-        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center circle-sketch-highlight">
+        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center sketch-highlight">
           Here is a list of completed courses and certifications so far. If you
           wish to know more about specific course click the card and it will
           take you to course provider's website.
         </p>
         <div className="flex items-center w-full justify-center my-10">
           <NextImage
-            className="rounded-full"
+            className="rounded-[5rem]"
             src="/images/thinking.png"
             width={350}
             height={350}
