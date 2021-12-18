@@ -23,19 +23,25 @@ import {
 
 export default function Skills() {
   return (
-    <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph">
-      <div className="flex flex-col items-start justify-center">
+    <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph pt-3">
+      <div className="flex flex-col items-center justify-center">
         {/* FRONTEND */}
-        <h3 className="text-gray-600 dark:text-gray-400 uppercase justify-center my-2">
+        <h3 className="text-gray-600 dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
           FRONTEND
         </h3>
 
         <ul className="flex flex-col items-center md:items-start justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <AiFillHtml5 /> HTML
+            <span className="pr-2 text-3xl">
+              <AiFillHtml5 />{" "}
+            </span>{" "}
+            HTML
           </li>
           <li className="flex items-center justify-center">
-            <DiCss3 /> CSS
+            <span className="pr-2 text-3xl">
+              <DiCss3 />
+            </span>{" "}
+            CSS
           </li>
           <li className="flex items-center justify-center">
             <IoLogoJavascript /> Javascript
@@ -48,13 +54,16 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* BACKEND */}
-        <h3 className="text-gray-600 dark:text-gray-400 uppercase my-2">
+        <h3 className="text-gray-600 dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
           BACKEND
         </h3>
 
         <ul className="flex flex-col items-center md:items-start justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <IoLogoNodejs /> Node
+            <span className="pr-2 text-3xl">
+              <IoLogoNodejs />
+            </span>
+            Node
           </li>
           <li className="flex items-center justify-center">
             <SiExpress /> Express
@@ -79,7 +88,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* FRAMEWORKS */}
-        <h3 className="text-gray-600 justify-center dark:text-gray-400 uppercase my-2">
+        <h3 className="text-gray-600r dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
           FRAMEWORKS
         </h3>
 
@@ -104,7 +113,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* TOOLS */}
-        <h3 className="text-gray-600 dark:text-gray-400 uppercase my-2">
+        <h3 className="text-gray-600 dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
           TOOLS
         </h3>
 

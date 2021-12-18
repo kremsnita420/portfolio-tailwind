@@ -13,13 +13,37 @@ export default function AboutPage() {
   return (
     <Layout>
       <HeadTitle title="About Page" />
+      {/* hightlight svg */}
+      <svg
+        xmlns="//www.w3.org/2000/svg"
+        version="1.1"
+        className="svg-filters hidden"
+      >
+        <defs>
+          <filter id="marker-shape">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0 0.15"
+              numOctaves="1"
+              result="warp"
+            />
+            <feDisplacementMap
+              xChannelSelector="R"
+              yChannelSelector="G"
+              scale="30"
+              in="SourceGraphic"
+              in2="warp"
+            />
+          </filter>
+        </defs>
+      </svg>
 
-      <div className="flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
+      <div className="flex flex-col lg:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
         <div className="flex items-center  justify-center pb-10">
           <NextImage src="/images/portrait.png" width={550} height={600} />
         </div>
 
-        <div className="flex flex-col items-start justify-between md:pl-10 md:w-2/3 xl:w-1/2 ">
+        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-2/3">
           <h2 className="font-heading1 font-black text-gray-800 dark:text-gray-200 text-xl md:text-2xl mb-5 relative">
             Hello, my name Is{" "}
             <span className="text-4xl font-black span-safet">Safet</span>,
@@ -29,47 +53,56 @@ export default function AboutPage() {
             </span>{" "}
             living in Ljubljana.
           </h2>
-          <p className="mb-5 text-lg md:text-xl relative">
+
+          <p className="mb-5 text-lg md:text-xl relative leading-10">
             In January 2021 I have quit my job to learn{" "}
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight2"> Web</span>
-            </span>{" "}
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight2">development</span>
+            <span className="realistic-marker-highlight rotate-[-3deg] inline-block">
+              <span className=" animate-moveRight2">Web development</span>
             </span>
-            . Since then I spend all my time learning fundamentals of{" "}
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight3">frontend</span>
+            . Since then I spend
+            <span className="realistic-marker-highlight inline-block rotate-[-3deg] z-[-1]">
+              <span className=" animate-moveRight3">all my time</span>
+            </span>
+            learning fundamentals of{" "}
+            <span className="realistic-marker-highlight rotate-[-2deg]  inline-block z-[-1]">
+              <span className=" animate-moveRight4">frontend</span>
             </span>{" "}
             and{" "}
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight3">backend</span>
+            <span className="realistic-marker-highlight rotate-[-3deg] inline-block">
+              <span className=" animate-moveRight5">backend</span>
             </span>{" "}
             web technologies and I'm loving every second of it.
           </p>
+
           <p className="mb-5 text-lg md:text-xl">
             I love building apps that are{" "}
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight4">simple</span>
+            <span className="realistic-marker-highlight inline-block rotate-[-3deg]">
+              <span className=" animate-moveRight6">simple</span>
             </span>{" "}
             and{" "}
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight4"> user </span>
-            </span>
-            <span className="bg-red-400 text-gray-400 px-1 rounded-bl-xl rounded-tr-xl">
-              <span className=" animate-moveRight4"> friendly</span>
+            <span className="realistic-marker-highlight inline-block rotate-[-3deg]">
+              <span className=" animate-moveRight7"> user-friendly</span>
             </span>
             .
           </p>
-          <p className="mb-5 mx-auto mt-10 text-center text-xl md:text-2xl">
-            I'm looking for position: <br />
-            <span className="bg-green-400 text-gray-800 dark:text-gray-200 p-3">
-              <span className=" inline-block border-gray-200 dark:border-gray-200 border-4 p-1 font-strong font-heading1 font-extrabold animate-rotateText mt-5">
-                Junior Web Developer
-              </span>
-            </span>{" "}
-          </p>
         </div>
+      </div>
+
+      <div class="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-10">
+        <p class="marquee realistic-marker-highlight py-2">
+          <span>
+            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
+            Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
+            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
+          </span>
+        </p>
+        <p class="marquee marquee2 py-2">
+          <span>
+            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
+            Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
+            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
+          </span>
+        </p>
       </div>
 
       <SecondaryTitle title="Tech Stack" />
@@ -81,12 +114,12 @@ export default function AboutPage() {
       <SecondaryTitle title="Courses & Certifications" />
 
       <div className="flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
-        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center">
+        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center sketch-highlight">
           Here is a list of completed courses and certifications so far. If you
           wish to know more about specific course click the card and it will
           take you to course provider's website.
         </p>
-        <div className="flex items-center w-full justify-center mb-20">
+        <div className="flex items-center w-full justify-center my-10">
           <NextImage
             className="rounded-full"
             src="/images/thinking.png"

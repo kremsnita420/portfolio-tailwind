@@ -19,11 +19,13 @@ module.exports = {
       },
       animation: {
         //hero text animations
-        moveRight1: 'moveRight 1s ease-in ',
+
         moveRight2: 'moveRight 2s ease-in ',
         moveRight3: 'moveRight 3s ease-in ',
         moveRight4: 'moveRight 4s ease-in',
         moveRight5: 'moveRight 5s ease-in',
+        moveRight6: 'moveRight 6s ease-in',
+        moveRight7: 'moveRight 7s ease-in',
         moveLeftNav: 'moveLeftNav 2s ease',
         moveRightNav: 'moveRightNav 2s ease',
         // general animations
@@ -44,7 +46,7 @@ module.exports = {
           '100%': { transform: 'translateX(100%)', },
         },
         moveRightNav: {
-          '0%': { transform: 'translateX(100%)' },
+          '0%': { transform: '' },
           '100%': { transform: 'translateX(0%)', },
         },
         rotate1: {
