@@ -26,7 +26,7 @@ export default function Skills() {
     <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph pt-3">
       <div className="flex flex-col items-center justify-center">
         {/* FRONTEND */}
-        <h3 className="text-gray-600 dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
+        <h3 className="md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
           FRONTEND
         </h3>
 
@@ -54,7 +54,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* BACKEND */}
-        <h3 className="text-gray-600 dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
+        <h3 className="md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
           BACKEND
         </h3>
 
@@ -88,7 +88,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* FRAMEWORKS */}
-        <h3 className="text-gray-600r dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
+        <h3 className=" md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
           FRAMEWORKS
         </h3>
 
@@ -113,11 +113,11 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* TOOLS */}
-        <h3 className="text-gray-600 dark:text-gray-400 md:self-start uppercase my-2 sketch-highlight">
+        <h3 className=" md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
           TOOLS
         </h3>
 
-        <ul className="flex flex-col items-center md:items-start  justify-center my-5 leading-7">
+        <ul className="flex flex-col items-center md:items-start  justify-center my-5">
           <li className="flex items-center justify-center">
             <SiGithub /> Github
           </li>

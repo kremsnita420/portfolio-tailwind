@@ -54,9 +54,9 @@ export default function AboutPage() {
             living in Ljubljana.
           </h2>
 
-          <p className="mb-5 text-lg md:text-xl relative leading-10">
+          <p className="mb-5 text-lg md:text-xl relative">
             In January 2021 I have quit my job to learn{" "}
-            <span className="realistic-marker-highlight rotate-[-3deg] inline-block">
+            <span className="realistic-marker-highlight rotate-[3deg] inline-block">
               <span className=" animate-moveRight2">Web development</span>
             </span>
             . Since then I spend
@@ -64,11 +64,11 @@ export default function AboutPage() {
               <span className=" animate-moveRight3">all my time</span>
             </span>
             learning fundamentals of{" "}
-            <span className="realistic-marker-highlight rotate-[-2deg]  inline-block z-[-1]">
+            <span className="realistic-marker-highlight rotate-[3deg]  inline-block z-[-1]">
               <span className=" animate-moveRight4">frontend</span>
             </span>{" "}
             and{" "}
-            <span className="realistic-marker-highlight rotate-[-3deg] inline-block">
+            <span className="realistic-marker-highlight rotate-[3deg] inline-block">
               <span className=" animate-moveRight5">backend</span>
             </span>{" "}
             web technologies and I'm loving every second of it.
@@ -76,11 +76,11 @@ export default function AboutPage() {
 
           <p className="mb-5 text-lg md:text-xl">
             I love building apps that are{" "}
-            <span className="realistic-marker-highlight inline-block rotate-[-3deg]">
+            <span className="realistic-marker-highlight inline-block rotate-[3deg]">
               <span className=" animate-moveRight6">simple</span>
             </span>{" "}
             and{" "}
-            <span className="realistic-marker-highlight inline-block rotate-[-3deg]">
+            <span className="realistic-marker-highlight inline-block rotate-[3deg]">
               <span className=" animate-moveRight7"> user-friendly</span>
             </span>
             .
@@ -121,7 +121,7 @@ export default function AboutPage() {
       <SecondaryTitle title="Courses & Certifications" />
 
       <div className="flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
-        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center sketch-highlight">
+        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center circle-sketch-highlight">
           Here is a list of completed courses and certifications so far. If you
           wish to know more about specific course click the card and it will
           take you to course provider's website.
