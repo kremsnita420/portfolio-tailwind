@@ -31,6 +31,7 @@ module.exports = {
         // general animations
         spinSlow: 'spin 15s linear infinite',
         bounceSlow: 'bounce 5s linear infinite',
+        pingSlow: 'pingSlow1 1.5s linear infinite',
         //higlighted text in about
         rotateText: 'rotate1 10s linear infinite',
       },
@@ -52,8 +53,24 @@ module.exports = {
         rotate1: {
           '0%': { transform: 'rotateX(0deg)' },
           '100%': { transform: 'rotateX(1080deg)', },
+        },
+        pingSlow1: {
+          '75%': {
+            transform: "scale(1.05)",
 
+          },
+          '75%': {
+            transform: "scale(1.0)",
 
+          },
+          '75%': {
+            transform: "scale(1.05)",
+
+          },
+          '100%': {
+            transform: "scale(1)",
+
+          }
         }
 
       },

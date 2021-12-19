@@ -42,7 +42,7 @@ export default function AboutPage() {
           <NextImage src="/images/portrait.png" width={550} height={600} />
         </div>
 
-        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-2/3">
+        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-2/3 xl:w-1/2">
           <h2 className="font-heading1 w-full font-black text-gray-800 dark:text-gray-200 text-2xl md:text-3xl mb-5 relative">
             Hello, my name Is <br />
             <span className="text-6xl font-black span-safet">Safet</span>,
@@ -91,8 +91,8 @@ export default function AboutPage() {
         I'm looking for position:
       </h2>
 
-      <div class="marquee-wrapper rotate-6 my-10">
-        <div class="marquee text-3xl">
+      <div className="marquee-wrapper rotate-6 my-10">
+        <div className="marquee text-3xl">
           <p className="py-2 border-t-2 border-b-2 border-gray-600 dark:border-gray-200 realistic-marker-highlight">
             ⭐Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web
             Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐ Junior
@@ -144,6 +144,7 @@ export default function AboutPage() {
             title={course.title}
             link={course.link}
             platform={course.platform}
+            bootcamp={course.bootcamp}
           />
         ))}
       </div>

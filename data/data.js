@@ -52,6 +52,7 @@ export const courses = [
     },
     {
         id: 1,
+        bootcamp: true,
         date: 'May 2021 - Sep 2021',
         platform: 'Scrimba',
         title: 'Scrimba Frontend Developer Creer Path',
