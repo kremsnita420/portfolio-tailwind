@@ -37,26 +37,26 @@ export default function AboutPage() {
           </filter>
         </defs>
       </svg>
-
       <div className="flex flex-col lg:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
         <div className="flex items-center  justify-center pb-10">
           <NextImage src="/images/portrait.png" width={550} height={600} />
         </div>
 
-        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-1/2">
-          <h2 className="font-heading1 font-black text-gray-800 dark:text-gray-200 text-xl md:text-2xl mb-5 relative">
-            Hello, my name Is{" "}
-            <span className="text-4xl font-black span-safet">Safet</span>,
-            <span className="text-4xl font-black span-developer">
+        <div className="flex flex-col items-start justify-between md:pl-10 lg:w-2/3">
+          <h2 className="font-heading1 w-full font-black text-gray-800 dark:text-gray-200 text-2xl md:text-3xl mb-5 relative">
+            Hello, my name Is <br />
+            <span className="text-6xl font-black span-safet">Safet</span>,
+            <span className="text-6xl font-black span-developer">
               <br />
               Web Developer
-            </span>{" "}
+            </span>
+            <br />
             living in Ljubljana.
           </h2>
 
-          <p className="mb-5 text-lg md:text-xl relative ">
+          <p className="mb-5 text-xl md:text-2xl md:leading-7 relative">
             In January 2021 I have quit my job to learn{" "}
-            <span className=" realistic-marker-highlight rotate-[3deg] inline-block">
+            <span className="realistic-marker-highlight rotate-[3deg] inline-block">
               <span className=" animate-moveRight2">Web development</span>
             </span>
             . Since then I spend{" "}
@@ -74,7 +74,7 @@ export default function AboutPage() {
             web technologies and I'm loving every second of it.
           </p>
 
-          <p className="mb-5 text-lg md:text-xl">
+          <p className="mb-5  text-xl md:text-2xl md:leading-7">
             I love building apps that are{" "}
             <span className="realistic-marker-highlight inline-block rotate-[3deg]">
               <span className=" animate-moveRight6">simple</span>
@@ -87,45 +87,42 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-
       <h2 className="font-heading1 relative text-xl md:text-2xl xl:text-3xl font-black my-5">
         I'm looking for position:
       </h2>
 
-      <div className="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-20">
-        <p className="marquee realistic-marker-highlight py-2">
-          <span className="pt-1  dark:bg-red-300 bg-green-300">
-            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
-            Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
-            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
-          </span>
-        </p>
-        <p className="marquee marquee2 py-2">
-          <span className="pt-1  dark:bg-red-300 bg-green-300">
-            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
-            Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
-            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
-          </span>
-        </p>
-        <p className="marquee marquee3 py-2">
-          <span className="pt-1">
-            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
-            Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
-            ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
-          </span>
-        </p>
+      <div class="marquee-wrapper rotate-6 my-10">
+        <div class="marquee text-3xl">
+          <p className="py-2 border-t-2 border-b-2 border-gray-600 dark:border-gray-200 realistic-marker-highlight">
+            ⭐Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web
+            Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐ Junior
+            Web Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐
+            Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web Developer
+            ⭐{" "}
+          </p>
+          <p className="py-2 border-t-2 border-b-2 border-gray-600 dark:border-gray-200 realistic-marker-highlight">
+            ⭐Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web
+            Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐ Junior
+            Web Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐
+            Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web Developer
+            ⭐{" "}
+          </p>
+          <p className="py-2 border-t-2 border-b-2 border-gray-600 dark:border-gray-200 realistic-marker-highlight">
+            ⭐Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web
+            Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐ Junior
+            Web Developer ⭐ Junior Web Developer ⭐ Junior Web Developer ⭐
+            Junior Web Developer ⭐ Junior Web Developer ⭐ Junior Web Developer
+            ⭐{" "}
+          </p>
+        </div>
       </div>
 
       <SecondaryTitle title="Tech Stack" />
-
       {/* skills */}
-
       <Skills />
-
       <SecondaryTitle title="Courses & Certifications" />
-
       <div className="flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
-        <p className="text-lg md:text-xl mb-10 md:px-2 w-full text-center sketch-highlight">
+        <p className="text-xl md:text-2xl md:leading-7 mb-10 md:px-2 w-full text-center sketch-highlight">
           Here is a list of completed courses and certifications so far. If you
           wish to know more about specific course click the card and it will
           take you to course provider's website.
@@ -139,7 +136,6 @@ export default function AboutPage() {
           />
         </div>
       </div>
-
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-20 items-center justify-between">
         {courses.map((course) => (
           <Course
