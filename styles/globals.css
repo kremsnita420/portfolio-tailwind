@@ -380,7 +380,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 120s linear infinite;
+  animation: marquee 100s linear infinite;
 }
 
 .marquee p {
