@@ -26,7 +26,7 @@ export default function Skills() {
     <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph mb-10 pt-3">
       <div className="flex flex-col items-start justify-center">
         {/* FRONTEND */}
-        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-[-6deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           FRONTEND
         </h3>
 
@@ -60,7 +60,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* BACKEND */}
-        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-6 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           BACKEND
         </h3>
 
@@ -112,7 +112,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* FRAMEWORKS */}
-        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-[-6deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           FRAMEWORKS
         </h3>
 
@@ -152,7 +152,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* TOOLS */}
-        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-6 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           TOOLS
         </h3>
 

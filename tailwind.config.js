@@ -31,7 +31,7 @@ module.exports = {
         // general animations
         spinSlow: 'spin 15s linear infinite',
         bounceSlow: 'bounce 5s linear infinite',
-        pingSlow: 'pingSlow1 1.5s linear infinite',
+        pingSlow: 'pingSlow1 2.5s linear infinite',
         //higlighted text in about
         rotateText: 'rotate1 10s linear infinite',
       },
