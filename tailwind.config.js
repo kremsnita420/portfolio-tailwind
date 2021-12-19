@@ -20,12 +20,12 @@ module.exports = {
       animation: {
         //hero text animations
 
-        moveRight2: 'moveRight 2s ease-in ',
-        moveRight3: 'moveRight 3s ease-in ',
-        moveRight4: 'moveRight 4s ease-in',
-        moveRight5: 'moveRight 5s ease-in',
-        moveRight6: 'moveRight 6s ease-in',
-        moveRight7: 'moveRight 7s ease-in',
+        moveRight2: 'moveRight 1s ease-in ',
+        moveRight3: 'moveRight 2s ease-in ',
+        moveRight4: 'moveRight 3s ease-in',
+        moveRight5: 'moveRight 4s ease-in',
+        moveRight6: 'moveRight 5s ease-in',
+        moveRight7: 'moveRight 6s ease-in',
         moveLeftNav: 'moveLeftNav 2s ease',
         moveRightNav: 'moveRightNav 2s ease',
         // general animations
