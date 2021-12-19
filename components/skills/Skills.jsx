@@ -19,6 +19,8 @@ import {
   SiGithub,
   SiVisualstudiocode,
   SiGooglechrome,
+  SiSass,
+  SiFigma,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -26,7 +28,7 @@ export default function Skills() {
     <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph mb-10 pt-3">
       <div className="flex flex-col items-start justify-center">
         {/* FRONTEND */}
-        <h3 className="uppercase rotate-[-6deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-[-4deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           FRONTEND
         </h3>
 
@@ -55,12 +57,18 @@ export default function Skills() {
             </span>{" "}
             React
           </li>
+          <li className="flex items-center justify-center">
+            <span className="pr-2 mb-2 text-3xl">
+              <SiSass />
+            </span>
+            Sass
+          </li>
         </ul>
       </div>
 
       <div className="flex flex-col items-center justify-center">
         {/* BACKEND */}
-        <h3 className="uppercase rotate-6 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-4 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           BACKEND
         </h3>
 
@@ -112,7 +120,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* FRAMEWORKS */}
-        <h3 className="uppercase rotate-[-6deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-[-4deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           FRAMEWORKS
         </h3>
 
@@ -152,7 +160,7 @@ export default function Skills() {
 
       <div className="flex flex-col items-center justify-center">
         {/* TOOLS */}
-        <h3 className="uppercase rotate-6 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
+        <h3 className="uppercase rotate-4 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           TOOLS
         </h3>
 
@@ -186,6 +194,12 @@ export default function Skills() {
               <SiVisualstudiocode />
             </span>
             VSCode
+          </li>
+          <li className="flex items-center justify-center">
+            <span className="pr-2 mb-2 text-3xl">
+              <SiFigma />
+            </span>
+            Figma
           </li>
         </ul>
       </div>

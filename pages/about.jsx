@@ -122,7 +122,7 @@ export default function AboutPage() {
       <Skills />
       <SecondaryTitle title="Courses & Certifications" />
       <div className="flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400">
-        <p className="text-xl md:text-2xl md:leading-7 mb-10 md:px-2 w-full text-center sketch-highlight">
+        <p className="text-xl md:text-2xl md:leading-7 py-5 mb-10 md:px-2 w-full text-center sketch-highlight">
           Here is a list of completed courses and certifications so far. If you
           wish to know more about specific course click the card and it will
           take you to course provider's website.

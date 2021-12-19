@@ -86,7 +86,7 @@ export default function Header() {
         </div>
 
         <div className="flex flex-col h-full w-full items-center justify-around ">
-          <nav className="flex font-heading1 rotate-6 flex-col h-1/2 items-center justify-around text-gray-800 dark:text-gray-200">
+          <nav className="flex font-heading1 rotate-3 flex-col h-1/2 items-center justify-around text-gray-800 dark:text-gray-200">
             <CtaButton link="/" title="Home" />
             <CtaButton link="/portfolio" title="Portfolio" />
             <CtaButton link="/about" title="About" />

@@ -176,8 +176,8 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     line-height: 0px;
     transition: all 0.3s;
     
@@ -223,7 +223,7 @@ img {
   }
   .btn-two::after, .btn-two::before {
     left: 0;
-    width: 60px;
+    width: 80px;
     
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -337,7 +337,7 @@ img {
   .sketch-highlight:before{
     content:"";
     z-index:-1;
-    left:-0.05em;
+    left:-0;
     top:-0.2em;
     border-width:2px;
     border-style:solid;
@@ -346,14 +346,14 @@ img {
     border-right-color:transparent;
     width:100%;
     height:120%;
-    transform:rotate(2deg);
+    transform:rotate(1deg);
     opacity:0.5;
     border-radius:0.25em;
   }
   .sketch-highlight:after{
     content:"";
     z-index:-1;
-    left:-0.1em;
+    left:0;
     top:-0.1em;
     border-width:2px;
     border-style:solid;
@@ -363,7 +363,7 @@ img {
     position:absolute;
     width:100%;
     height:110%;
-    transform:rotate(1deg);
+    transform:rotate(0.5deg);
     opacity:0.5;
     border-radius:0.25em;
   }
@@ -380,7 +380,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 30s linear infinite;
+  animation: marquee 120s linear infinite;
 }
 
 .marquee p {

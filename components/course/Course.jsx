@@ -9,7 +9,7 @@ export default function Course({ date, link, title, platform, bootcamp }) {
         }
       >
         <p className="my-2 text-md">{date}</p>
-        <h3 className=" uppercase my-2 realistic-marker-highlight rotate-2 ">
+        <h3 className=" uppercase my-2 realistic-marker-highlight text-center rotate-2 ">
           {title}
         </h3>
         <h4 className="rotate-[-2deg] my-2">{platform}</h4>
