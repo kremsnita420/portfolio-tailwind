@@ -17,7 +17,7 @@ export default function AboutPage() {
       <svg
         xmlns="//www.w3.org/2000/svg"
         version="1.1"
-        className="svg-filters hidden"
+        className="svg-filters absolute h-0"
       >
         <defs>
           <filter id="marker-shape">
@@ -54,9 +54,9 @@ export default function AboutPage() {
             living in Ljubljana.
           </h2>
 
-          <p className="mb-5 text-lg md:text-xl relative">
+          <p className="mb-5 text-lg md:text-xl relative ">
             In January 2021 I have quit my job to learn{" "}
-            <span className="realistic-marker-highlight rotate-[3deg] inline-block">
+            <span className=" realistic-marker-highlight rotate-[3deg] inline-block">
               <span className=" animate-moveRight2">Web development</span>
             </span>
             . Since then I spend{" "}
@@ -92,22 +92,22 @@ export default function AboutPage() {
         I'm looking for position:
       </h2>
 
-      <div class="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-20">
-        <p class="marquee realistic-marker-highlight py-2">
-          <span className="pt-1">
+      <div className="wrapper realistic-marker-highlight rotate-[2.5deg] text-3xl my-20">
+        <p className="marquee realistic-marker-highlight py-2">
+          <span className="pt-1  dark:bg-red-300 bg-green-300">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
             Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
           </span>
         </p>
-        <p class="marquee marquee2 py-2">
-          <span className="pt-1">
+        <p className="marquee marquee2 py-2">
+          <span className="pt-1  dark:bg-red-300 bg-green-300">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
             Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐{"  "}
           </span>
         </p>
-        <p class="marquee marquee3 py-2">
+        <p className="marquee marquee3 py-2">
           <span className="pt-1">
             ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web
             Developer⭐ ⭐Junior Web Developer⭐ ⭐Junior Web Developer⭐
@@ -140,7 +140,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-20  items-center justify-between">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-20 items-center justify-between">
         {courses.map((course) => (
           <Course
             key={course.id}

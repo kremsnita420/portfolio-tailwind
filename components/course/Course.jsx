@@ -7,7 +7,7 @@ export default function Course({ date, link, title, platform, description }) {
 			     hover:bg-gray-100 dark:hover:bg-gray-600 hover:scale-105 transition-all"
       >
         <p className="my-2 text-md">{date}</p>
-        <h3 className="text-gray-500 dark:text-gray-800 uppercase my-2 realistic-marker-highlight">
+        <h3 className="text-gray-500 dark:text-gray-800 uppercase my-2 realistic-marker-highlight ">
           {title}
         </h3>
         <h4 className="text-gray-500 dark:text-gray-800 my-2">{platform}</h4>

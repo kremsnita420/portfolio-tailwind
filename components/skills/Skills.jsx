@@ -24,114 +24,168 @@ import {
 export default function Skills() {
   return (
     <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph mb-10 pt-3">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-start justify-center">
         {/* FRONTEND */}
-        <h3 className="md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
+        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           FRONTEND
         </h3>
 
-        <ul className="flex flex-col items-center md:items-start justify-center my-5 leading-7">
+        <ul className="flex flex-col items-start justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <span className="pr-2 text-3xl">
+            <span className="pr-2 mb-2 text-3xl">
               <AiFillHtml5 />{" "}
             </span>{" "}
             HTML
           </li>
           <li className="flex items-center justify-center">
-            <span className="pr-2 text-3xl">
+            <span className="pr-2 mb-2 text-3xl">
               <DiCss3 />
             </span>{" "}
             CSS
           </li>
           <li className="flex items-center justify-center">
-            <IoLogoJavascript /> Javascript
+            <span className="pr-2 mb-2 text-3xl">
+              <IoLogoJavascript />
+            </span>
+            Javascript
           </li>
           <li className="flex items-center justify-center">
-            <DiReact /> React
+            <span className="pr-2 mb-2 text-3xl">
+              <DiReact />
+            </span>{" "}
+            React
           </li>
         </ul>
       </div>
 
       <div className="flex flex-col items-center justify-center">
         {/* BACKEND */}
-        <h3 className="md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
+        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           BACKEND
         </h3>
 
-        <ul className="flex flex-col items-center md:items-start justify-center my-5 leading-7">
+        <ul className="flex flex-col items-start justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <span className="pr-2 text-3xl">
+            <span className="pr-2 mb-2 text-3xl">
               <IoLogoNodejs />
             </span>
             Node
           </li>
           <li className="flex items-center justify-center">
-            <SiExpress /> Express
+            <span className="pr-2 mb-2 text-3xl">
+              <SiExpress />
+            </span>{" "}
+            Express
           </li>
           <li className="flex items-center justify-center">
-            <DiMongodb /> MongoDB
+            <span className="pr-2 mb-2 text-3xl">
+              <DiMongodb />
+            </span>{" "}
+            MongoDB
           </li>
           <li className="flex items-center justify-center">
-            <IoIosCodeWorking /> RestAPI
+            <span className="pr-2 mb-2 text-3xl">
+              <IoIosCodeWorking />
+            </span>
+            RestAPI
           </li>
           <li className="flex items-center justify-center">
-            <SiVercel /> Vercel
+            <span className="pr-2 mb-2 text-3xl">
+              <SiVercel />
+            </span>
+            Vercel
           </li>
           <li className="flex items-center justify-center">
-            <SiFirebase /> Firebase
+            <span className="pr-2 mb-2 text-3xl">
+              <SiFirebase />
+            </span>
+            Firebase
           </li>
           <li className="flex items-center justify-center">
-            <SiHeroku /> Heroku
+            <span className="pr-2 mb-2 text-3xl">
+              <SiHeroku />
+            </span>
+            Heroku
           </li>
         </ul>
       </div>
 
       <div className="flex flex-col items-center justify-center">
         {/* FRAMEWORKS */}
-        <h3 className=" md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
+        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           FRAMEWORKS
         </h3>
 
-        <ul className="flex flex-col items-center md:items-start  justify-center my-5 leading-7">
+        <ul className="flex flex-col items-start justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <SiNextdotjs /> NextJS
+            <span className="pr-2 mb-2 text-3xl">
+              <SiNextdotjs />
+            </span>
+            NextJS
           </li>
           <li className="flex items-center justify-center">
-            <SiTailwindcss /> TailwindCSS
+            <span className="pr-2 mb-2 text-3xl">
+              <SiTailwindcss />
+            </span>
+            TailwindCSS
           </li>
           <li className="flex items-center justify-center">
-            <SiStyledcomponents /> Styled Components
+            <span className="pr-2 mb-2 text-3xl">
+              <SiStyledcomponents />
+            </span>
+            Styled
           </li>
           <li className="flex items-center justify-center">
-            <SiBootstrap /> Bootstrap
+            <span className="pr-2 mb-2 text-3xl">
+              <SiBootstrap />
+            </span>
+            Bootstrap
           </li>
           <li className="flex items-center justify-center">
-            <SiMaterialui /> MaterialUI
+            <span className="pr-2 mb-2 text-3xl">
+              <SiMaterialui />
+            </span>
+            MaterialUI
           </li>
         </ul>
       </div>
 
       <div className="flex flex-col items-center justify-center">
         {/* TOOLS */}
-        <h3 className=" md:self-start text-red-400 dark:text-blue-400 uppercase my-2 sketch-highlight">
+        <h3 className="uppercase my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
           TOOLS
         </h3>
 
-        <ul className="flex flex-col items-center md:items-start  justify-center my-5">
+        <ul className="flex flex-col items-start  justify-center my-5 leading-7">
           <li className="flex items-center justify-center">
-            <SiGithub /> Github
+            <span className="pr-2 mb-2 text-3xl">
+              <SiGithub />
+            </span>
+            Github
           </li>
           <li className="flex items-center justify-center">
-            <DiGit /> Git
+            <span className="pr-2 mb-2 text-3xl">
+              <DiGit />
+            </span>
+            Git
           </li>
           <li className="flex items-center justify-center">
-            <DiNpm /> npm
+            <span className="pr-2 mb-2 text-3xl">
+              <DiNpm />
+            </span>
+            npm
           </li>
           <li className="flex items-center justify-center">
-            <SiGooglechrome /> Chrome
+            <span className="pr-2 mb-2 text-3xl">
+              <SiGooglechrome />
+            </span>
+            Chrome
           </li>
           <li className="flex items-center justify-center">
-            <SiVisualstudiocode /> VSCode
+            <span className="pr-2 mb-2 text-3xl">
+              <SiVisualstudiocode />
+            </span>
+            VSCode
           </li>
         </ul>
       </div>
