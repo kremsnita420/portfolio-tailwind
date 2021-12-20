@@ -19,7 +19,7 @@ export default function Header() {
   };
 
   return (
-    <header className="container mx-auto flex items-center px-5 pt-2 z-20">
+    <header className="container mx-auto flex items-center px-5 pt-5 z-20">
       {/* header logo */}
       <HeaderLogo />
       <div className="flex-1"></div>
@@ -57,7 +57,7 @@ export default function Header() {
       {/* drawer */}
       <div
         className={
-          !sidebarVisible
+          sidebarVisible !== true
             ? "top-0 fixed right-[-100%]  w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-1000"
             : "top-0 fixed  right-0 w-full h-full bg-gray-400 dark:bg-gray-800 z-20 transition-all duration-1000"
         }

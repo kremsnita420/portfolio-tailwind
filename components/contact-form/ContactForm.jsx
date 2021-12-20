@@ -45,8 +45,12 @@ export default function ContactForm() {
             Send me a message.
           </h2>
           <p className="text-lg mb-10">
-            If you wish to contact me just fill the form and I will reply very
-            fast.
+            If you wish to contact me just{" "}
+            <span className="realistic-marker-highlight inline-block">
+              {" "}
+              fill the form
+            </span>{" "}
+            and I will reply very fast.
           </p>
           <div className="w-3/4  m-auto">
             <NextImage
@@ -59,18 +63,15 @@ export default function ContactForm() {
               blurDataURL="https://images.unsplash.com/photo-1613387275674-cb92af1c29d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
             />
           </div>
-          <p className="text-lg mt-10">Or you can reach me with</p>
-
-          <SocialIcons />
         </div>
 
         {/* FORM */}
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col items-center justify-end w-full mt-10 lg:mt-0"
+          className="flex flex-col items-center justify-end w-full mt-10 mb-10 lg:mt-0"
         >
-          <h2 className="font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
+          <h2 className="font-heading1 circle-sketch-highlight relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
             Contact Form
           </h2>
           {/* NAME */}

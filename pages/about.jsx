@@ -13,30 +13,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <HeadTitle title="About Me" />
-      {/* hightlight svg */}
-      <svg
-        xmlns="//www.w3.org/2000/svg"
-        version="1.1"
-        className="svg-filters absolute h-0"
-      >
-        <defs>
-          <filter id="marker-shape">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0 0.15"
-              numOctaves="1"
-              result="warp"
-            />
-            <feDisplacementMap
-              xChannelSelector="R"
-              yChannelSelector="G"
-              scale="30"
-              in="SourceGraphic"
-              in2="warp"
-            />
-          </filter>
-        </defs>
-      </svg>
+
       <div className="flex flex-col lg:flex-row items-center justify-start text-gray-400 dark:text-gray-800">
         <div className="flex items-center  justify-center pb-10">
           <NextImage src="/images/portrait.png" width={550} height={600} />
@@ -94,20 +71,20 @@ export default function AboutPage() {
 
       <div className="marquee-wrapper rotate-6 my-10">
         <div className="marquee text-3xl">
-          <p className="py-2 bg-yellow-300 border-t-8 border-b-8 border-black border-dashed">
+          <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
             ☠️Junior Web Developer ☠️ Junior Web Developer ☠️ Junior Web
             Developer ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️ Junior
             Web Developer ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️
             Junior Web Developer ☠️ Junior Web Developer ☠️ Junior Web Developer
             ☠️{" "}
           </p>
-          <p className="py-2 bg-yellow-300 border-t-8 border-b-8 border-black border-dashed">
+          <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
             Junior Web Developer ☠️ Junior Web Developer ☠️ Junior Web Developer
             ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️ Junior Web
             Developer ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️ Junior
             Web Developer ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️{" "}
           </p>
-          <p className="py-2 bg-yellow-300 border-t-8 border-b-8 border-black border-dashed">
+          <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
             Junior Web Developer ☠️ Junior Web Developer ☠️ Junior Web Developer
             ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️ Junior Web
             Developer ☠️ Junior Web Developer ☠️ Junior Web Developer ☠️ Junior

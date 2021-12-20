@@ -33,13 +33,12 @@ export default function IndexPage({ projects }) {
         {
           <NextLink href="/portfolio">
             <a className="relative">
-              <span className="sketch-highlight px-2 pb-1 mt-2 rotate-[3deg] inline-block">
-                portfolio page
+              <span className="sketch-highlight hover:text-green-200 hover:scale-110 transition-all dark:hover:text-red-300 px-2 p-1 mt-2 rotate-[3deg] inline-block">
+                portfolio page.
               </span>
             </a>
           </NextLink>
         }
-        .
       </p>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 mt-20 gap-10 mx-auto">

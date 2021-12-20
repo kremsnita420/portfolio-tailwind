@@ -10,7 +10,7 @@
         "/images/project-1/project-1-2.JPG",
         "/images/project-1/project-1-3.JPG",
         "/images/project-1/project-1-4.JPG",
-        "/images/project-1/project-1-5.JPG",
+
         "/images/project-1/project-1-6.JPG",
         "/images/project-1/project-1-7.JPG",
         "/images/project-1/project-1-8.JPG",
@@ -184,7 +184,7 @@
     },
     {
       "id": "pp3",
-      "title": "Javascript Weather App",
+      "title": "Weather App",
       "category": "Javascript",
       "isFeatured": false,
       "image": [
@@ -268,7 +268,7 @@
       "technologies": [
         {
           "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSG and SSR"
+          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
         },
         {
           "name": "ReactJS",
@@ -297,8 +297,66 @@
       ],
       "features": [
         {
-          "name": "Weather Information",
-          "description": "You can check weather forecast for your device's current loaction. There is hourly and daily forecast. "
+          "name": "Post blogs",
+          "description": "Create blog posts with markdown. Visitors can filter by categories or use searcbar to find blog posts. "
+        }
+      ],
+      "todos": [
+        {
+          "name": "No update",
+          "description": "I don't plan to update this website"
+        }
+      ]
+    },
+    {
+      "id": "pp5",
+      "title": "Rick & Morty API",
+      "category": "React",
+      "isFeatured": false,
+      "image": [
+        "/images/project-5/project-5-1.JPG",
+        "/images/project-5/project-5-2.JPG",
+        "/images/project-5/project-5-3.JPG",
+        "/images/project-5/project-5-4.JPG"
+      ],
+
+      "languages": ["Html", "CSS", "Javascript"],
+      "links": [
+        {
+          "name": "github",
+          "link": "https://github.com/kremsnita420/nextjs-markdown-blog"
+        },
+        { "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
+      ],
+
+      "description": "Simple demostration of API fetching and NextJS server side rendering with dynamic pages nad routing",
+      "technologies": [
+        {
+          "name": "NextJS",
+          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
+        },
+        {
+          "name": "ReactJS",
+          "description": "Reusable components, hooks and more"
+        },
+
+        {
+          "name": "CSS",
+          "description": "CSS module scoped styles"
+        },
+        {
+          "name": "Deployment",
+          "description": "Hosted on Vercel with continuous deployment from Github"
+        }
+      ],
+      "features": [
+        {
+          "name": "Fetch data",
+          "description": "Fectch Rick and Morty's data from API and display and display it on page "
+        },
+        {
+          "name": "NextJS dynamic page and routing",
+          "description": "Pages are rendered based on provided data from API"
         }
       ],
       "todos": [
