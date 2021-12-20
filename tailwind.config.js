@@ -31,9 +31,9 @@ module.exports = {
         // general animations
         spinSlow: 'spin 15s linear infinite',
         bounceSlow: 'bounce 5s linear infinite',
-        pingSlow: 'pingSlow1 2.5s linear infinite',
+        pingSlow: 'pingSlow1 2.5s ease-in-out infinite',
         //higlighted text in about
-        rotateText: 'rotate1 10s linear infinite',
+        rotateText: 'rotate1 10s ease infinite',
       },
       keyframes: {
         //hero text animations
@@ -55,22 +55,10 @@ module.exports = {
           '100%': { transform: 'rotateX(1080deg)', },
         },
         pingSlow1: {
-          '75%': {
-            transform: "scale(1.05)",
-
-          },
-          '75%': {
-            transform: "scale(1.0)",
-
-          },
-          '75%': {
-            transform: "scale(1.05)",
-
-          },
           '100%': {
-            transform: "scale(1)",
-
+            transform: 'scale(1.05)',
           }
+
         }
 
       },

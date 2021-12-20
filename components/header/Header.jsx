@@ -1,11 +1,10 @@
 import { useState } from "react";
-import SocialIcons from "../contact-form/SocialIcons.jsx";
+import SocialIcons from "../layout/SocialIcons";
 import CtaButton from "../layout/CtaButton.jsx";
 import DarkmodeButton from "./DarkmodeButton.jsx.jsx";
 
 import HeaderLogo from "./HeaderLogo.jsx";
 
-import DrawerNavigationItem from "./mobile-navigation/DrawerNavigationItem.jsx";
 import NavigationBar from "./navigation/NavigationBar.jsx";
 
 export default function Header() {

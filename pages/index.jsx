@@ -32,7 +32,11 @@ export default function IndexPage({ projects }) {
         Some of my selected projects that I'm working on. For all projects visit{" "}
         {
           <NextLink href="/portfolio">
-            <a className="underline">portfolio page</a>
+            <a className="relative">
+              <span className="sketch-highlight px-2 pb-1 mt-2 rotate-[3deg] inline-block">
+                portfolio page
+              </span>
+            </a>
           </NextLink>
         }
         .

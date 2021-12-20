@@ -281,12 +281,12 @@ img {
     @apply bg-green-300 dark:bg-red-300;
     content:"";
     width:100%;
-    height:100%;
+    height:90%;
     position:absolute;
     z-index:-1;
     filter:url(#marker-shape);
     left:0;
-    top:0;
+    top:.15em;
     
   }
 
@@ -381,11 +381,12 @@ img {
   overflow: hidden;
   display: inline-block;
   animation: marquee 100s linear infinite;
+  
 }
 
 .marquee p {
   display: inline-block;
-
+  color: black ;
 }
 
 @keyframes marquee {
