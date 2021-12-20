@@ -25,7 +25,8 @@ export default function Footer() {
             "
       >
         <span>
-          Copyright {new Date().getFullYear()}.{" "}
+          Copyright <strong>&copy;</strong>
+          {new Date().getFullYear()}{" "}
           <a
             target="-blank"
             rel="noopener"

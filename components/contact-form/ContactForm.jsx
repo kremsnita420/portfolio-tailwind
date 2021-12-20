@@ -78,9 +78,9 @@ export default function ContactForm() {
           <div className="mb-6 w-full">
             <label
               htmlFor="name"
-              className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
+              className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-2"
             >
-              Name
+              <span className="realistic-marker-highlight p-1"> Name</span>
             </label>
             <input
               required
@@ -98,9 +98,9 @@ export default function ContactForm() {
           <div className="mb-6 w-full">
             <label
               htmlFor="email"
-              className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
+              className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-2"
             >
-              Email
+              <span className="realistic-marker-highlight p-1">Email</span>
             </label>
             <input
               required
@@ -119,9 +119,9 @@ export default function ContactForm() {
           <div className="mb-6 w-full">
             <label
               htmlFor="subject"
-              className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
+              className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-3"
             >
-              Subject
+              <span className="realistic-marker-highlight p-1">Subject</span>
             </label>
             <input
               required
@@ -142,7 +142,7 @@ export default function ContactForm() {
               htmlFor="message"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
             >
-              Your message
+              <span className="circle-sketch-highlight p-1">Your message</span>
             </label>
             <textarea
               required
