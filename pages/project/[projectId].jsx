@@ -177,7 +177,7 @@ export async function getStaticProps(context) {
   const project =
     data.projectsData.find((project) => project.id === projectIdSingle) || null;
 
-  //define fallback if data are not found
+  // fallback if data are not found
   if (!project) {
     return { notFound: true };
   }
