@@ -185,6 +185,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       filteredProject: project,
+      fallback: false,
     },
   };
 }
@@ -198,6 +199,6 @@ export async function getStaticPaths() {
 
   return {
     paths: pathsWithParams,
-    fallback: true,
+    fallback: false,
   };
 }
