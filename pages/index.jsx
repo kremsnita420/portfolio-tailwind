@@ -69,7 +69,7 @@ export default function IndexPage({ projects }) {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps() {
   //node.js file sistem
   //define working directory, folder and file path
   const filePath = path.join(process.cwd(), "data", "projects-list.json");
@@ -80,7 +80,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       projects: data.projectsData,
-      locale,
     },
   };
 }
