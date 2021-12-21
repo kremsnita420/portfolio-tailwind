@@ -185,7 +185,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       filteredProject: project,
-      fallback: false,
     },
   };
 }
@@ -194,11 +193,11 @@ export async function getStaticPaths() {
   const data = await getData();
 
   //extract id for every product
-  const ids = data.projectsData.map((project) => project.id);
+  const ids = data.projectsData.map((product) => product.id);
   const pathsWithParams = ids.map((id) => ({ params: { projectId: id } }));
 
   return {
     paths: pathsWithParams,
-    fallback: false,
+    fallback: true,
   };
 }
