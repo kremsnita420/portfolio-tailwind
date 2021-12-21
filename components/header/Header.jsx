@@ -7,8 +7,17 @@ import HeaderLogo from "./HeaderLogo.jsx";
 
 import NavigationBar from "./navigation/NavigationBar.jsx";
 
+import LangSwitch from "./navigation/LangSwitch";
+import en from "../../locales/en";
+import sl from "../../locales/sl";
+import { useRouter } from "next/router";
+
 export default function Header() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
 
   //open-close sidebar
   const sidebarOpenHandler = () => {
@@ -19,20 +28,21 @@ export default function Header() {
   };
 
   return (
-    <header className="container mx-auto flex items-center px-5 pt-5 z-20">
+    <header className="container mx-auto flex items-center w-full justify-between px-5 pt-5 z-20">
       {/* header logo */}
       <HeaderLogo />
       <div className="flex-1"></div>
-      <div className="flex items-center ">
-        {/* navigation bar */}
-        <NavigationBar />
+      {/* navigation bar */}
+      <NavigationBar />
 
-        {/* darkmode button */}
+      {/* darkmode button and lang switch */}
+      <div className="flex items-center justify-center px-2 py-1 ml-5 glassmorph">
         <DarkmodeButton />
+        <LangSwitch />
       </div>
 
+      {/* mobile nav button */}
       <div className="flex items-center justify-between">
-        {/* mobile nav button */}
         <button
           className="flex hover:scale-125 md:hidden items-center justify-center p-2 h-12 w-12 my-auto ml-2 font-semibold rounded-md transition-all z-10"
           onClick={sidebarOpenHandler}
@@ -84,17 +94,33 @@ export default function Header() {
           </button>
         </div>
 
+        {/* darkmode button and lang switch */}
+        <div className="flex w-1/4 mx-auto items-center justify-center pr-3 glassmorph">
+          <DarkmodeButton />
+          <LangSwitch />
+        </div>
+
         <div className="flex flex-col h-full w-full items-center justify-around ">
-          <nav className="flex font-heading1 rotate-3 flex-col h-1/2 items-center justify-around text-gray-800 dark:text-gray-200">
-            <CtaButton link="/" title="Home" />
-            <CtaButton link="/portfolio" title="Portfolio" />
-            <CtaButton link="/about" title="About" />
+          <nav className="flex font-heading1 flex-col h-1/2 items-center justify-around text-gray-800 dark:text-gray-200">
+            <span className=" rotate-3">
+              <CtaButton link="/" title={t.home} />
+            </span>
+            <span className=" rotate-[-3deg]">
+              <CtaButton link="/portfolio" title={t.portfolio} />
+            </span>
+            <span className=" rotate-3">
+              <CtaButton link="/about" title={t.about} />
+            </span>
           </nav>
 
           <div className="pb-5 w-full lg:w-1/3 flex flex-col items-center justify-around mb-10">
             <SocialIcons />
-            <span className="mt-5">Email: duranovic.safet@gmail.com</span>
-            <span className="mt-5">Telephone: +386 40867888</span>
+            <span className="mt-5 realistic-marker-highlight rotate-3">
+              duranovic.safet@gmail.com
+            </span>
+            <span className="mt-5 realistic-marker-highlight rotate-[-3deg]">
+              +386 40867888
+            </span>
           </div>
         </div>
       </div>

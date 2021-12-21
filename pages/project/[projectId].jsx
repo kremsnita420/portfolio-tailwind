@@ -66,8 +66,7 @@ export default function ProjectPage(props) {
           <div className="flex flex-col justify-center text-center items-center w-full mt-10">
             <SecondaryTitle title="Github & Website" />
             <p className="text-lg md:text-xl mb-10 lg:w-2/3">
-              A picture is worth a thousand words... but uses up a thousand
-              times more memory 😜. You can see website{" "}
+              You can see website{" "}
               <span className="circle-sketch-highlight">in action</span> or code
               on <span className="px-1 sketch-highlight">Github</span> by
               visiting links below.
@@ -118,7 +117,7 @@ export default function ProjectPage(props) {
               <SecondaryTitle title="Features" />
               <ul className=" glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200">
                 {filteredProject.features.map((feature, i) => (
-                  <li className=" py-2 border-b-[1px] text-center" key={i}>
+                  <li className=" py-2 text-center" key={i}>
                     <h4 className=" font-heading1 font-black mb-2">
                       <span className="sketch-highlight p-1">
                         {i + 1}. {feature.name}
@@ -137,11 +136,7 @@ export default function ProjectPage(props) {
 
           <p className="text-lg md:text-xl mb-10">
             Here is a <span className="sketch-highlight px-1">list</span> of
-            some major{" "}
-            <span className="circle-sketch-highlight px-1">
-              functionalities
-            </span>{" "}
-            that I'm planning to add in the future
+            some major functionalities that I'm planning to add in the future
           </p>
 
           <ul className=" pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-start dark:text-gray-200">

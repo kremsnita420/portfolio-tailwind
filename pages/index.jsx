@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-
+import { useRouter } from "next/router";
 //components
 import Layout from "../components/layout/Layout";
 import HeadTitle from "../components/layout/typography/HeadTitle";
@@ -12,12 +12,18 @@ import fs from "fs/promises";
 import ScrollToBottomButton from "../components/layout/ScrollBottomButton";
 import SecondaryTitle from "../components/layout/typography/SecondaryTitle";
 import ContactForm from "../components/contact-form/ContactForm";
+//translation
+import en from "../locales/en";
+import sl from "../locales/sl";
 
 export default function IndexPage({ projects }) {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
+
   return (
     <Layout title="Home Page" description="Home Page">
       {/* hero section */}
-
       <div className="relative flex items-start w-full justify-center">
         <HeroText />
         <HeroBgSvg />
@@ -25,16 +31,15 @@ export default function IndexPage({ projects }) {
       <ScrollToBottomButton />
 
       {/* Projects section */}
-
-      <HeadTitle id="projects" title="Featured Projects" />
+      <HeadTitle id="projects" title={t.featured1} />
 
       <p className="text-2xl text-center mb-10">
-        Some of my selected projects that I'm working on. For all projects visit{" "}
+        {t.featured2}{" "}
         {
           <NextLink href="/portfolio">
             <a className="relative">
-              <span className="sketch-highlight hover:text-green-200 hover:scale-110 transition-all dark:hover:text-red-300 px-2 p-1 mt-2 rotate-[3deg] inline-block">
-                portfolio page.
+              <span className="sketch-highlight hover:text-red-300 dark:hover:text-green-300 hover:scale-110 transition-all px-2 p-1 mt-2 rotate-[3deg] inline-block">
+                {t.featured3}
               </span>
             </a>
           </NextLink>
@@ -56,7 +61,7 @@ export default function IndexPage({ projects }) {
           ))}
       </div>
 
-      <SecondaryTitle title="Get in touch" />
+      <SecondaryTitle title={t.contact11} />
       <div className="flex w-full">
         <ContactForm />
       </div>
@@ -64,7 +69,7 @@ export default function IndexPage({ projects }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   //node.js file sistem
   //define working directory, folder and file path
   const filePath = path.join(process.cwd(), "data", "projects-list.json");
@@ -75,6 +80,7 @@ export async function getStaticProps() {
   return {
     props: {
       projects: data.projectsData,
+      locale,
     },
   };
 }

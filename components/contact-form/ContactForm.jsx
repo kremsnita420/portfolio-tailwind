@@ -1,4 +1,5 @@
 import NextImage from "next/image";
+import { useRouter } from "next/router";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -6,9 +7,15 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SocialIcons from "../layout/SocialIcons";
 import CtaButton from "../layout/CtaButton";
+//translation
+import en from "../../locales/en";
+import sl from "../../locales/sl";
 
 export default function ContactForm() {
   const form = useRef();
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,31 +33,29 @@ export default function ContactForm() {
         },
         (error) => {
           console.log(error.text);
-          alert(
-            "Something went wrong! Please try again or write to duranovic.safet@gmail.com"
-          );
+          alert(t.contact1);
         }
       );
     e.target.reset();
   };
 
-  const notify = () =>
-    toast("🦄 Message sent successfully. You will hear from very soon. 🦄 ");
+  const notify = () => toast(`🦄 ${t.contact2} 🦄 `);
 
   return (
     <>
       <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-5">
-        <div className="w-full lg:pr-10 flex flex-col mb-10 items-center">
+        {/* left side */}
+        <div className="w-full lg:pr-10 flex flex-col mb-10 text-center items-center">
           <h2 className="font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
-            Send me a message.
+            {t.contact3}
           </h2>
           <p className="text-lg mb-10">
-            If you wish to contact me just{" "}
+            {t.contact4}{" "}
             <span className="realistic-marker-highlight inline-block">
               {" "}
-              fill the form
+              {t.contact5}
             </span>{" "}
-            and I will reply very fast.
+            {t.contact6}
           </p>
           <div className="w-3/4  m-auto">
             <NextImage
@@ -72,7 +77,7 @@ export default function ContactForm() {
           className="flex flex-col items-center justify-end w-full mt-10 mb-10 lg:mt-0"
         >
           <h2 className="font-heading1 circle-sketch-highlight relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
-            Contact Form
+            {t.contact7}
           </h2>
           {/* NAME */}
           <div className="mb-6 w-full">
@@ -80,7 +85,9 @@ export default function ContactForm() {
               htmlFor="name"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-2"
             >
-              <span className="realistic-marker-highlight p-1"> Name</span>
+              <span className="realistic-marker-highlight p-1">
+                {t.contact8}
+              </span>
             </label>
             <input
               required
@@ -100,7 +107,9 @@ export default function ContactForm() {
               htmlFor="email"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-2"
             >
-              <span className="realistic-marker-highlight p-1">Email</span>
+              <span className="realistic-marker-highlight p-1">
+                {t.contact9}
+              </span>
             </label>
             <input
               required
@@ -121,7 +130,9 @@ export default function ContactForm() {
               htmlFor="subject"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-3"
             >
-              <span className="realistic-marker-highlight p-1">Subject</span>
+              <span className="realistic-marker-highlight p-1">
+                {t.contact10}
+              </span>
             </label>
             <input
               required
@@ -142,7 +153,7 @@ export default function ContactForm() {
               htmlFor="message"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
             >
-              <span className="circle-sketch-highlight p-1">Your message</span>
+              <span className="circle-sketch-highlight p-1">{t.contact12}</span>
             </label>
             <textarea
               required
@@ -154,7 +165,7 @@ export default function ContactForm() {
                 focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 
                 dark:border-gray-600 dark:placeholder-gray-400 p-2 dark:text-white 
                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Write your message here..."
+              placeholder={t.contact13}
             />
           </div>
 
@@ -171,7 +182,7 @@ export default function ContactForm() {
           />
 
           <button onClick={notify} type="submit">
-            <CtaButton title="Send" />
+            <CtaButton title={t.contact14} />
           </button>
         </form>
       </div>

@@ -17,7 +17,7 @@ export default function Layout({ title, description, children }) {
       <main
         className="container font-body
 						   flex flex-col items-center px-5
-				 		   justify-center mx-auto relative"
+				 		   justify-center mx-auto relative min-h-[calc(100vh-76px)]"
       >
         {children}
         <ScrollToButton />

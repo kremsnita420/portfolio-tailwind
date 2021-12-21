@@ -33,32 +33,32 @@ export default function Skills() {
         </h3>
 
         <ul className="flex flex-col items-start justify-center my-5 leading-7">
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2 text-3xl">
               <AiFillHtml5 />{" "}
             </span>{" "}
             HTML
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <DiCss3 />
             </span>{" "}
             CSS
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <IoLogoJavascript />
             </span>
             Javascript
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <DiReact />
             </span>{" "}
             React
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiSass />
             </span>
             Sass
@@ -73,44 +73,44 @@ export default function Skills() {
         </h3>
 
         <ul className="flex flex-col items-start justify-center my-5 leading-7">
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <IoLogoNodejs />
             </span>
             Node
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiExpress />
             </span>{" "}
             Express
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <DiMongodb />
             </span>{" "}
             MongoDB
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <IoIosCodeWorking />
             </span>
             RestAPI
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiVercel />
             </span>
             Vercel
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiFirebase />
             </span>
             Firebase
           </li>
           <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+            <span className="pr-2  text-3xl">
               <SiHeroku />
             </span>
             Heroku
@@ -125,32 +125,32 @@ export default function Skills() {
         </h3>
 
         <ul className="flex flex-col items-start justify-center my-5 leading-7">
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiNextdotjs />
             </span>
             NextJS
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiTailwindcss />
             </span>
             TailwindCSS
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiStyledcomponents />
             </span>
             Styled
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiBootstrap />
             </span>
             Bootstrap
           </li>
           <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+            <span className="pr-2  text-3xl">
               <SiMaterialui />
             </span>
             MaterialUI
@@ -165,38 +165,38 @@ export default function Skills() {
         </h3>
 
         <ul className="flex flex-col items-start  justify-center my-5 leading-7">
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiGithub />
             </span>
             Github
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <DiGit />
             </span>
             Git
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <DiNpm />
             </span>
             npm
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiGooglechrome />
             </span>
             Chrome
           </li>
-          <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+          <li className="flex items-center justify-center mb-2">
+            <span className="pr-2  text-3xl">
               <SiVisualstudiocode />
             </span>
             VSCode
           </li>
           <li className="flex items-center justify-center">
-            <span className="pr-2 mb-2 text-3xl">
+            <span className="pr-2  text-3xl">
               <SiFigma />
             </span>
             Figma

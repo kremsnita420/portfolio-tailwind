@@ -10,7 +10,7 @@ export default function DarkmodeButton() {
 
   return (
     <button
-      className="flex active:rotate-[360deg] items-center justify-center ml-5 p-1 h-8 w-8 my-auto bg-transparent
+      className="flex active:rotate-[360deg] items-center justify-center p-1 mr-2 h-8 w-8 bg-transparent
 					   rounded-full hover:scale-125  transition-all"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
