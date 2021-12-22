@@ -11,8 +11,6 @@ import LangSwitch from "./navigation/LangSwitch";
 //translation
 import { useTranslation } from "next-i18next";
 
-import { useRouter } from "next/router";
-
 export default function Header() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
