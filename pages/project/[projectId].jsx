@@ -177,6 +177,11 @@ export async function getStaticProps(context) {
   const project =
     data.projectsData.find((project) => project.id === projectIdSingle) || null;
 
+  //define fallback if data are not found
+  if (!project) {
+    return { notFound: true };
+  }
+
   return {
     props: {
       filteredProject: project,
@@ -187,12 +192,12 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const data = await getData();
 
-  //extract id for every product
+  //extract id for every project
   const ids = data.projectsData.map((project) => project.id);
   const pathsWithParams = ids.map((id) => ({ params: { projectId: id } }));
 
   return {
     paths: pathsWithParams,
-    fallback: false,
+    fallback: true,
   };
 }

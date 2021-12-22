@@ -8,16 +8,15 @@ import HeaderLogo from "./HeaderLogo.jsx";
 import NavigationBar from "./navigation/NavigationBar.jsx";
 
 import LangSwitch from "./navigation/LangSwitch";
-import en from "../../locales/en";
-import sl from "../../locales/sl";
+//translation
+import { useTranslation } from "next-i18next";
+
 import { useRouter } from "next/router";
 
 export default function Header() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === "en" ? en : sl;
+  const { t } = useTranslation("common");
 
   //open-close sidebar
   const sidebarOpenHandler = () => {

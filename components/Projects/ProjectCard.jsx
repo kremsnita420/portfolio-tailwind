@@ -7,11 +7,7 @@ export default function ProjectCard({ id, image, title }) {
   const { locale } = router;
 
   return (
-    <NextLink
-      passHref
-      href={`/project/${id}`}
-      locale={locale === "en" ? "en" : "sl"}
-    >
+    <NextLink passHref href={`/project/${id}`} locale={locale}>
       <div className="card mb-10 glassmorph cursor-pointer hover:scale-105 transition-transform hover:bg-green-300 dark:hover:bg-red-300">
         <div className="imgbox">
           <NextImage
