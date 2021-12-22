@@ -26,12 +26,12 @@ export default function HeroText() {
         </span>
       </h2>
       <h1
-        className=" text-6xl md:text-[8rem] xl:text-[10rem] text-center mb-14
-		text-transparent bg-clip-text	bg-gradient-to-br dark:from-pink-400 dark:to-red-600 from-blue-600 to-pink-900 font-heading1 font-black animate-moveRight2"
+        className=" text-6xl md:text-[8rem] xl:text-[12rem] text-center mb-14
+		text-transparent bg-clip-text	bg-gradient-to-b from-blue-500 to-pink-700 dark:from-blue-400 dark:to-green-500 font-heading1 font-black animate-moveRight2"
       >
         Safet
         <br />
-        <span className=" font-normal text-transparent bg-clip-text 	bg-gradient-to-br dark:from-pink-400 dark:to-red-600 from-blue-600 to-pink-900">
+        <span className=" font-normal text-transparent bg-clip-text	bg-gradient-to-b dark:from-green-400 dark:to-blue-600 from-pink-700 to-blue-500">
           {" "}
           Duranović
         </span>

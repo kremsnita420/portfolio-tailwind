@@ -21,10 +21,12 @@ export default {
     backend_text: 'Backend',
     frameworks_text: 'Frameworks',
     tools_text: 'Tools',
+    //?footer
+    copyright: 'Copyright',
     //? get in touch
     contact11: 'Get in touch',
     contact1: 'Something went wrong! Please try again or write to duranovic.safet@gmail.com',
-    contact2: '🦄 Message sent successfully. Please check your email for confirmation 🦄',
+    contact2: 'Message sent successfully. Please check your email for confirmation ',
     contact3: 'Send me a message',
     contact4: 'If you wish to contact me just',
     contact5: 'fill the form',

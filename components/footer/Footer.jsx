@@ -1,6 +1,13 @@
+import { useRouter } from "next/router";
 import SocialIcons from "../layout/SocialIcons";
 
+import en from "../../locales/en";
+import sl from "../../locales/sl";
+
 export default function Footer() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
   return (
     <footer
       className="
@@ -23,7 +30,7 @@ export default function Footer() {
             "
       >
         <span>
-          Copyright <strong>&copy;</strong>
+          {t.copyright} <strong>&copy;</strong>
           {new Date().getFullYear()}{" "}
           <a
             target="-blank"

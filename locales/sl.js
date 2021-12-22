@@ -21,6 +21,8 @@ export default {
     backend_text: 'Ozadje',
     frameworks_text: 'Ogrodja',
     tools_text: 'Orodja',
+    //?footer
+    copyright: 'Pravice',
     //? get in touch
     contact11: 'Stopite v stik',
     contact1: 'Nekaj je šlo narobe! Poskusite znova ali pišite duranovic.safet@gmail.com',

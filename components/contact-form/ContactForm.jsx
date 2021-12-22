@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import SocialIcons from "../layout/SocialIcons";
+
 import CtaButton from "../layout/CtaButton";
 //translation
 import en from "../../locales/en";
@@ -33,12 +33,14 @@ export default function ContactForm() {
         },
         (error) => {
           console.log(error.text);
-          alert(t.contact1);
+          // Something went wrong! Please try again or write to duranovic.safet@gmail.com
+          toast(t.contact1);
         }
       );
     e.target.reset();
   };
 
+  // Message sent successfully. Please check your email for confirmation
   const notify = () => toast(`🦄 ${t.contact2} 🦄 `);
 
   return (
@@ -47,14 +49,18 @@ export default function ContactForm() {
         {/* left side */}
         <div className="w-full lg:pr-10 flex flex-col mb-10 text-center items-center">
           <h2 className="font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
+            {/* Send me a message */}
             {t.contact3}
           </h2>
           <p className="text-lg mb-10">
+            {/* If you wish to contact me just */}
             {t.contact4}{" "}
-            <span className="realistic-marker-highlight inline-block">
+            <span className="realistic-marker-highlight inline-block rotate-3">
               {" "}
+              {/* fill the form */}
               {t.contact5}
             </span>{" "}
+            {/* and I will reply very fast */}
             {t.contact6}
           </p>
           <div className="w-3/4  m-auto">
@@ -77,6 +83,7 @@ export default function ContactForm() {
           className="flex flex-col items-center justify-end w-full mt-10 mb-10 lg:mt-0"
         >
           <h2 className="font-heading1 circle-sketch-highlight relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
+            {/* Contact Form */}
             {t.contact7}
           </h2>
           {/* NAME */}
@@ -86,6 +93,7 @@ export default function ContactForm() {
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-2"
             >
               <span className="realistic-marker-highlight p-1">
+                {/* Name */}
                 {t.contact8}
               </span>
             </label>
@@ -108,6 +116,7 @@ export default function ContactForm() {
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-2"
             >
               <span className="realistic-marker-highlight p-1">
+                {/* Email */}
                 {t.contact9}
               </span>
             </label>
@@ -131,6 +140,7 @@ export default function ContactForm() {
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300 rotate-3"
             >
               <span className="realistic-marker-highlight p-1">
+                {/* Subject */}
                 {t.contact10}
               </span>
             </label>
@@ -153,7 +163,10 @@ export default function ContactForm() {
               htmlFor="message"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
             >
-              <span className="circle-sketch-highlight p-1">{t.contact12}</span>
+              <span className="circle-sketch-highlight p-1">
+                {/* Your message */}
+                {t.contact12}
+              </span>
             </label>
             <textarea
               required
@@ -165,6 +178,7 @@ export default function ContactForm() {
                 focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 
                 dark:border-gray-600 dark:placeholder-gray-400 p-2 dark:text-white 
                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              // Write your message here...
               placeholder={t.contact13}
             />
           </div>
@@ -182,7 +196,10 @@ export default function ContactForm() {
           />
 
           <button onClick={notify} type="submit">
-            <CtaButton title={t.contact14} />
+            <CtaButton
+              // Send
+              title={t.contact14}
+            />
           </button>
         </form>
       </div>
