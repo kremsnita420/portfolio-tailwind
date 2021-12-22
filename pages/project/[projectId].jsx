@@ -177,11 +177,6 @@ export async function getStaticProps(context) {
   const project =
     data.projectsData.find((project) => project.id === projectIdSingle) || null;
 
-  //define fallback if data are not found
-  if (!project) {
-    return { notFound: true };
-  }
-
   return {
     props: {
       filteredProject: project,
@@ -189,15 +184,20 @@ export async function getStaticProps(context) {
   };
 }
 
-export async function getStaticPaths() {
-  const data = await getData();
-
-  //extract id for every project
-  const ids = data.projectsData.map((project) => project.id);
-  const pathsWithParams = ids.map((id) => ({ params: { projectId: id } }));
-
+export async function getStaticPaths(locale) {
   return {
-    paths: pathsWithParams,
+    paths: [
+      { params: { projectId: "pp1" }, locale: "en" },
+      { params: { projectId: "pp1" }, locale: "sl" },
+      { params: { projectId: "pp2" }, locale: "en" },
+      { params: { projectId: "pp2" }, locale: "sl" },
+      { params: { projectId: "pp3" }, locale: "en" },
+      { params: { projectId: "pp3" }, locale: "sl" },
+      { params: { projectId: "pp4" }, locale: "en" },
+      { params: { projectId: "pp4" }, locale: "sl" },
+      { params: { projectId: "pp5" }, locale: "en" },
+      { params: { projectId: "pp6" }, locale: "sl" },
+    ],
     fallback: true,
   };
 }

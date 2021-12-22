@@ -1,7 +1,6 @@
 module.exports = {
     i18n: {
         defaultLocale: 'en',
-        locales: ['en', 'sl'],
+        locales: ['en', 'de'],
     },
-    react: { useSuspense: false },
-}
+};

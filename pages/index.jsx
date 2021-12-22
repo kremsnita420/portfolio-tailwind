@@ -1,4 +1,5 @@
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 //components
 import Layout from "../components/layout/Layout";
 import HeadTitle from "../components/layout/typography/HeadTitle";
@@ -12,11 +13,13 @@ import ScrollToBottomButton from "../components/layout/ScrollBottomButton";
 import SecondaryTitle from "../components/layout/typography/SecondaryTitle";
 import ContactForm from "../components/contact-form/ContactForm";
 //translation
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import en from "../locales/en";
+import sl from "../locales/sl";
 
-export default function IndexPage({ projects, locale }) {
-  const { t } = useTranslation();
+export default function IndexPage({ projects }) {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
 
   return (
     <Layout title="Home Page" description="Home Page">
@@ -28,15 +31,15 @@ export default function IndexPage({ projects, locale }) {
       <ScrollToBottomButton />
 
       {/* Projects section */}
-      <HeadTitle title={t("home:featured1")} />
+      <HeadTitle id="projects" title={t.featured1} />
 
       <p className="text-2xl text-center mb-10">
-        {t("home:featured2")}{" "}
+        {t.featured2}{" "}
         {
           <NextLink href="/portfolio">
             <a className="relative">
               <span className="sketch-highlight hover:text-red-300 dark:hover:text-green-300 hover:scale-110 transition-all px-2 p-1 mt-2 rotate-[3deg] inline-block">
-                {t("home:featured3")}
+                {t.featured3}
               </span>
             </a>
           </NextLink>
@@ -58,7 +61,7 @@ export default function IndexPage({ projects, locale }) {
           ))}
       </div>
 
-      <SecondaryTitle title={t("home:contact11")} />
+      <SecondaryTitle title={t.contact11} />
       <div className="flex w-full">
         <ContactForm />
       </div>
@@ -77,7 +80,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       projects: data.projectsData,
-      ...(await serverSideTranslations(locale, ["home"])),
+      locale,
     },
   };
 }
