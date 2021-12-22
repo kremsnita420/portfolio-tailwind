@@ -138,7 +138,7 @@ export default function AboutPage() {
         <p className="text-xl md:text-2xl py-5 mb-10 md:px-2 w-full text-center sketch-highlight">
           {/* Here is a list of completed courses and certifications so fa
         If you wish to know more about a specific course click the card 
-        and it will take you to the course provider's website. */}
+        and it will take you to the course provider's website */}
           {t.about_text18}
         </p>
         <div className="flex items-center w-full justify-center my-10">
