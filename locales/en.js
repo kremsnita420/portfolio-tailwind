@@ -16,6 +16,11 @@ export default {
     featured1: 'Featured Projects',
     featured2: "Some of my selected projects that I'm working on. For all projects visit",
     featured3: 'projects page',
+    //?skills
+    fronted_text: 'Frontend',
+    backend_text: 'Backend',
+    frameworks_text: 'Frameworks',
+    tools_text: 'Tools',
     //? get in touch
     contact11: 'Get in touch',
     contact1: 'Something went wrong! Please try again or write to duranovic.safet@gmail.com',
@@ -54,4 +59,9 @@ export default {
     about_text16: "user-friendly.",
     about_text17: "I'm looking for a position:",
     about_text18: "Here is a list of completed courses and certifications so far. If you wish to know more about a specific course click the card and it will take you to the course provider's website.",
+    //? projects page
+    projects_title: 'Projects',
+    projects_text1: 'All my projects.',
+    projects_text2: 'All',
+
 }

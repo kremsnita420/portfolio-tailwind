@@ -1,4 +1,5 @@
 //icons
+import { useRouter } from "next/router";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiMongodb, DiGit, DiNpm, DiReact } from "react-icons/di";
 import {
@@ -23,13 +24,21 @@ import {
   SiFigma,
 } from "react-icons/si";
 
+//translation
+import en from "../../locales/en";
+import sl from "../../locales/sl";
+
 export default function Skills() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
+
   return (
     <div className="flex flex-col text-lg md:flex-row w-full items-center md:items-start justify-around glassmorph mb-10 pt-3">
       <div className="flex flex-col items-start justify-center">
         {/* FRONTEND */}
         <h3 className="uppercase rotate-[-4deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
-          FRONTEND
+          {t.fronted_text}
         </h3>
 
         <ul className="flex flex-col items-start justify-center my-5 leading-7">
@@ -69,7 +78,7 @@ export default function Skills() {
       <div className="flex flex-col items-center justify-center">
         {/* BACKEND */}
         <h3 className="uppercase rotate-4 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
-          BACKEND
+          {t.backend_text}
         </h3>
 
         <ul className="flex flex-col items-start justify-center my-5 leading-7">
@@ -121,7 +130,7 @@ export default function Skills() {
       <div className="flex flex-col items-center justify-center">
         {/* FRAMEWORKS */}
         <h3 className="uppercase rotate-[-4deg] my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
-          FRAMEWORKS
+          {t.frameworks_text}
         </h3>
 
         <ul className="flex flex-col items-start justify-center my-5 leading-7">
@@ -161,7 +170,7 @@ export default function Skills() {
       <div className="flex flex-col items-center justify-center">
         {/* TOOLS */}
         <h3 className="uppercase rotate-4 my-2 px-2 sketch-highlight text-blue-400 dark:text-red-400">
-          TOOLS
+          {t.tools_text}
         </h3>
 
         <ul className="flex flex-col items-start  justify-center my-5 leading-7">

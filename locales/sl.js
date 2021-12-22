@@ -16,6 +16,11 @@ export default {
     featured1: 'Izbrani projekti',
     featured2: "Nekaj mojih večjih projektov. Za vse projekte obiščite",
     featured3: 'stran s projekti',
+    //?skills
+    fronted_text: 'Ospredje',
+    backend_text: 'Ozadje',
+    frameworks_text: 'Ogrodja',
+    tools_text: 'Orodja',
     //? get in touch
     contact11: 'Stopite v stik',
     contact1: 'Nekaj je šlo narobe! Poskusite znova ali pišite duranovic.safet@gmail.com',
@@ -48,10 +53,13 @@ export default {
     about_text10: "in",
     about_text11: "backend",
     about_text12: "spletnih tehnologij in uživam v vsaki sekundi.",
-    about_text13: "Obožujem ustvarjanje aplikacij, ki so",
+    about_text13: "Obožujem ustvarjati aplikacije, ki so",
     about_text14: "preproste",
     about_text15: "in",
     about_text16: "uporabniku prijazne.",
     about_text17: "Iščem delovno mesto:",
     about_text18: "Tukaj je seznam do sedaj opravljenih tečajev in certifikatov. Če želite izvedeti več o določenem tečaju, kliknite kartico in preusmerila vas bo na spletno mesto izvajalca tečaja.",
+    projects_title: 'Projekti',
+    projects_text1: 'Vsi moji projekti.',
+    projects_text2: 'Vsi',
 }

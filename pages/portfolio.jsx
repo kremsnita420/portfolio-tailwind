@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NextLink from "next/link";
 //components
 import Layout from "../components/layout/Layout";
 import HeadTitle from "../components/layout/typography/HeadTitle";
@@ -9,8 +8,16 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import path from "path";
 import fs from "fs/promises";
 
-export default function IndexPage({ projects, href }) {
+//translation
+import en from "../locales/en";
+import sl from "../locales/sl";
+import { useRouter } from "next/router";
+
+export default function PortfolioPage({ projects, href }) {
   const [projectCategory, setProjectCategory] = useState("");
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : sl;
 
   // get unique category items
   const uniqueItems = (x, i, array) => array.indexOf(x) === i;
@@ -21,9 +28,9 @@ export default function IndexPage({ projects, href }) {
 
   return (
     <Layout title="Portfolio Page" description="First Page">
-      <HeadTitle title="Portfolio" />
+      <HeadTitle title={t.projects_title} />
 
-      <p className="text-2xl my-10">All my projects.</p>
+      <p className="text-2xl my-10">{t.projects_text1}</p>
       {/* categories filter */}
       <div className="flex">
         <button
@@ -34,7 +41,7 @@ export default function IndexPage({ projects, href }) {
               : "ring-1 m-2 px-2 py-1 "
           }
         >
-          All
+          {t.projects_text2}
         </button>
 
         {PRODUCT_CATEGORIES.map((category, i) => (
