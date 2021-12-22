@@ -10,13 +10,13 @@ export default function LangSwitch() {
     <div className="flex flex-col items-center justify-center">
       {locale === "en" ? (
         <NextLink href={router.asPath} locale="sl">
-          <button className=" text-xl cursor-pointer font-black active:rotate-[1080deg] transition-all ">
+          <button className=" text-xl cursor-pointer font-strong active:rotate-[1080deg] hover:scale-125 transition-all ">
             EN
           </button>
         </NextLink>
       ) : (
         <NextLink href={router.asPath} locale="en">
-          <button className=" text-xl cursor-pointer font-black active:rotate-[1080deg] transition-all  ">
+          <button className=" text-xl cursor-pointer font-strong active:rotate-[1080deg] hover:scale-125 transition-all  ">
             SL
           </button>
         </NextLink>

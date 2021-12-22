@@ -65,7 +65,7 @@ export default function ProjectPage(props) {
         <div className="flex flex-col items-start">
           <div className="flex flex-col justify-center text-center items-center w-full mt-10">
             <SecondaryTitle title="Github & Website" />
-            <p className="text-lg md:text-xl mb-10 lg:w-2/3">
+            <p className="text-lg md:text-xl mb-10">
               You can see website{" "}
               <span className="circle-sketch-highlight">in action</span> or code
               on <span className="px-1 sketch-highlight">Github</span> by
