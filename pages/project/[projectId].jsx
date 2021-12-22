@@ -188,7 +188,7 @@ export async function getStaticProps(context) {
   };
 }
 
-export async function getStaticPaths(locale) {
+export function getStaticPaths() {
   return {
     paths: [
       { params: { projectId: "pp1" }, locale: "en" },
@@ -202,6 +202,6 @@ export async function getStaticPaths(locale) {
       { params: { projectId: "pp5" }, locale: "en" },
       { params: { projectId: "pp6" }, locale: "sl" },
     ],
-    fallback: true,
+    fallback: false,
   };
 }
