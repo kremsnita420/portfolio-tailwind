@@ -157,17 +157,16 @@ export default function ProjectPage(props) {
   );
 }
 
-async function getData() {
-  //node.js file sistem
-  //define working directory, folder and file path
-  const filePath = path.join(process.cwd(), "data", "projects-list.json");
-  //define data and parse it
-  const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
-  return data;
-}
-
 export async function getStaticProps(context) {
+  async function getData() {
+    //node.js file sistem
+    //define working directory, folder and file path
+    const filePath = path.join(process.cwd(), "data", "projects-list.json");
+    //define data and parse it
+    const jsonData = await fs.readFile(filePath);
+    const data = JSON.parse(jsonData);
+    return data;
+  }
   const { params } = context;
   const projectIdSingle = params.projectId;
 
