@@ -200,7 +200,7 @@ export function getStaticPaths() {
       { params: { projectId: "pp4" }, locale: "en" },
       { params: { projectId: "pp4" }, locale: "sl" },
       { params: { projectId: "pp5" }, locale: "en" },
-      { params: { projectId: "pp6" }, locale: "sl" },
+      { params: { projectId: "pp5" }, locale: "sl" },
     ],
     fallback: false,
   };
