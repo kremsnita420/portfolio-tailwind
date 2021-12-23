@@ -67,7 +67,7 @@ export default function ProjectPage(props) {
             <SecondaryTitle title="Github & Website" />
             <p className="text-lg md:text-xl mb-10">
               You can see website{" "}
-              <span className="circle-sketch-highlight">in action</span> or code
+              <span className="circle-sketch-highlight">in action</span> or check code
               on <span className="px-1 sketch-highlight">Github</span> by
               visiting links below.
             </p>
