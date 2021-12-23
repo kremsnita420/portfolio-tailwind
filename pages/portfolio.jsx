@@ -13,11 +13,12 @@ import en from "../locales/en";
 import sl from "../locales/sl";
 import { useRouter } from "next/router";
 
-export default function PortfolioPage({ projects, href }) {
+export default function PortfolioPage({ projectsEn, projectsSl }) {
   const [projectCategory, setProjectCategory] = useState("");
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : sl;
+  const projects = locale === "en" ? projectsEn : projectsSl;
 
   // get unique category items
   const uniqueItems = (x, i, array) => array.indexOf(x) === i;
@@ -81,17 +82,22 @@ export default function PortfolioPage({ projects, href }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   //node.js file sistem
   //define working directory, folder and file path
-  const filePath = path.join(process.cwd(), "data", "projects-list.json");
+  const filePathEn = path.join(process.cwd(), "data", "projects-list.json");
+  const filePathSl = path.join(process.cwd(), "data", "projects-list-slo.json");
   //define data and parse it
-  const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
+  const jsonDataEn = await fs.readFile(filePathEn);
+  const jsonDataSl = await fs.readFile(filePathSl);
+  const dataEn = JSON.parse(jsonDataEn);
+  const dataSl = JSON.parse(jsonDataSl);
 
   return {
     props: {
-      projects: data.projectsData,
+      projectsEn: dataEn.projectsData,
+      projectsSl: dataSl.projectsData,
+      locale,
     },
   };
 }

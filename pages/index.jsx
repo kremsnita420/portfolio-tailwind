@@ -16,10 +16,11 @@ import ContactForm from "../components/contact-form/ContactForm";
 import en from "../locales/en";
 import sl from "../locales/sl";
 
-export default function IndexPage({ projects }) {
+export default function IndexPage({ projectsEn, projectsSl }) {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : sl;
+  const projects = locale === "en" ? projectsEn : projectsSl;
 
   return (
     <Layout title="Home Page" description="Home Page">
@@ -72,14 +73,18 @@ export default function IndexPage({ projects }) {
 export async function getStaticProps({ locale }) {
   //node.js file sistem
   //define working directory, folder and file path
-  const filePath = path.join(process.cwd(), "data", "projects-list.json");
+  const filePathEn = path.join(process.cwd(), "data", "projects-list.json");
+  const filePathSl = path.join(process.cwd(), "data", "projects-list-slo.json");
   //define data and parse it
-  const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
+  const jsonDataEn = await fs.readFile(filePathEn);
+  const jsonDataSl = await fs.readFile(filePathSl);
+  const dataEn = JSON.parse(jsonDataEn);
+  const dataSl = JSON.parse(jsonDataSl);
 
   return {
     props: {
-      projects: data.projectsData,
+      projectsEn: dataEn.projectsData,
+      projectsSl: dataSl.projectsData,
       locale,
     },
   };

@@ -1,17 +1,25 @@
 import NextImage from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
 //dependencies
 import path from "path";
 import fs from "fs/promises";
 //components
 import HeadTitle from "../../components/layout/typography/HeadTitle";
 import Layout from "../../components/layout/Layout";
-import { useState } from "react";
 import ScrollToBottomButton from "../../components/layout/ScrollBottomButton";
 import SecondaryTitle from "../../components/layout/typography/SecondaryTitle";
 import ButtonStyled from "../../components/layout/ButtonStyled";
+//translation
+import en from "../../locales/en";
+import sl from "../../locales/sl";
 
-export default function ProjectPage(props) {
-  const { filteredProject } = props;
+export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "sl" ? en : sl;
+  const filteredProject =
+    locale === "sl" ? filteredProjectEn : filteredProjectSl;
   const [selectedImage, setSelectedImage] = useState(filteredProject.image[0]);
 
   return (
@@ -67,9 +75,10 @@ export default function ProjectPage(props) {
             <SecondaryTitle title="Github & Website" />
             <p className="text-lg md:text-xl mb-10">
               You can see website{" "}
-              <span className="circle-sketch-highlight">in action</span> or check code
-              on <span className="px-1 sketch-highlight">Github</span> by
-              visiting links below.
+              <span className="circle-sketch-highlight">in action</span> or
+              check code on{" "}
+              <span className="px-1 sketch-highlight">Github</span> by visiting
+              links below.
             </p>
           </div>
 
@@ -157,33 +166,50 @@ export default function ProjectPage(props) {
   );
 }
 
+async function getData() {
+  //node.js file sistem
+  //define working directory, folder and file path
+  const filePathEn = path.join(process.cwd(), "data", "projects-list.json");
+  //define data and parse it
+  const jsonDataEn = await fs.readFile(filePathEn);
+  const dataEn = JSON.parse(jsonDataEn);
+  return dataEn;
+}
+
+async function getData2() {
+  //node.js file sistem
+  //define working directory, folder and file path
+  const filePathSl = path.join(process.cwd(), "data", "projects-list-slo.json");
+  //define data and parse it
+  const jsonDataSl = await fs.readFile(filePathSl);
+  const dataSl = JSON.parse(jsonDataSl);
+  return dataSl;
+}
+
 export async function getStaticProps(context) {
-  async function getData() {
-    //node.js file sistem
-    //define working directory, folder and file path
-    const filePath = path.join(process.cwd(), "data", "projects-list.json");
-    //define data and parse it
-    const jsonData = await fs.readFile(filePath);
-    const data = JSON.parse(jsonData);
-    return data;
-  }
   const { params } = context;
   const projectIdSingle = params.projectId;
 
-  const data = await getData();
+  const dataEn = await getData();
+  const dataSl = await getData2();
 
   //filter results and return only one that matches with id
-  const project =
-    data.projectsData.find((project) => project.id === projectIdSingle) || null;
+  const projectSl =
+    dataSl.projectsData.find((project) => project.id === projectIdSingle) ||
+    null;
+  const projectEn =
+    dataEn.projectsData.find((project) => project.id === projectIdSingle) ||
+    null;
 
   //define fallback if data are not found
-  if (!project) {
+  if (!projectSl || !projectEn) {
     return { notFound: true };
   }
 
   return {
     props: {
-      filteredProject: project,
+      filteredProjectSl: projectSl,
+      filteredProjectEn: projectEn,
     },
   };
 }
