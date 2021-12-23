@@ -107,21 +107,20 @@ export default function AboutPage() {
       <div className="marquee-wrapper rotate-6 my-10">
         <div className="marquee text-3xl">
           <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
-            ☠️{t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
-            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
-            {t.banner_text} ☠️ {t.banner_text} ☠️
-            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text}
-            ☠️{" "}
-          </p>
-          <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
-            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text}
             ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
             {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
             {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
           </p>
           <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
-            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text}
-            ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+            {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+          </p>
+          <p className="py-2 bg-yellow-300 border-black enveloppe border-dashed">
+            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
+            {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
             {t.banner_text} ☠️ {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
             {t.banner_text} ☠️ {t.banner_text} ☠️{" "}
           </p>

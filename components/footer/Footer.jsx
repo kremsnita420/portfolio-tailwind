@@ -17,10 +17,12 @@ export default function Footer() {
     >
       <div className="pb-2 w-full lg:w-1/2 flex flex-col items-center justify-around ">
         <SocialIcons />
-        <span className="mt-2 circle-sketch-highlight">
+        <span className="mt-2 p-1 sketch-highlight rotate-[-2deg]">
           duranovic.safet@gmail.com
         </span>
-        <span className="my-3 circle-sketch-highlight">+386 40867888</span>
+        <span className="my-3 circle-sketch-highlight rotate-2">
+          +386 40867888
+        </span>
       </div>
 
       <div

@@ -17,9 +17,9 @@ import sl from "../../locales/sl";
 export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "sl" ? en : sl;
+  const t = locale === "en" ? en : sl;
   const filteredProject =
-    locale === "sl" ? filteredProjectEn : filteredProjectSl;
+    locale === "en" ? filteredProjectEn : filteredProjectSl;
   const [selectedImage, setSelectedImage] = useState(filteredProject.image[0]);
 
   return (
@@ -68,17 +68,21 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
         ))}
       </div>
 
-      <div className="flex flex-col items-center justify-center  lg:justify-around">
+      <div className="flex flex-col items-center justify-centerlg:justify-around  text-xl">
         {/* repository and live website */}
         <div className="flex flex-col items-start">
           <div className="flex flex-col justify-center text-center items-center w-full mt-10">
-            <SecondaryTitle title="Github & Website" />
-            <p className="text-lg md:text-xl mb-10">
-              You can see website{" "}
-              <span className="circle-sketch-highlight">in action</span> or
-              check code on{" "}
-              <span className="px-1 sketch-highlight">Github</span> by visiting
-              links below.
+            {/* Github & Website */}
+            <SecondaryTitle title={t.single_project_title1} />
+            <p className="text-2xl mb-10">
+              {/* You can see website */}
+              {t.single_project_text1}{" "}
+              <span className="circle-sketch-highlight inline-block">
+                {/* in action */}
+                {t.single_project_text2}
+              </span>{" "}
+              {/* or check code on Github by visiting links below. */}
+              {t.single_project_text3}
             </p>
           </div>
 
@@ -99,20 +103,22 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
         {/* project description */}
         <div className="flex-col items-center w-full text-center justify-center">
           <div className="flex flex-col justify-center items-center w-full mt-10">
-            <SecondaryTitle title="Description" />
-            <p className="text-lg md:text-xl">{filteredProject.description}</p>
+            {/* Description */}
+            <SecondaryTitle title={t.single_project_title2} />
+            <p className="">{filteredProject.description}</p>
           </div>
           <div className="flex flex-col justify-start items-start md:flex-row w-full mt-10">
             <div className="flex flex-col justify-center items-center w-full md:mr-10">
-              <SecondaryTitle title="Technologies" />
-              <ul className=" pb-10 text-gray-800 dark:text-gray-200">
+              {/* Technologies */}
+              <SecondaryTitle title={t.single_project_title3} />
+              <ul className=" py-2 mb-10 text-gray-800 dark:text-gray-200">
                 {filteredProject.technologies.map((tech, i) => (
                   <li
                     className=" py-2 text-center glassmorph mb-5 px-2"
                     key={i}
                   >
                     <h4 className="font-heading1 font-black mb-2">
-                      <span className="circle-sketch-highlight p-1">
+                      <span className="circle-sketch-highlight p-1 inline-block">
                         {i + 1}. {tech.name}
                       </span>
                     </h4>
@@ -122,13 +128,14 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
               </ul>
             </div>
 
-            <div className="flex flex-col w-full justify-center items-center md:ml-10">
-              <SecondaryTitle title="Features" />
-              <ul className=" glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200">
+            <div className="flex flex-col w-full justify-center items-center py-2 md:ml-10">
+              {/* Features */}
+              <SecondaryTitle title={t.single_project_title4} />
+              <ul className=" py-2 glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200">
                 {filteredProject.features.map((feature, i) => (
                   <li className=" py-2 text-center" key={i}>
-                    <h4 className=" font-heading1 font-black mb-2">
-                      <span className="sketch-highlight p-1">
+                    <h4 className="font-heading1 font-black mb-2 ">
+                      <span className="sketch-highlight p-2 inline-block">
                         {i + 1}. {feature.name}
                       </span>
                     </h4>
@@ -140,18 +147,25 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
           </div>
 
           <div className="flex flex-col justify-center items-center w-full mt-10">
-            <SecondaryTitle title="Todo List" />
+            {/* todo list */}
+            <SecondaryTitle title={t.single_project_title5} />
           </div>
 
           <p className="text-lg md:text-xl mb-10">
-            Here is a <span className="sketch-highlight px-1">list</span> of
-            some major functionalities that I'm planning to add in the future
+            {/* Here is a */}
+            {t.single_project_text4}{" "}
+            <span className="sketch-highlight px-2 py-[2px] inline-block rotate-3">
+              {/* list */}
+              {t.single_project_text5}
+            </span>{" "}
+            {/* of some major functionalities that I'm planning to add in the future */}
+            {t.single_project_text6}
           </p>
 
-          <ul className=" pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-start dark:text-gray-200">
+          <ul className="pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-start dark:text-gray-200">
             {filteredProject.todos.map((todo, i) => (
               <li className="md:ml-5 py-2 text-center" key={i}>
-                <h4 className="realistic-marker-highlight font-heading1 font-black mb-2">
+                <h4 className="realistic-marker-highlight font-heading1 inline-block rotate-2 font-black mb-2">
                   {i + 1}. {todo.name}
                 </h4>
                 <p className="pb-2">{todo.description}</p>

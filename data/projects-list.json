@@ -26,7 +26,7 @@
 
         { "name": "website", "link": "https://about-me-rho-weld.vercel.app/" }
       ],
-      "description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments. Users can search and filter products, add them to cart and make purchase with online payment. Admins can edit and list new products, manage sales and users. If you wish to test website as admin login with this credentials: email: admin@admin.com, password: '123456'",
+      "description": "Fullstack, fully functional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has a shopping cart with an integrated Paypal Api for making online payments. Users can search and filter products, add them to a cart and make purchases with online payment. Admins can edit and list new products, manage sales and users. If you wish to test the website as an admin login with these credentials: email: admin@admin.com, password: '123456'",
       "technologies": [
         {
           "name": "ReactJS",
@@ -34,7 +34,7 @@
         },
         {
           "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
+          "description": "Setting up the project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
         },
         {
           "name": "MongoDB / Mongoose",
@@ -47,7 +47,7 @@
         { "name": "PayPal developer api", "description": "For online payment" },
         {
           "name": "Material UI",
-          "description": "For building responsive website using custom theme, animation, carousel and more"
+          "description": "For building a responsive website using a custom theme, animation, carousel and more"
         },
         {
           "name": "Deployment",
@@ -57,19 +57,19 @@
       "features": [
         {
           "name": "User Registration and Authentication",
-          "description": "Users can register to make future purchase faster. Pages are protected so only authenticated users have access"
+          "description": "Users can register to make a future purchases faster. Pages are protected so only authenticated users have access"
         },
         {
           "name": "Shopping Cart",
-          "description": "Users can add products to cart, update or remove items and make online payment with Paypal and credit card"
+          "description": "Users can add products to cart, update or remove items and make an online payment with Paypal and credit card"
         },
         {
           "name": "User",
-          "description": "Users can visit Order history page to check past purchases. They can rate and review products. On profile page they can change their username, email and password"
+          "description": "Users can visit the Order History page to check past purchases. They can rate and review products. On profile page, they can change their username, email and password"
         },
         {
           "name": "Admin Dashboard",
-          "description": "In admin dashboard is possible to see details of past purchases, check and change status of delivery and payment. Admins can add new products or update existing. Admins can also manage and delete users and create new admins."
+          "description": "In the admin dashboard is possible to see details of past purchases, check and change the status of delivery and payment. Admins can add new products or update existing ones and they can also manage and delete users and create new admins"
         },
         {
           "name": "SEO",
@@ -79,15 +79,15 @@
       "todos": [
         {
           "name": "Reset Password",
-          "description": "Need to implement ability to reset forgotten password"
+          "description": "Need to implement the ability to reset forgotten password"
         },
         {
           "name": "Email notifications",
-          "description": "Users will recieve email with specific information when they register, reset password, make purchase"
+          "description": "Users will receive an email with specific information when they register, reset the password, make a purchase,..."
         },
         {
           "name": "PDF Receipt",
-          "description": "When purchase is made user will receive PDF receipt. And in dashboard they can download recepit"
+          "description": "When a purchase is made user will receive a PDF receipt. And in the dashboard, they can download receipt"
         }
       ]
     },

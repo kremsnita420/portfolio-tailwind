@@ -24,70 +24,73 @@
           "link": "https://github.com/kremsnita420/about-me"
         },
 
-        { "name": "website", "link": "https://about-me-rho-weld.vercel.app/" }
+        { "name": "Demo", "link": "https://about-me-rho-weld.vercel.app/" }
       ],
-      "description": "Fullstack, fully fuctional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has shopping cart with integrated Paypal Api for making online payments. Users can search and filter products, add them to cart and make purchase with online payment. Admins can edit and list new products, manage sales and users. If you wish to test website as admin login with this credentials: email: admin@admin.com, password: '123456'",
+      "description": "Popolnoma funkcionalna in odzivna spletna trgovina. Z uporabniško in administratorsko nadzorno ploščo za upravljanje naročil, zalog, uporabnikov, pregled naročil... Ima nakupovalni voziček z integriranim Paypal Api za spletno plačevanje. Uporabniki lahko iščejo in filtrirajo izdelke, jih dodajajo v košarico in opravijo spletno plačilo. Administratorji lahko urejajo in kreirajo nove izdelke, pregledujejo prodajo in upravljajo z uporabniki. Če želite spletno mesto preizkusiti kot skrbniško prijavo s temi poverilnicami: e-naslov: admin@admin.com, geslo: '123456'",
       "technologies": [
         {
           "name": "ReactJS",
-          "description": "Reusable components, context API, hooks and more"
+          "description": "Komponente za večkratno uporabo, kontekstni API, kljuke in drugo"
         },
         {
           "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
+          "description": "Nastavitev projekta, navigacija med stranmi in pridobivanje podatkov, dinamično usmerjanje, optimizacija slike, SSG in SSR "
         },
         {
           "name": "MongoDB / Mongoose",
-          "description": "Save and retrieve data like products, orders and users"
+          "description": "Shranjevanje in prikazovanje podatkov, kot so izdelki, naročila in uporabniki"
         },
         {
           "name": "Next Connect",
-          "description": "Backend API"
+          "description": "API za pridovanje podatkov iz ozadja"
         },
-        { "name": "PayPal developer api", "description": "For online payment" },
+        {
+          "name": "PayPal API ",
+          "description": "Za Paypal spletno plačevanje"
+        },
         {
           "name": "Material UI",
-          "description": "For building responsive website using custom theme, animation, carousel and more"
+          "description": "Za izdelavo odzivnega spletnega mesta z uporabo teme po meri, animacije, vrtiljaka in več"
         },
         {
-          "name": "Deployment",
-          "description": "Hosted on Vercel with continuous deployment from Github"
+          "name": "Gostovanje",
+          "description": "Gostuje na Vercelu z neprekinjenim nalaganjem iz Githuba"
         }
       ],
       "features": [
         {
-          "name": "User Registration and Authentication",
-          "description": "Users can register to make future purchase faster. Pages are protected so only authenticated users have access"
+          "name": "Registracija in avtentikacija uporabnika",
+          "description": "Uporabniki se lahko registrirajo za hitrejše prihodnje nakupe. Strani so zaščitene, tako da imajo dostop samo overjeni uporabniki"
         },
         {
-          "name": "Shopping Cart",
-          "description": "Users can add products to cart, update or remove items and make online payment with Paypal and credit card"
+          "name": "Nakupovalni voziček",
+          "description": "Uporabniki lahko dodajo, posodabijo ali odstranijo artikle izdelke v košarici ter opravijo spletno plačilo s Paypal ali kreditno kartico"
         },
         {
-          "name": "User",
-          "description": "Users can visit Order history page to check past purchases. They can rate and review products. On profile page they can change their username, email and password"
+          "name": "Uporabnik",
+          "description": "Uporabniki lahko obiščejo stran Zgodovina naročil, da preverijo pretekle nakupe. Lahko komentirajo in ocenijo izdelke. Na Profilni strani lahko spremenijo svoje uporabniško ime, e-pošto ali geslo"
         },
         {
-          "name": "Admin Dashboard",
-          "description": "In admin dashboard is possible to see details of past purchases, check and change status of delivery and payment. Admins can add new products or update existing. Admins can also manage and delete users and create new admins."
+          "name": "Skrbniška nadzorna plošča",
+          "description": "V nadzorni plošči se vidi podrobnosti preteklih nakupov, preveri in spremeni status dostave in plačila. Skrbniki lahko dodajajo nove izdelke ali posodabijo obstoječe in lahko tudi upravljajo in brišejo uporabnike ter ustvarjijo nove skrbnike"
         },
         {
           "name": "SEO",
-          "description": "Dynamic meta tags based on dynamic pages and content"
+          "description": "Dinamične meta oznake, ki temeljijo na dinamičnih straneh in vsebini"
         }
       ],
       "todos": [
         {
-          "name": "Reset Password",
-          "description": "Need to implement ability to reset forgotten password"
+          "name": "Ponastavitev gesla",
+          "description": "Potrebno je implementirati možnost ponastavitve pozabljenega gesla"
         },
         {
-          "name": "Email notifications",
-          "description": "Users will recieve email with specific information when they register, reset password, make purchase"
+          "name": "E-poštna obvestila",
+          "description": "Uporabniki bodo ob registraciji, ponastavitvi gesla in nakupu prejeli e-pošto s potrebnimi podatki"
         },
         {
-          "name": "PDF Receipt",
-          "description": "When purchase is made user will receive PDF receipt. And in dashboard they can download recepit"
+          "name": "PDF Račun",
+          "description": "Po opravljenem nakupu bo uporabnik prejel potrdilo o plačilu - račun v PDF obliki. In v nadzorni plošči lahko ogledajo račun."
         }
       ]
     },

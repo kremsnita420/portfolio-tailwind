@@ -64,4 +64,16 @@ export default {
     projects_title: 'Projekti',
     projects_text1: 'Vsi moji projekti.',
     projects_text2: 'Vsi',
+    //? Single Project Page
+    single_project_title1: 'Github & Demo stran',
+    single_project_title2: 'Opis',
+    single_project_title3: 'Tehnologije',
+    single_project_title4: 'Glavne značilnosti',
+    single_project_title5: 'Načrtovane nadgradnje',
+    single_project_text1: 'Lahko si ogledate spletno stran',
+    single_project_text2: 'v akciji',
+    single_project_text3: `ali preverite kodo na Githubu, tako da obiščete spodnje povezave.`,
+    single_project_text4: 'Tukaj je',
+    single_project_text5: 'seznam',
+    single_project_text6: "nekaterih glavnih funkcij, ki jih nameravam dodati v prihodnosti",
 }

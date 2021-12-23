@@ -7,7 +7,7 @@ export default {
     text1: 'Hi,',
     text2: 'my',
     text3: 'name',
-    text4: 'is',
+    text4: 'Is',
     text5: 'and',
     text6: "I'm a",
     text7: 'Web',
@@ -65,5 +65,17 @@ export default {
     projects_title: 'Projects',
     projects_text1: 'All my projects.',
     projects_text2: 'All',
+    //? Single Project Page
+    single_project_title1: 'Github & Website',
+    single_project_title2: 'Description',
+    single_project_title3: 'Technologies',
+    single_project_title4: 'Features',
+    single_project_title5: 'Todo List',
+    single_project_text1: 'You can see website',
+    single_project_text2: 'in action',
+    single_project_text3: `or check code on Github by visiting links below.`,
+    single_project_text4: 'Here is a',
+    single_project_text5: 'list',
+    single_project_text6: "of some major functionalities that I'm planning to add in the future",
 
 }
