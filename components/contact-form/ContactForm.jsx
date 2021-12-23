@@ -45,14 +45,14 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20  glassmorph px-5 py-5">
+      <div className="flex flex-col lg:flex-row items-start justify-center w-full h-full mb-20 glassmorph px-5 py-5">
         {/* left side */}
         <div className="w-full lg:pr-10 flex flex-col mb-10 text-center items-center">
           <h2 className="font-heading1 relative text-2xl md:text-3xl xl:text-4xl font-black mb-5">
             {/* Send me a message */}
             {t.contact3}
           </h2>
-          <p className="text-lg mb-10">
+          <p className="text-xl mb-10">
             {/* If you wish to contact me just */}
             {t.contact4}{" "}
             <span className="realistic-marker-highlight inline-block rotate-3">
@@ -163,7 +163,7 @@ export default function ContactForm() {
               htmlFor="message"
               className="text-sm md:text-base lg:text-lg font-medium text-gray-900 block mb-2 dark:text-gray-300"
             >
-              <span className="circle-sketch-highlight p-1">
+              <span className="text-xl circle-sketch-highlight p-1">
                 {/* Your message */}
                 {t.contact12}
               </span>

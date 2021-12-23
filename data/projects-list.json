@@ -56,7 +56,7 @@
       ],
       "features": [
         {
-          "name": "User Registration and Authentication",
+          "name": "Registration & Authentication",
           "description": "Users can register to make a future purchases faster. Pages are protected so only authenticated users have access"
         },
         {
@@ -118,7 +118,7 @@
         { "name": "website", "link": "https://eventsnextfrontend.vercel.app/" }
       ],
 
-      "description": "Fullstack events website. For backend is used Strapi CMS. Users are able to register and post events.",
+      "description": "Fullstack events website. For backend is used Strapi CMS. Users can register and post events",
       "technologies": [
         {
           "name": "ReactJS",
@@ -126,11 +126,11 @@
         },
         {
           "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, pagination "
+          "description": "Setting up the project, navigating between pages and data fetching,  dynamic routing, image optimization, pagination"
         },
         {
           "name": "Strapi CMS",
-          "description": "Open source headless CMS and fully customizable. Used for admin to manage users and events"
+          "description": "Open source headless CMS for admin to manage users and events"
         },
         {
           "name": "Security",
@@ -138,7 +138,7 @@
         },
         {
           "name": "Cloudinary",
-          "description": "Image uploading with Cloudinary integration"
+          "description": "Image uploading and optimization with Cloudinary integration"
         },
         {
           "name": "Deployment",
@@ -148,15 +148,15 @@
       "features": [
         {
           "name": "User Registration and Authorization",
-          "description": "Users can register to post events. Pages are protected so only authenticated users have access to own content"
+          "description": "Users can register to post events. Pages are protected so only authenticated users have access to their own content"
         },
         {
           "name": "User",
-          "description": "Users can visit dashboard page to check, edit or delete posted events"
+          "description": "Users can visit the dashboard page to create, edit or delete their events"
         },
         {
           "name": "Map",
-          "description": "Automatic map generation with marked location of event that is visible on website"
+          "description": "Automatic map generation with marked location of the event that is visible on the website"
         },
         {
           "name": "SEO",
@@ -166,7 +166,7 @@
       "todos": [
         {
           "name": "Comment and rate events",
-          "description": "Need to implement ability to comment and rate events by users"
+          "description": "Need to implement an ability to comment and rate events by users"
         },
         {
           "name": "Reset Password",
@@ -174,7 +174,7 @@
         },
         {
           "name": "Email notifications",
-          "description": "Users will recieve email with specific information when they register, reset password"
+          "description": "Users will receive an email with specific information when they register, reset password"
         },
         {
           "name": "Chat Room",
@@ -205,11 +205,11 @@
         { "name": "website", "link": "https://weathe-app-pure-js.netlify.app/" }
       ],
 
-      "description": "Weather App that shows hourly and daily forecast based on device's geolocation. Background is animated and changes based on weather condition",
+      "description": "Weather App that shows hourly and daily forecasts based on devices geolocation. The background is animated(gif) and changes based on weather condition",
       "technologies": [
         {
           "name": "Openweather API",
-          "description": "For fetching weather information with api calls"
+          "description": "For fetching weather information with API calls"
         },
         {
           "name": "Javascript",
@@ -217,7 +217,7 @@
         },
         {
           "name": "Styling",
-          "description": "For styling is used Material Design for Bootstrap"
+          "description": "For styling is used Bootstrap Material Design"
         },
         {
           "name": "Deployment",
@@ -227,7 +227,7 @@
       "features": [
         {
           "name": "Weather Information",
-          "description": "You can check weather forecast for your device's current loaction. There is hourly and daily forecast. "
+          "description": "You can check the weather forecast for your device's current location. There is an hourly and daily forecast."
         }
       ],
       "todos": [
@@ -237,7 +237,7 @@
         },
         {
           "name": "Local storage",
-          "description": "Save favorite locations to local storage and always display theirs weather information"
+          "description": "Save favourite locations to local storage"
         }
       ]
     },
@@ -298,7 +298,7 @@
       "features": [
         {
           "name": "Post blogs",
-          "description": "Create blog posts with markdown. Visitors can filter by categories or use searcbar to find blog posts. "
+          "description": "Create blog posts with markdown. Visitors can filter by category or use the search bar to find blog posts"
         }
       ],
       "todos": [
@@ -329,7 +329,7 @@
         { "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
       ],
 
-      "description": "Simple demostration of API fetching and NextJS server side rendering with dynamic pages nad routing",
+      "description": "Simple demonstration of API fetching and NextJS server-side rendering with dynamic pages nad routing",
       "technologies": [
         {
           "name": "NextJS",
@@ -351,8 +351,8 @@
       ],
       "features": [
         {
-          "name": "Fetch data",
-          "description": "Fectch Rick and Morty's data from API and display and display it on page "
+          "name": "API call",
+          "description": "Fetch Rick and Morty's data from API and display and display it on page "
         },
         {
           "name": "NextJS dynamic page and routing",

@@ -59,7 +59,7 @@
       ],
       "features": [
         {
-          "name": "Registracija in avtentikacija uporabnika",
+          "name": "Registracija & avtentikacija",
           "description": "Uporabniki se lahko registrirajo za hitrejše prihodnje nakupe. Strani so zaščitene, tako da imajo dostop samo overjeni uporabniki"
         },
         {
@@ -121,67 +121,67 @@
         { "name": "demo", "link": "https://eventsnextfrontend.vercel.app/" }
       ],
 
-      "description": "Fullstack events website. For backend is used Strapi CMS. Users are able to register and post events.",
+      "description": "Spletno mesto za dogodke Fullstack. Za backend se uporablja Strapi CMS. Uporabniki se lahko registrirajo in objavljajo dogodke",
       "technologies": [
         {
           "name": "ReactJS",
-          "description": "Reusable components, hooks and more"
+          "description": "Komponente za večkratno uporabo, kontekstni API, kljuke in drugo"
         },
         {
           "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching,  dynamic routing, image optimization, pagination "
+          "description": "Nastavitev projekta, navigacija med stranmi in pridobivanje podatkov, dinamično usmerjanje, optimizacija slik, paginacija"
         },
         {
           "name": "Strapi CMS",
-          "description": "Open source headless CMS and fully customizable. Used for admin to manage users and events"
+          "description": "Odprtokodni brezglavi CMS za skrbnika za upravljanje uporabnikov in dogodkov"
         },
         {
-          "name": "Security",
-          "description": "JWT (JSON Web Tokens), storing HttpOnly Cookies on the server, authorization and access control"
+          "name": "Varnost",
+          "description": "JWT (JSON spletni žetoni), shranjevanje piškotkov HttpOnly na strežniku, avtorizacija in nadzor dostopa"
         },
         {
           "name": "Cloudinary",
-          "description": "Image uploading with Cloudinary integration"
+          "description": "Nalaganje in optimizacija slik z integracijo Cloudinary"
         },
         {
-          "name": "Deployment",
-          "description": "Frontend hosted on Vercel and backend on Heroku with continuous deployment from Github"
+          "name": "Gostovanje",
+          "description": "Frontend, ki gostuje na Vercelu, in backend na Heroku z neprekinjenim nalaganjem iz Githuba"
         }
       ],
       "features": [
         {
-          "name": "User Registration and Authorization",
-          "description": "Users can register to post events. Pages are protected so only authenticated users have access to own content"
+          "name": "Registracija in avtorizacija uporabnikov",
+          "description": "Uporabniki se lahko registrirajo za objavo dogodkov. Strani so zaščitene, tako da imajo samo overjeni uporabniki dostop do lastne vsebine"
         },
         {
-          "name": "User",
-          "description": "Users can visit dashboard page to check, edit or delete posted events"
+          "name": "Uporabniki",
+          "description": "Uporabniki lahko obiščejo stran nadzorne plošče, da ustvarijo, uredijo ali izbrišejo svoje dogodke"
         },
         {
-          "name": "Map",
-          "description": "Automatic map generation with marked location of event that is visible on website"
+          "name": "Zemljevid",
+          "description": "Avtomatsko generiranje zemljevida z označeno lokacijo dogodka, ki je vidna na spletni strani"
         },
         {
           "name": "SEO",
-          "description": "Dynamic meta tags based on dynamic pages and content"
+          "description": "Dinamične meta oznake, ki temeljijo na dinamičnih straneh in vsebini"
         }
       ],
       "todos": [
         {
-          "name": "Comment and rate events",
-          "description": "Need to implement ability to comment and rate events by users"
+          "name": "Komentiranje in ocenjevanje dogodkov",
+          "description": "Potrebno je implementirati možnost komentiranja in ocenjevanja dogodkov s strani uporabnikov"
         },
         {
-          "name": "Reset Password",
-          "description": "Need to implement ability to reset forgotten password"
+          "name": "Ponastavitev gesla",
+          "description": "Treba je implementirati možnost ponastavitve pozabljenega gesla"
         },
         {
-          "name": "Email notifications",
-          "description": "Users will recieve email with specific information when they register, reset password"
+          "name": "E-poštna obvestila",
+          "description": "Uporabniki bodo ob registraciji ali ob ponastavitvi gesla prejeli e-poštno obvestilo s potrebnimi informacijami"
         },
         {
-          "name": "Chat Room",
-          "description": "Where visitors can talk and comment about events"
+          "name": "Klepet",
+          "description": "Kjer lahko obiskovalci govorijo in komentirajo dogodke"
         }
       ]
     },
@@ -205,42 +205,42 @@
           "name": "github",
           "link": "https://github.com/kremsnita420/animated-weather-pureJS-bootstrap"
         },
-        { "name": "website", "link": "https://weathe-app-pure-js.netlify.app/" }
+        { "name": "demo", "link": "https://weathe-app-pure-js.netlify.app/" }
       ],
 
-      "description": "Weather App that shows hourly and daily forecast based on device's geolocation. Background is animated and changes based on weather condition",
+      "description": "Aplikacija za vremensko napoved, ki prikazuje urne in dnevne napovedi na podlagi geolokacije naprave. Ozadje je animirano(gif) in se spreminja glede na vremenske razmere",
       "technologies": [
         {
           "name": "Openweather API",
-          "description": "For fetching weather information with api calls"
+          "description": "Za pridobivanje vremenskih informacij s klici API"
         },
         {
           "name": "Javascript",
-          "description": "For interactivity and DOM manipulation"
+          "description": "Za interaktivnost in manipulacijo DOM-a"
         },
         {
-          "name": "Styling",
-          "description": "For styling is used Material Design for Bootstrap"
+          "name": "Bootstrap",
+          "description": "Za izgled se uporablja Bootstrap Material Design"
         },
         {
-          "name": "Deployment",
-          "description": "Hosted on Netlify with continuous deployment from Github"
+          "name": "Gostovanje",
+          "description": "Gostovanje na Vercelu z neprekinjenim nalaganjem iz Githuba"
         }
       ],
       "features": [
         {
-          "name": "Weather Information",
-          "description": "You can check weather forecast for your device's current loaction. There is hourly and daily forecast. "
+          "name": "Vremenske informacije",
+          "description": "Preverite lahko vremensko napoved za trenutno lokacijo vaše naprave v obliki urne in dnevne napovedi. "
         }
       ],
       "todos": [
         {
-          "name": "Search",
-          "description": "Search bar for looking up other locations"
+          "name": "Iskanje",
+          "description": "Iskanje in prikazovanje drugih lokacij"
         },
         {
-          "name": "Local storage",
-          "description": "Save favorite locations to local storage and always display theirs weather information"
+          "name": "Priljubljene lokacije",
+          "description": "Shranjevanje priljubljenih lokacij"
         }
       ]
     },
@@ -264,50 +264,50 @@
           "name": "github",
           "link": "https://github.com/kremsnita420/nextjs-markdown-blog"
         },
-        { "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
+        { "name": "demo", "link": "https://nextjsmarkdownblog.vercel.app/" }
       ],
 
-      "description": "Static blog with pagination, search & categories using Markdown",
+      "description": "Statični spletni dnevnik s paginacijo, iskanjem in kategorijami z uporabo Markdowna",
       "technologies": [
         {
-          "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
+          "name": "ReactJS",
+          "description": "Komponente za večkratno uporabo, kontekstni API, kljuke in drugo"
         },
         {
-          "name": "ReactJS",
-          "description": "Reusable components, hooks and more"
+          "name": "NextJS",
+          "description": "Nastavitev projekta, navigacija med stranmi in pridobivanje podatkov, dinamično usmerjanje, optimizacija slik, paginacija"
         },
         {
           "name": "Marked",
-          "description": "Markdown compiler for parsing markdown text"
+          "description": "Prevajalnik Markdown za razčlenitev markdown besedila"
         },
         {
           "name": "Gray matter",
-          "description": "Front matter parsing from a string or a file"
+          "description": "Front matter razčlenitev iz niza ali datoteke"
         },
         {
           "name": "Husky",
-          "description": "Github hook to cache made changes when blog content is updated "
+          "description": "Github hook za 'caching' objav, ko so spremembe narejene"
         },
         {
           "name": "TailwindCSS",
-          "description": "Styling and responsive layout"
+          "description": "Izgled in odzivna postavitev strani"
         },
         {
-          "name": "Deployment",
-          "description": "Hosted on Vercel with continuous deployment from Github"
+          "name": "Gostovanje",
+          "description": "Gostovanje na Vercelu z neprekinjenim nalaganjem iz Githuba"
         }
       ],
       "features": [
         {
-          "name": "Post blogs",
-          "description": "Create blog posts with markdown. Visitors can filter by categories or use searcbar to find blog posts. "
+          "name": "Blog objave",
+          "description": "Ustvaranje blog objav z markdownom. Obiskovalci lahko filtrirajo po kategorijah ali z iskalno vrstico poiščejo objave"
         }
       ],
       "todos": [
         {
-          "name": "No update",
-          "description": "I don't plan to update this website"
+          "name": "Brez posodobitve",
+          "description": "Ne nameravam posodabljati te spletne strani"
         }
       ]
     },
@@ -329,43 +329,42 @@
           "name": "github",
           "link": "https://github.com/kremsnita420/nextjs-markdown-blog"
         },
-        { "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
+        { "name": "demo", "link": "https://nextjsmarkdownblog.vercel.app/" }
       ],
 
-      "description": "Simple demostration of API fetching and NextJS server side rendering with dynamic pages nad routing",
+      "description": "Preprosta predstavitev pridobivanja podatkov preko API-ja in upodabljanja NextJS na strani strežnika z dinamičnimi stranmi in usmerjanjem",
       "technologies": [
         {
-          "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
+          "name": "ReactJS",
+          "description": "Komponente za večkratno uporabo, kontekstni API, kljuke in drugo"
         },
         {
-          "name": "ReactJS",
-          "description": "Reusable components, hooks and more"
+          "name": "NextJS",
+          "description": "Nastavitev projekta, navigacija med stranmi in pridobivanje podatkov, dinamično usmerjanje, optimizacija slik, paginacija"
         },
-
         {
           "name": "CSS",
-          "description": "CSS module scoped styles"
+          "description": "CSS slogi z obsegom modula"
         },
         {
-          "name": "Deployment",
-          "description": "Hosted on Vercel with continuous deployment from Github"
+          "name": "Gostovanje",
+          "description": "Gostovanje na Vercelu z neprekinjenim nalaganjem z Githuba"
         }
       ],
       "features": [
         {
-          "name": "Fetch data",
-          "description": "Fectch Rick and Morty's data from API and display and display it on page "
+          "name": "API klic",
+          "description": "Pridobivanje podatkov in prikazovanje le teh na spletni strani "
         },
         {
-          "name": "NextJS dynamic page and routing",
-          "description": "Pages are rendered based on provided data from API"
+          "name": "NextJS dinamične strani in usmerjanje",
+          "description": "Strani se upodabljajo na podlagi podatkov, ki jih posreduje API"
         }
       ],
       "todos": [
         {
-          "name": "No update",
-          "description": "I don't plan to update this website"
+          "name": "Brez posodobitve",
+          "description": "Ne nameravam posodabljati te spletne strani"
         }
       ]
     }

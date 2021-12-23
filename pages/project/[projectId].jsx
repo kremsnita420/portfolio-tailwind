@@ -68,13 +68,13 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
         ))}
       </div>
 
-      <div className="flex flex-col items-center justify-centerlg:justify-around text-xl">
+      <div className="flex flex-col items-center justify-centerlg:justify-around text-2xl">
         {/* repository and live website */}
         <div className="flex flex-col items-start">
           <div className="flex flex-col justify-center text-center items-center w-full mt-10">
             {/* Github & Website */}
             <SecondaryTitle title={t.single_project_title1} />
-            <p className="text-2xl mb-10">
+            <p className=" mb-10">
               {/* You can see website */}
               {t.single_project_text1}{" "}
               <span className="circle-sketch-highlight inline-block">
@@ -134,11 +134,11 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
               <ul className=" py-2 glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200">
                 {filteredProject.features.map((feature, i) => (
                   <li className=" py-2 text-center" key={i}>
-                    <h4 className="font-heading1 font-black mb-2 ">
+                    <h5 className="font-heading1 font-black mb-2 ">
                       <span className="sketch-highlight p-2 inline-block">
                         {i + 1}. {feature.name}
                       </span>
-                    </h4>
+                    </h5>
                     <p className="pb-2">{feature.description}</p>
                   </li>
                 ))}
