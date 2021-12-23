@@ -68,7 +68,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
         ))}
       </div>
 
-      <div className="flex flex-col items-center justify-centerlg:justify-around  text-xl">
+      <div className="flex flex-col items-center justify-centerlg:justify-around text-xl">
         {/* repository and live website */}
         <div className="flex flex-col items-start">
           <div className="flex flex-col justify-center text-center items-center w-full mt-10">

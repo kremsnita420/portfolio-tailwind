@@ -111,14 +111,14 @@
       "languages": ["Html", "CSS", "Javascript"],
       "links": [
         {
-          "name": "frontend",
+          "name": "github1",
           "link": "https://github.com/kremsnita420/events-next-frontend"
         },
         {
-          "name": "backend",
+          "name": "Github2",
           "link": "https://github.com/kremsnita420/events-next-backend"
         },
-        { "name": "website", "link": "https://eventsnextfrontend.vercel.app/" }
+        { "name": "demo", "link": "https://eventsnextfrontend.vercel.app/" }
       ],
 
       "description": "Fullstack events website. For backend is used Strapi CMS. Users are able to register and post events.",
