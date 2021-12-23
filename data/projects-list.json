@@ -26,7 +26,7 @@
 
         { "name": "website", "link": "https://about-me-rho-weld.vercel.app/" }
       ],
-      "description": "Fullstack, fully functional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has a shopping cart with an integrated Paypal Api for making online payments. Users can search and filter products, add them to a cart and make purchases with online payment. Admins can edit and list new products, manage sales and users. If you wish to test the website as an admin login with these credentials: email: admin@admin.com, password: '123456'",
+      "description": "Fullstack, fully functional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has a shopping cart with an integrated Paypal Api for making online payments. Users can search and filter products, add them to a cart and make purchases with online payment. Admins can edit and list new products, manage sales and users. If you wish to test the website as an admin login with these credentials: email: admin@admin.com, password: 123456. Paypal credentials: email: sb-fjfm16118256@personal.example.com, password: kUy$#2lb",
       "technologies": [
         {
           "name": "ReactJS",

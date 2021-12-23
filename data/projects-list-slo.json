@@ -26,7 +26,7 @@
 
         { "name": "Demo", "link": "https://about-me-rho-weld.vercel.app/" }
       ],
-      "description": "Popolnoma funkcionalna in odzivna spletna trgovina. Z uporabniško in administratorsko nadzorno ploščo za upravljanje naročil, zalog, uporabnikov, pregled naročil... Ima nakupovalni voziček z integriranim Paypal Api za spletno plačevanje. Uporabniki lahko iščejo in filtrirajo izdelke, jih dodajajo v košarico in opravijo spletno plačilo. Administratorji lahko urejajo in kreirajo nove izdelke, pregledujejo prodajo in upravljajo z uporabniki. Če želite spletno mesto preizkusiti kot skrbniško prijavo s temi poverilnicami: e-naslov: admin@admin.com, geslo: '123456'",
+      "description": "Popolnoma funkcionalna in odzivna spletna trgovina. Z uporabniško in administratorsko nadzorno ploščo za upravljanje naročil, zalog, uporabnikov, pregled naročil... Ima nakupovalni voziček z integriranim Paypal Api za spletno plačevanje. Uporabniki lahko iščejo in filtrirajo izdelke, jih dodajajo v košarico in opravijo spletno plačilo. Administratorji lahko urejajo in kreirajo nove izdelke, pregledujejo prodajo in upravljajo z uporabniki. Če želite spletno mesto preizkusiti kot skrbniško prijavo s temi poverilnicami: e-naslov: admin@admin.com, geslo: 123456.  Paypal podatki: e-pošta: sb-fjfm16118256@personal.example.com, geslo: kUy$#2lb",
       "technologies": [
         {
           "name": "ReactJS",
