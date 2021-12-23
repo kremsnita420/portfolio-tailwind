@@ -11,7 +11,7 @@ export default function HeroText() {
 
   return (
     <div className="flex flex-col items-center justify-start md:justify-center w-full min-h-[calc(100vh-76px)] relative mt-20 md:mt-0">
-      <h2 className=" text-xl md:text-2xl xl:text-3xl animate-moveRight2 mb-14">
+      <h2 className=" text-xl md:text-2xl xl:text-3xl animate-moveRight2 mb-14 ">
         <span className="p-1 px-2 border-t-2 border-l-2 border-b-2 text-gray-800 dark:text-gray-200 border-gray-800 dark:border-gray-200">
           {/* Hi, */}
           {t.text1}
@@ -32,7 +32,7 @@ export default function HeroText() {
       <h1 className=" text-center ">
         <span
           className="mb-14 text-8xl md:text-[10rem] xl:text-[15rem]
-		text-transparent bg-clip-text	bg-gradient-to-b from-blue-500 to-pink-700 dark:from-blue-400 dark:to-green-500 font-heading1 font-black animate-moveRight2"
+		text-transparent bg-clip-text	bg-[url('public/images/mail.png')] font-heading1 font-black animate-moveRight2"
         >
           {" "}
           Safet

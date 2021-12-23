@@ -15,6 +15,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   cursor: default;
+  
 }
 
 
@@ -73,10 +74,8 @@ img {
 
 .main-bg {
     background: url('/images/main-bg.png');
-    
+    background-size: cover;
 }
-
-/*! HAMBURGER ICON */
 
 
 /*! CTA BUTTON */

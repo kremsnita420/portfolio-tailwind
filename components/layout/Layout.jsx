@@ -5,13 +5,17 @@ import ScrollToButton from "./ScrollTopButton";
 
 export default function Layout({ title, description, children }) {
   return (
-    <>
+    <div>
       <Head>
         <title>{title ? `${title} - My Portfolio` : "My Portfolio"}</title>
         {description && <meta name="description" content={description} />}
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <meta charSet="utf-8" />
-        <meta property="og:image" content="/images/preview.jpg" key="ogimage" />
+        <meta
+          property="og:image"
+          content="/images/portrait.png"
+          key="ogimage"
+        />
       </Head>
       <Header />
       <main
@@ -48,6 +52,6 @@ export default function Layout({ title, description, children }) {
           </filter>
         </defs>
       </svg>
-    </>
+    </div>
   );
 }

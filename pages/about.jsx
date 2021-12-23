@@ -53,7 +53,7 @@ export default function AboutPage() {
             </span>
             {/* Since then I spend */}
             {t.about_text6}{" "}
-            <span className="realistic-marker-highlight inline-block rotate-[-3deg] z-[-1]">
+            <span className="realistic-marker-highlight inline-block rotate-[-3deg]">
               <span className=" animate-moveRight3">
                 {/* all my time */}
                 {t.about_text7}
@@ -61,7 +61,7 @@ export default function AboutPage() {
             </span>{" "}
             {/* learning fundamentals of */}
             {t.about_text8}{" "}
-            <span className="realistic-marker-highlight rotate-[3deg] inline-block z-[-1]">
+            <span className="realistic-marker-highlight rotate-[3deg] inline-block ">
               <span className=" animate-moveRight4">
                 {/* frontend */}
                 {t.about_text9}
