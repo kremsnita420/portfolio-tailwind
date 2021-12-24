@@ -120,13 +120,16 @@ export default function AboutPage() {
 							</span>
 						</span>
 					</p>
-					<button className='mt-10 text-gray-800 dark:text-gray-200 font-black font-heading1 text-2xl sketch-highlight px-3 py-2 hover:scale-125 hover:rotate-3 transition-all'>
-						<a
-							target='_blank'
-							href='https://drive.google.com/file/d/1bZW3APymGqEtAAC5W3n6TtyZyBX3vX8H/view?usp=sharing'>
-							Resume
-						</a>
-					</button>
+
+					<div className='flex items-center justify-center my-10 wrapper'>
+						<div className='cta'>
+							<a
+								target='_blank'
+								href='https://drive.google.com/file/d/1bZW3APymGqEtAAC5W3n6TtyZyBX3vX8H/view?usp=sharing'>
+								<span className='flex items-center justify-center'>Resume</span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 
