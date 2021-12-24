@@ -121,14 +121,14 @@ export default function AboutPage() {
 						</span>
 					</p>
 
-					<div className='flex items-center justify-center my-10 wrapper'>
-						<div className='cta'>
-							<a
-								target='_blank'
-								href='https://drive.google.com/file/d/1bZW3APymGqEtAAC5W3n6TtyZyBX3vX8H/view?usp=sharing'>
+					<div className='my-10'>
+						<a
+							target='_blank'
+							href='https://drive.google.com/file/d/1bZW3APymGqEtAAC5W3n6TtyZyBX3vX8H/view?usp=sharing'>
+							<CtaButton title='Resume'>
 								<span className='flex items-center justify-center'>Resume</span>
-							</a>
-						</div>
+							</CtaButton>
+						</a>
 					</div>
 				</div>
 			</div>
