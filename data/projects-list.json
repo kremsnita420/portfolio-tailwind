@@ -1,370 +1,370 @@
 {
-  "projectsData": [
-    {
-      "id": "pp1",
-      "title": "E-commerce webshop",
-      "category": "React",
-      "isFeatured": true,
-      "image": [
-        "/images/project-1/project-1-1.JPG",
-        "/images/project-1/project-1-2.JPG",
-        "/images/project-1/project-1-3.JPG",
-        "/images/project-1/project-1-4.JPG",
+	"projectsData": [
+		{
+			"id": "pp1",
+			"title": "E-commerce webshop",
+			"category": "React",
+			"isFeatured": true,
+			"image": [
+				"/images/project-1/project-1-1.JPG",
+				"/images/project-1/project-1-2.JPG",
+				"/images/project-1/project-1-3.JPG",
+				"/images/project-1/project-1-4.JPG",
 
-        "/images/project-1/project-1-6.JPG",
-        "/images/project-1/project-1-7.JPG",
-        "/images/project-1/project-1-8.JPG",
-        "/images/project-1/project-1-9.JPG"
-      ],
+				"/images/project-1/project-1-6.JPG",
+				"/images/project-1/project-1-7.JPG",
+				"/images/project-1/project-1-8.JPG",
+				"/images/project-1/project-1-9.JPG"
+			],
 
-      "languages": ["Html", "CSS", "Javascript"],
-      "links": [
-        {
-          "name": "github",
-          "link": "https://github.com/kremsnita420/about-me"
-        },
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/about-me"
+				},
 
-        { "name": "website", "link": "https://about-me-rho-weld.vercel.app/" }
-      ],
-      "description": "Fullstack, fully functional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has a shopping cart with an integrated Paypal Api for making online payments. Users can search and filter products, add them to a cart and make purchases with online payment. Admins can edit and list new products, manage sales and users. If you wish to test the website as an admin login with these credentials: email: admin@admin.com, password: 123456. Paypal credentials: email: sb-fjfm16118256@personal.example.com, password: kUy$#2lb",
-      "technologies": [
-        {
-          "name": "ReactJS",
-          "description": "Reusable components, context API, hooks and more"
-        },
-        {
-          "name": "NextJS",
-          "description": "Setting up the project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
-        },
-        {
-          "name": "MongoDB / Mongoose",
-          "description": "Save and retrieve data like products, orders and users"
-        },
-        {
-          "name": "Next Connect",
-          "description": "Backend API"
-        },
-        { "name": "PayPal developer api", "description": "For online payment" },
-        {
-          "name": "Material UI",
-          "description": "For building a responsive website using a custom theme, animation, carousel and more"
-        },
-        {
-          "name": "Deployment",
-          "description": "Hosted on Vercel with continuous deployment from Github"
-        }
-      ],
-      "features": [
-        {
-          "name": "Registration & Authentication",
-          "description": "Users can register to make a future purchases faster. Pages are protected so only authenticated users have access"
-        },
-        {
-          "name": "Shopping Cart",
-          "description": "Users can add products to cart, update or remove items and make an online payment with Paypal and credit card"
-        },
-        {
-          "name": "User",
-          "description": "Users can visit the Order History page to check past purchases. They can rate and review products. On profile page, they can change their username, email and password"
-        },
-        {
-          "name": "Admin Dashboard",
-          "description": "In the admin dashboard is possible to see details of past purchases, check and change the status of delivery and payment. Admins can add new products or update existing ones and they can also manage and delete users and create new admins"
-        },
-        {
-          "name": "SEO",
-          "description": "Dynamic meta tags based on dynamic pages and content"
-        }
-      ],
-      "todos": [
-        {
-          "name": "Reset Password",
-          "description": "Need to implement the ability to reset forgotten password"
-        },
-        {
-          "name": "Email notifications",
-          "description": "Users will receive an email with specific information when they register, reset the password, make a purchase,..."
-        },
-        {
-          "name": "PDF Receipt",
-          "description": "When a purchase is made user will receive a PDF receipt. And in the dashboard, they can download receipt"
-        }
-      ]
-    },
-    {
-      "id": "pp2",
-      "title": "Music Events",
-      "category": "React",
-      "isFeatured": true,
-      "image": [
-        "/images/project-2/project-2-1.JPG",
-        "/images/project-2/project-2-2.JPG",
-        "/images/project-2/project-2-3.JPG",
-        "/images/project-2/project-2-4.JPG",
-        "/images/project-2/project-2-5.JPG",
-        "/images/project-2/project-2-6.JPG"
-      ],
+				{ "name": "website", "link": "https://about-me-rho-weld.vercel.app/" }
+			],
+			"description": "Fullstack, fully functional and responsive E-commerce webshop. With user and admin dashboard for managing orders, stock, users,... It has a shopping cart with an integrated Paypal Api for making online payments. Users can search and filter products, add them to a cart and make purchases with online payment. Admins can edit and list new products, manage sales and users. If you wish to test the website as an admin login with these credentials: email: admin@admin.com, password: 123456. Paypal credentials: email: sb-fjfm16118256@personal.example.com, password: kUy$#2lb",
+			"technologies": [
+				{
+					"name": "ReactJS",
+					"description": "Reusable components, context API, hooks and more"
+				},
+				{
+					"name": "NextJS",
+					"description": "Setting up the project, navigating between pages and data fetching,  dynamic routing, image optimization, SSG and SSR "
+				},
+				{
+					"name": "MongoDB",
+					"description": "Save and retrieve data like products, orders and users"
+				},
+				{
+					"name": "Next Connect",
+					"description": "Backend API"
+				},
+				{ "name": "PayPal api", "description": "For online payment" },
+				{
+					"name": "Material UI",
+					"description": "For building a responsive website using a custom theme, animation, carousel and more"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Registration & Authentication",
+					"description": "Users can register to make a future purchases faster. Pages are protected so only authenticated users have access"
+				},
+				{
+					"name": "Shopping Cart",
+					"description": "Users can add products to cart, update or remove items and make an online payment with Paypal and credit card"
+				},
+				{
+					"name": "User",
+					"description": "Users can visit the Order History page to check past purchases. They can rate and review products. On profile page, they can change their username, email and password"
+				},
+				{
+					"name": "Admin Dashboard",
+					"description": "In the admin dashboard is possible to see details of past purchases, check and change the status of delivery and payment. Admins can add new products or update existing ones and they can also manage and delete users and create new admins"
+				},
+				{
+					"name": "SEO",
+					"description": "Dynamic meta tags based on dynamic pages and content"
+				}
+			],
+			"todos": [
+				{
+					"name": "Reset Password",
+					"description": "Need to implement the ability to reset forgotten password"
+				},
+				{
+					"name": "Email notifications",
+					"description": "Users will receive an email with specific information when they register, reset the password, make a purchase,..."
+				},
+				{
+					"name": "PDF Receipt",
+					"description": "When a purchase is made user will receive a PDF receipt. And in the dashboard, they can download receipt"
+				}
+			]
+		},
+		{
+			"id": "pp2",
+			"title": "Music Events",
+			"category": "React",
+			"isFeatured": true,
+			"image": [
+				"/images/project-2/project-2-1.JPG",
+				"/images/project-2/project-2-2.JPG",
+				"/images/project-2/project-2-3.JPG",
+				"/images/project-2/project-2-4.JPG",
+				"/images/project-2/project-2-5.JPG",
+				"/images/project-2/project-2-6.JPG"
+			],
 
-      "languages": ["Html", "CSS", "Javascript"],
-      "links": [
-        {
-          "name": "frontend",
-          "link": "https://github.com/kremsnita420/events-next-frontend"
-        },
-        {
-          "name": "backend",
-          "link": "https://github.com/kremsnita420/events-next-backend"
-        },
-        { "name": "website", "link": "https://eventsnextfrontend.vercel.app/" }
-      ],
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "frontend",
+					"link": "https://github.com/kremsnita420/events-next-frontend"
+				},
+				{
+					"name": "backend",
+					"link": "https://github.com/kremsnita420/events-next-backend"
+				},
+				{ "name": "website", "link": "https://eventsnextfrontend.vercel.app/" }
+			],
 
-      "description": "Fullstack events website. For backend is used Strapi CMS. Users can register and post events",
-      "technologies": [
-        {
-          "name": "ReactJS",
-          "description": "Reusable components, hooks and more"
-        },
-        {
-          "name": "NextJS",
-          "description": "Setting up the project, navigating between pages and data fetching,  dynamic routing, image optimization, pagination"
-        },
-        {
-          "name": "Strapi CMS",
-          "description": "Open source headless CMS for admin to manage users and events"
-        },
-        {
-          "name": "Security",
-          "description": "JWT (JSON Web Tokens), storing HttpOnly Cookies on the server, authorization and access control"
-        },
-        {
-          "name": "Cloudinary",
-          "description": "Image uploading and optimization with Cloudinary integration"
-        },
-        {
-          "name": "Deployment",
-          "description": "Frontend hosted on Vercel and backend on Heroku with continuous deployment from Github"
-        }
-      ],
-      "features": [
-        {
-          "name": "User Registration and Authorization",
-          "description": "Users can register to post events. Pages are protected so only authenticated users have access to their own content"
-        },
-        {
-          "name": "User",
-          "description": "Users can visit the dashboard page to create, edit or delete their events"
-        },
-        {
-          "name": "Map",
-          "description": "Automatic map generation with marked location of the event that is visible on the website"
-        },
-        {
-          "name": "SEO",
-          "description": "Dynamic meta tags based on dynamic pages and content"
-        }
-      ],
-      "todos": [
-        {
-          "name": "Comment and rate events",
-          "description": "Need to implement an ability to comment and rate events by users"
-        },
-        {
-          "name": "Reset Password",
-          "description": "Need to implement ability to reset forgotten password"
-        },
-        {
-          "name": "Email notifications",
-          "description": "Users will receive an email with specific information when they register, reset password"
-        },
-        {
-          "name": "Chat Room",
-          "description": "Where visitors can talk and comment about events"
-        }
-      ]
-    },
-    {
-      "id": "pp3",
-      "title": "Weather App",
-      "category": "Javascript",
-      "isFeatured": false,
-      "image": [
-        "/images/project-3/project-3-1.JPG",
-        "/images/project-3/project-3-2.JPG",
-        "/images/project-3/project-3-3.JPG",
-        "/images/project-3/project-3-4.JPG",
-        "/images/project-3/project-3-5.JPG",
-        "/images/project-3/project-3-6.JPG"
-      ],
+			"description": "Fullstack events website. For backend is used Strapi CMS. Users can register and post events",
+			"technologies": [
+				{
+					"name": "ReactJS",
+					"description": "Reusable components, hooks and more"
+				},
+				{
+					"name": "NextJS",
+					"description": "Setting up the project, navigating between pages and data fetching,  dynamic routing, image optimization, pagination"
+				},
+				{
+					"name": "Strapi CMS",
+					"description": "Open source headless CMS for admin to manage users and events"
+				},
+				{
+					"name": "Security",
+					"description": "JWT (JSON Web Tokens), storing HttpOnly Cookies on the server, authorization and access control"
+				},
+				{
+					"name": "Cloudinary",
+					"description": "Image uploading and optimization with Cloudinary integration"
+				},
+				{
+					"name": "Deployment",
+					"description": "Frontend hosted on Vercel and backend on Heroku with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "User Registration and Authorization",
+					"description": "Users can register to post events. Pages are protected so only authenticated users have access to their own content"
+				},
+				{
+					"name": "User",
+					"description": "Users can visit the dashboard page to create, edit or delete their events"
+				},
+				{
+					"name": "Map",
+					"description": "Automatic map generation with marked location of the event that is visible on the website"
+				},
+				{
+					"name": "SEO",
+					"description": "Dynamic meta tags based on dynamic pages and content"
+				}
+			],
+			"todos": [
+				{
+					"name": "Comment and rate events",
+					"description": "Need to implement an ability to comment and rate events by users"
+				},
+				{
+					"name": "Reset Password",
+					"description": "Need to implement ability to reset forgotten password"
+				},
+				{
+					"name": "Email notifications",
+					"description": "Users will receive an email with specific information when they register, reset password"
+				},
+				{
+					"name": "Chat Room",
+					"description": "Where visitors can talk and comment about events"
+				}
+			]
+		},
+		{
+			"id": "pp3",
+			"title": "Weather App",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-3/project-3-1.JPG",
+				"/images/project-3/project-3-2.JPG",
+				"/images/project-3/project-3-3.JPG",
+				"/images/project-3/project-3-4.JPG",
+				"/images/project-3/project-3-5.JPG",
+				"/images/project-3/project-3-6.JPG"
+			],
 
-      "languages": ["Html", "CSS", "Javascript"],
-      "links": [
-        {
-          "name": "github",
-          "link": "https://github.com/kremsnita420/animated-weather-pureJS-bootstrap"
-        },
-        { "name": "website", "link": "https://weathe-app-pure-js.netlify.app/" }
-      ],
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/animated-weather-pureJS-bootstrap"
+				},
+				{ "name": "website", "link": "https://weathe-app-pure-js.netlify.app/" }
+			],
 
-      "description": "Weather App that shows hourly and daily forecasts based on devices geolocation. The background is animated(gif) and changes based on weather condition",
-      "technologies": [
-        {
-          "name": "Openweather API",
-          "description": "For fetching weather information with API calls"
-        },
-        {
-          "name": "Javascript",
-          "description": "For interactivity and DOM manipulation"
-        },
-        {
-          "name": "Styling",
-          "description": "For styling is used Bootstrap Material Design"
-        },
-        {
-          "name": "Deployment",
-          "description": "Hosted on Netlify with continuous deployment from Github"
-        }
-      ],
-      "features": [
-        {
-          "name": "Weather Information",
-          "description": "You can check the weather forecast for your device's current location. There is an hourly and daily forecast."
-        }
-      ],
-      "todos": [
-        {
-          "name": "Search",
-          "description": "Search bar for looking up other locations"
-        },
-        {
-          "name": "Local storage",
-          "description": "Save favourite locations to local storage"
-        }
-      ]
-    },
-    {
-      "id": "pp4",
-      "title": "Markdown Blog",
-      "category": "React",
-      "isFeatured": true,
-      "image": [
-        "/images/project-4/project-4-1.JPG",
-        "/images/project-4/project-4-2.JPG",
-        "/images/project-4/project-4-3.JPG",
-        "/images/project-4/project-4-4.JPG",
-        "/images/project-4/project-4-5.JPG",
-        "/images/project-4/project-4-6.JPG"
-      ],
+			"description": "Weather App that shows hourly and daily forecasts based on devices geolocation. The background is animated(gif) and changes based on weather condition",
+			"technologies": [
+				{
+					"name": "Openweather API",
+					"description": "For fetching weather information with API calls"
+				},
+				{
+					"name": "Javascript",
+					"description": "For interactivity and DOM manipulation"
+				},
+				{
+					"name": "Styling",
+					"description": "For styling is used Bootstrap Material Design"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Netlify with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Weather Information",
+					"description": "You can check the weather forecast for your device's current location. There is an hourly and daily forecast."
+				}
+			],
+			"todos": [
+				{
+					"name": "Search",
+					"description": "Search bar for looking up other locations"
+				},
+				{
+					"name": "Local storage",
+					"description": "Save favourite locations to local storage"
+				}
+			]
+		},
+		{
+			"id": "pp4",
+			"title": "Markdown Blog",
+			"category": "React",
+			"isFeatured": true,
+			"image": [
+				"/images/project-4/project-4-1.JPG",
+				"/images/project-4/project-4-2.JPG",
+				"/images/project-4/project-4-3.JPG",
+				"/images/project-4/project-4-4.JPG",
+				"/images/project-4/project-4-5.JPG",
+				"/images/project-4/project-4-6.JPG"
+			],
 
-      "languages": ["Html", "CSS", "Javascript"],
-      "links": [
-        {
-          "name": "github",
-          "link": "https://github.com/kremsnita420/nextjs-markdown-blog"
-        },
-        { "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
-      ],
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/nextjs-markdown-blog"
+				},
+				{ "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
+			],
 
-      "description": "Static blog with pagination, search & categories using Markdown",
-      "technologies": [
-        {
-          "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
-        },
-        {
-          "name": "ReactJS",
-          "description": "Reusable components, hooks and more"
-        },
-        {
-          "name": "Marked",
-          "description": "Markdown compiler for parsing markdown text"
-        },
-        {
-          "name": "Gray matter",
-          "description": "Front matter parsing from a string or a file"
-        },
-        {
-          "name": "Husky",
-          "description": "Github hook to cache made changes when blog content is updated "
-        },
-        {
-          "name": "TailwindCSS",
-          "description": "Styling and responsive layout"
-        },
-        {
-          "name": "Deployment",
-          "description": "Hosted on Vercel with continuous deployment from Github"
-        }
-      ],
-      "features": [
-        {
-          "name": "Post blogs",
-          "description": "Create blog posts with markdown. Visitors can filter by category or use the search bar to find blog posts"
-        }
-      ],
-      "todos": [
-        {
-          "name": "No update",
-          "description": "I don't plan to update this website"
-        }
-      ]
-    },
-    {
-      "id": "pp5",
-      "title": "Rick & Morty API",
-      "category": "React",
-      "isFeatured": false,
-      "image": [
-        "/images/project-5/project-5-1.JPG",
-        "/images/project-5/project-5-2.JPG",
-        "/images/project-5/project-5-3.JPG",
-        "/images/project-5/project-5-4.JPG"
-      ],
+			"description": "Static blog with pagination, search & categories using Markdown",
+			"technologies": [
+				{
+					"name": "NextJS",
+					"description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
+				},
+				{
+					"name": "ReactJS",
+					"description": "Reusable components, hooks and more"
+				},
+				{
+					"name": "Marked",
+					"description": "Markdown compiler for parsing markdown text"
+				},
+				{
+					"name": "Gray matter",
+					"description": "Front matter parsing from a string or a file"
+				},
+				{
+					"name": "Husky",
+					"description": "Github hook to cache made changes when blog content is updated "
+				},
+				{
+					"name": "TailwindCSS",
+					"description": "Styling and responsive layout"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Post blogs",
+					"description": "Create blog posts with markdown. Visitors can filter by category or use the search bar to find blog posts"
+				}
+			],
+			"todos": [
+				{
+					"name": "No update",
+					"description": "I don't plan to update this website"
+				}
+			]
+		},
+		{
+			"id": "pp5",
+			"title": "Rick & Morty API",
+			"category": "React",
+			"isFeatured": false,
+			"image": [
+				"/images/project-5/project-5-1.JPG",
+				"/images/project-5/project-5-2.JPG",
+				"/images/project-5/project-5-3.JPG",
+				"/images/project-5/project-5-4.JPG"
+			],
 
-      "languages": ["Html", "CSS", "Javascript"],
-      "links": [
-        {
-          "name": "github",
-          "link": "https://github.com/kremsnita420/nextjs-markdown-blog"
-        },
-        { "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
-      ],
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/nextjs-markdown-blog"
+				},
+				{ "name": "website", "link": "https://nextjsmarkdownblog.vercel.app/" }
+			],
 
-      "description": "Simple demonstration of API fetching and NextJS server-side rendering with dynamic pages nad routing",
-      "technologies": [
-        {
-          "name": "NextJS",
-          "description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
-        },
-        {
-          "name": "ReactJS",
-          "description": "Reusable components, hooks and more"
-        },
+			"description": "Simple demonstration of API fetching and NextJS server-side rendering with dynamic pages nad routing",
+			"technologies": [
+				{
+					"name": "NextJS",
+					"description": "Setting up project, navigating between pages and data fetching, dynamic routing, image optimization, SSR"
+				},
+				{
+					"name": "ReactJS",
+					"description": "Reusable components, hooks and more"
+				},
 
-        {
-          "name": "CSS",
-          "description": "CSS module scoped styles"
-        },
-        {
-          "name": "Deployment",
-          "description": "Hosted on Vercel with continuous deployment from Github"
-        }
-      ],
-      "features": [
-        {
-          "name": "API call",
-          "description": "Fetch Rick and Morty's data from API and display and display it on page "
-        },
-        {
-          "name": "NextJS dynamic page and routing",
-          "description": "Pages are rendered based on provided data from API"
-        }
-      ],
-      "todos": [
-        {
-          "name": "No update",
-          "description": "I don't plan to update this website"
-        }
-      ]
-    }
-  ]
+				{
+					"name": "CSS",
+					"description": "CSS module scoped styles"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "API call",
+					"description": "Fetch Rick and Morty's data from API and display and display it on page "
+				},
+				{
+					"name": "NextJS dynamic page and routing",
+					"description": "Pages are rendered based on provided data from API"
+				}
+			],
+			"todos": [
+				{
+					"name": "No update",
+					"description": "I don't plan to update this website"
+				}
+			]
+		}
+	]
 }

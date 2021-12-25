@@ -51,7 +51,7 @@ export default function AboutPage() {
 				</div>
 
 				<div className='flex text-center flex-col items-center justify-between md:pl-10 lg:w-2/3 xl:w-1/2'>
-					<h2 className='font-heading1 w-full font-black text-gray-800 dark:text-gray-200 text-2xl md:text-3xl mb-5 relative'>
+					<h2 className='font-heading1 w-full font-black text-gray-800 dark:text-gray-200 md:text-3xl mb-5 relative'>
 						{/* Hello, my name Is */}
 						{t.about_text1} <br />
 						<span className='text-6xl font-black span-safet'>Safet</span>,
@@ -65,7 +65,7 @@ export default function AboutPage() {
 						{t.about_text3}
 					</h2>
 
-					<p className='mb-5 text-xl md:text-2xl relative'>
+					<p className='mb-5 text-xl relative'>
 						{/* In January 2021 I have quit my job to learn */}
 						{t.about_text4}{' '}
 						<span className='realistic-marker-highlight rotate-[3deg] inline-block'>
@@ -102,7 +102,7 @@ export default function AboutPage() {
 						{t.about_text12}
 					</p>
 
-					<p className='mb-5  text-xl md:text-2xl'>
+					<p className='mb-5  text-xl'>
 						{/* I love building apps that are */}
 						{t.about_text13}{' '}
 						<span className='realistic-marker-highlight inline-block rotate-[3deg]'>
@@ -133,7 +133,7 @@ export default function AboutPage() {
 				</div>
 			</div>
 
-			<h2 className='font-heading1 relative text-xl md:text-2xl xl:text-3xl font-black my-5'>
+			<h2 className='font-heading1 relative text-xl xl:text-3xl font-black my-5'>
 				{/* I'm looking for a position: */}
 				{t.about_text17}
 			</h2>
@@ -168,7 +168,7 @@ export default function AboutPage() {
 			{/* Courses & Certifications */}
 			<SecondaryTitle title={t.about_title3} />
 			<div className='flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400'>
-				<p className='text-xl md:text-2xl py-5 mb-10 md:px-2 w-full text-center sketch-highlight'>
+				<p className='text-xl mb-10 p-5 w-full text-center sketch-highlight'>
 					{/* Here is a list of completed courses and certifications so fa
         If you wish to know more about a specific course click the card 
         and it will take you to the course provider's website */}

@@ -6,7 +6,7 @@
 /* typography */
 @layer components {
     p {
-        @apply text-gray-600 dark:text-gray-300
+        @apply text-gray-600 dark:text-gray-300 md:text-xl lg:text-2xl
     }
 }
 
@@ -38,7 +38,7 @@ html {
 .card {
     position: relative;
     width: 325px;
-    height: 300px;
+    height: 325px;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
@@ -332,8 +332,8 @@ img {
   .sketch-highlight:before{
     content:"";
     z-index:1;
-    left:-0;
-    top:-0.2em;
+    left:0;
+    top:0;
     border-width:2px;
     border-style: solid;
     @apply border-4 border-red-400 dark:border-green-400 ;
@@ -349,7 +349,7 @@ img {
     content:"";
     z-index:1;
     left:0;
-    top:-0.1em;
+    top:0;
     border-width:2px;
     border-style:solid;
     @apply border-4 border-red-400  dark:border-green-400;

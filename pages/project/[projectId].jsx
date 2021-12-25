@@ -66,16 +66,16 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 				))}
 			</div>
 
-			<div className='flex flex-col items-center justify-center px-5 lg:justify-around text-xl'>
+			<div className='flex flex-col items-center justify-centerlg:justify-around'>
 				{/* repository and live website */}
 				<div className='flex flex-col items-start'>
 					<div className='flex flex-col justify-center text-center items-center w-full mt-10'>
 						{/* Github & Website */}
 						<SecondaryTitle title={t.single_project_title1} />
-						<p className=' mb-10'>
+						<p className='mb-10'>
 							{/* You can see website */}
 							{t.single_project_text1}{' '}
-							<span className='circle-sketch-highlight inline-block'>
+							<span className='circle-sketch-highlight'>
 								{/* in action */}
 								{t.single_project_text2}
 							</span>{' '}
@@ -84,7 +84,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 						</p>
 					</div>
 
-					<div className='flex items-center justify-center mx-auto '>
+					<div className='flex items-center justify-center mx-auto w-full'>
 						{filteredProject.links.map((l, i) => (
 							<button
 								key={i}
@@ -98,7 +98,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 				</div>
 
 				{/* project description */}
-				<div className='flex-col items-center w-[80%] sm:w-full text-center justify-center '>
+				<div className='flex-col items-center w-full text-center justify-center'>
 					<div className='flex flex-col justify-center items-center w-full mt-10'>
 						{/* Description */}
 						<SecondaryTitle title={t.single_project_title2} />
@@ -114,7 +114,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 										className=' py-2 text-center glassmorph mb-5 px-2'
 										key={i}>
 										<h4 className='font-heading1 font-black mb-2'>
-											<span className='circle-sketch-highlight p-1 inline-block'>
+											<span className='circle-sketch-highlight inline-block md:text-2xl p-1'>
 												{i + 1}. {tech.name}
 											</span>
 										</h4>
@@ -130,11 +130,11 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 							<ul className=' py-2 glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200'>
 								{filteredProject.features.map((feature, i) => (
 									<li className=' py-2 text-center' key={i}>
-										<h5 className='font-heading1 font-black mb-2 '>
-											<span className='sketch-highlight p-2 inline-block'>
+										<h4 className='font-heading1 md:text-2xl font-black mb-5 '>
+											<span className='sketch-highlight p-3'>
 												{i + 1}. {feature.name}
 											</span>
-										</h5>
+										</h4>
 										<p className='pb-2'>{feature.description}</p>
 									</li>
 								))}
@@ -150,7 +150,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 					<p className='text-lg md:text-xl mb-10'>
 						{/* Here is a */}
 						{t.single_project_text4}{' '}
-						<span className='sketch-highlight px-2 py-[2px] inline-block rotate-3'>
+						<span className='sketch-highlight px-2 py-[2px] rotate-3'>
 							{/* list */}
 							{t.single_project_text5}
 						</span>{' '}
@@ -161,7 +161,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 					<ul className='pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-start dark:text-gray-200'>
 						{filteredProject.todos.map((todo, i) => (
 							<li className='md:ml-5 py-2 text-center' key={i}>
-								<h4 className='realistic-marker-highlight font-heading1 inline-block rotate-2 font-black mb-2'>
+								<h4 className='realistic-marker-highlight font-heading1 rotate-2 font-black mb-2'>
 									{i + 1}. {todo.name}
 								</h4>
 								<p className='pb-2'>{todo.description}</p>
