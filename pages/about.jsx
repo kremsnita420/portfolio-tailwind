@@ -51,11 +51,14 @@ export default function AboutPage() {
 				</div>
 
 				<div className='flex text-center flex-col items-center justify-between md:pl-10 lg:w-2/3 xl:w-1/2'>
-					<h2 className='font-heading1 w-full font-black text-gray-800 dark:text-gray-200 md:text-3xl mb-5 relative'>
+					<h2 className='font-heading1 w-full font-black text-gray-800 dark:text-gray-200 text-2xl md:text-3xl mb-5 relative'>
 						{/* Hello, my name Is */}
 						{t.about_text1} <br />
-						<span className='text-6xl font-black span-safet'>Safet</span>,
-						<span className='text-6xl font-black span-developer'>
+						<span className='text-5xl font-black span-safet inline-block mt-5'>
+							Safet
+						</span>
+						,
+						<span className='text-5xl font-black span-developer block leading-10'>
 							<br />
 							{/* Web Developer */}
 							{t.about_text2}
