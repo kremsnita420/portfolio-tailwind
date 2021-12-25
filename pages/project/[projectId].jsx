@@ -75,7 +75,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 						<p className='mb-10'>
 							{/* You can see website */}
 							{t.single_project_text1}{' '}
-							<span className='circle-sketch-highlight'>
+							<span className='circle-sketch-highlight inline-block'>
 								{/* in action */}
 								{t.single_project_text2}
 							</span>{' '}
@@ -131,7 +131,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 								{filteredProject.features.map((feature, i) => (
 									<li className=' py-2 text-center' key={i}>
 										<h4 className='font-heading1 md:text-2xl font-black mb-5 '>
-											<span className='sketch-highlight p-3'>
+											<span className='sketch-highlight inline-block p-3'>
 												{i + 1}. {feature.name}
 											</span>
 										</h4>
@@ -150,7 +150,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 					<p className='text-lg md:text-xl mb-10'>
 						{/* Here is a */}
 						{t.single_project_text4}{' '}
-						<span className='sketch-highlight px-2 py-[2px] rotate-3'>
+						<span className='sketch-highlight inline-block px-2 py-[2px] rotate-3'>
 							{/* list */}
 							{t.single_project_text5}
 						</span>{' '}
@@ -158,10 +158,10 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 						{t.single_project_text6}
 					</p>
 
-					<ul className='pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-start dark:text-gray-200'>
+					<ul className='pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-center dark:text-gray-200'>
 						{filteredProject.todos.map((todo, i) => (
 							<li className='md:ml-5 py-2 text-center' key={i}>
-								<h4 className='realistic-marker-highlight font-heading1 rotate-2 font-black mb-2'>
+								<h4 className='realistic-marker-highlight inline-block font-heading1 rotate-2 font-black mb-2'>
 									{i + 1}. {todo.name}
 								</h4>
 								<p className='pb-2'>{todo.description}</p>

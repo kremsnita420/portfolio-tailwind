@@ -1,13 +1,23 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
 import ScrollToButton from './ScrollTopButton'
 
 export default function Layout({ title, description, children }) {
+	const router = useRouter()
+	const { locale } = router
+
 	return (
 		<div>
 			<Head>
-				<title>{title ? `${title} - My Portfolio` : 'My Portfolio'}</title>
+				<title>
+					{title
+						? `${title} - ${
+								locale === 'en' ? 'My Portfolio' : 'Moja spletna stran'
+						  }`
+						: 'My Portfolio'}
+				</title>
 				{description && <meta name='description' content={description} />}
 				<meta name='viewport' content='width=device-width, user-scalable=no' />
 				<meta charSet='utf-8' />

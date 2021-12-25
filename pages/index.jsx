@@ -23,7 +23,9 @@ export default function IndexPage({ projectsEn, projectsSl }) {
 	const projects = locale === 'en' ? projectsEn : projectsSl
 
 	return (
-		<Layout title='Home Page' description='Home Page'>
+		<Layout
+			title={locale === 'en' ? 'Home Page' : 'Domača stran'}
+			description={locale === 'en' ? 'Home Page' : 'Domača stran'}>
 			{/* hero section */}
 			<div className='relative flex items-start w-full justify-center'>
 				<HeroText />

@@ -23,17 +23,15 @@ export default function AboutPage() {
 	const { locale } = router
 	const t = locale === 'en' ? en : sl
 
-	const [numPages, setNumPages] = useState(null)
-	const [pageNumber, setPageNumber] = useState(1)
-
-	function onDocumentLoadSuccess({ numPages }) {
-		setNumPages(numPages)
-	}
-
 	return (
-		<Layout>
+		<Layout
+			title={locale === 'en' ? 'About Me' : 'O meni'}
+			description={locale === 'en' ? 'About Me' : 'O meni'}>
 			{/* About Me */}
-			<HeadTitle title={t.about_title1} />
+			<HeadTitle
+				title={locale === 'en' ? 'About Me' : 'O meni'}
+				description={locale === 'en' ? 'About Me' : 'O meni'}
+			/>
 
 			<div className='flex flex-col lg:flex-row items-center justify-start text-gray-400 dark:text-gray-800'>
 				<div className='flex items-center  justify-center pb-10'>
@@ -171,7 +169,7 @@ export default function AboutPage() {
 			{/* Courses & Certifications */}
 			<SecondaryTitle title={t.about_title3} />
 			<div className='flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400'>
-				<p className='text-xl mb-10 p-5 w-full text-center sketch-highlight'>
+				<p className='text-xl mb-10 p-5 w-full text-center sketch-highlight inline-block'>
 					{/* Here is a list of completed courses and certifications so fa
         If you wish to know more about a specific course click the card 
         and it will take you to the course provider's website */}

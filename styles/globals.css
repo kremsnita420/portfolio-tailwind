@@ -6,7 +6,7 @@
 /* typography */
 @layer components {
     p {
-        @apply text-gray-600 dark:text-gray-300 md:text-xl lg:text-2xl
+        @apply text-gray-600 dark:text-gray-300 text-lg md:text-xl lg:text-2xl
     }
 }
 
