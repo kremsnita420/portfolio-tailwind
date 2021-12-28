@@ -1,7 +1,14 @@
 //icons
 import { useRouter } from 'next/router'
-import { AiFillHtml5 } from 'react-icons/ai'
-import { DiCss3, DiMongodb, DiGit, DiNpm, DiReact } from 'react-icons/di'
+import { AiFillHtml5, AiOutlineTablet } from 'react-icons/ai'
+import {
+	DiCss3,
+	DiMongodb,
+	DiGit,
+	DiNpm,
+	DiReact,
+	DiResponsive,
+} from 'react-icons/di'
 import {
 	IoLogoJavascript,
 	IoLogoNodejs,
@@ -71,6 +78,12 @@ export default function Skills() {
 							<SiSass />
 						</span>
 						Sass
+					</li>
+					<li className='flex items-center justify-center mb-2'>
+						<span className='pr-2  text-3xl'>
+							<AiOutlineTablet />
+						</span>
+						Responsive
 					</li>
 				</ul>
 			</div>
