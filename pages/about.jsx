@@ -119,9 +119,7 @@ export default function AboutPage() {
 					</p>
 
 					<div className='my-10'>
-						<a
-							target='_blank'
-							href='https://drive.google.com/file/d/1bZW3APymGqEtAAC5W3n6TtyZyBX3vX8H/view?usp=sharing'>
+						<a target='_blank' download href='Safet-Duranovic-CV.pdf'>
 							<CtaButton
 								title={locale === 'en' ? 'Resume' : 'Življenjepis'}></CtaButton>
 						</a>

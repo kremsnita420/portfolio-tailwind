@@ -29,6 +29,7 @@ import {
 	SiGooglechrome,
 	SiSass,
 	SiFigma,
+	SiStrapi,
 } from 'react-icons/si'
 
 //translation
@@ -127,9 +128,9 @@ export default function Skills() {
 					</li>
 					<li className='flex items-center justify-center mb-2'>
 						<span className='pr-2  text-3xl'>
-							<SiFirebase />
+							<SiStrapi />
 						</span>
-						Firebase
+						Strapi CMS
 					</li>
 					<li className='flex items-center justify-center'>
 						<span className='pr-2  text-3xl'>
