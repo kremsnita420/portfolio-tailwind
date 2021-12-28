@@ -82,6 +82,12 @@ export default function Skills() {
 					</li>
 					<li className='flex items-center justify-center mb-2'>
 						<span className='pr-2  text-3xl'>
+							<SiStyledcomponents />
+						</span>
+						Styled
+					</li>
+					<li className='flex items-center justify-center mb-2'>
+						<span className='pr-2  text-3xl'>
 							<AiOutlineTablet />
 						</span>
 						Responsive
@@ -159,12 +165,6 @@ export default function Skills() {
 							<SiTailwindcss />
 						</span>
 						TailwindCSS
-					</li>
-					<li className='flex items-center justify-center mb-2'>
-						<span className='pr-2  text-3xl'>
-							<SiStyledcomponents />
-						</span>
-						Styled
 					</li>
 					<li className='flex items-center justify-center mb-2'>
 						<span className='pr-2  text-3xl'>
