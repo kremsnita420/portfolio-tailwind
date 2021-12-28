@@ -6,17 +6,13 @@ import Layout from '../components/layout/Layout'
 import SecondaryTitle from '../components/layout/typography/SecondaryTitle'
 import Course from '../components/course/Course'
 import Skills from '../components/skills/Skills'
-import ButtonStyled from '../components/layout/ButtonStyled'
 //data
 import { courses } from '../data/data'
 //translation
 import en from '../locales/en'
 import sl from '../locales/sl'
 
-import { Document, Page } from 'react-pdf'
-import { useState } from 'react'
 import CtaButton from '../components/layout/CtaButton'
-import NavigationItem from '../components/header/navigation/NavigationItem'
 
 export default function AboutPage() {
 	const router = useRouter()

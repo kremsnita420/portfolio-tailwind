@@ -525,6 +525,74 @@
 					"description": "Nastavi poljubno barvo listka"
 				}
 			]
+		},
+		{
+			"id": "pp9",
+			"title": "Osebna spletna stran",
+			"category": "React",
+			"isFeatured": true,
+			"image": [
+				"/images/project-9/project-9-1.JPG",
+				"/images/project-9/project-9-2.JPG",
+				"/images/project-9/project-9-3.JPG",
+				"/images/project-1/project-1-4.JPG",
+
+				"/images/project-9/project-9-6.JPG",
+				"/images/project-9/project-9-7.JPG",
+				"/images/project-9/project-9-8.JPG",
+				"/images/project-9/project-9-9.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/portfolio-tailwind"
+				}
+			],
+			"description": "Osebna spletna stran, kjer povem nekaj o sebi in pokažem svoje projekte. Je večjezična in ima temni način",
+			"technologies": [
+				{
+					"name": "ReactJS",
+					"description": "Komponente za večkratno uporabo, kljuke in drugo"
+				},
+				{
+					"name": "NextJS",
+					"description": "Nastavitev projekta, navigacija med stranmi in pridobivanje podatkov, dinamično usmerjanje, optimizacija slike, SSR "
+				},
+				{
+					"name": "Tailwind CSS",
+					"description": "For building a responsive website using a custom theme, animation and more"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Dark Mode",
+					"description": "Light and Dark Mode"
+				},
+				{
+					"name": "Večjezična",
+					"description": "Stran je v angleškem jeziku in prevedena v slovenščino"
+				},
+				{
+					"name": "Kontaktni obrazec",
+					"description": "Kontaktni obrazec z EmailJS in preprostim preverjanjem na strani odjemalca"
+				},
+				{
+					"name": "SEO",
+					"description": "Dinamične meta oznake, ki temeljijo na dinamičnih straneh in vsebini"
+				}
+			],
+			"todos": [
+				{
+					"name": "Brez posodobitve",
+					"description": "Ne nameravam posodabljati te spletne strani"
+				}
+			]
 		}
 	]
 }

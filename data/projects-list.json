@@ -527,6 +527,74 @@
 					"description": "Set color of background"
 				}
 			]
+		},
+		{
+			"id": "pp9",
+			"title": "Personal Website",
+			"category": "React",
+			"isFeatured": true,
+			"image": [
+				"/images/project-9/project-9-1.JPG",
+				"/images/project-9/project-9-2.JPG",
+				"/images/project-9/project-9-3.JPG",
+				"/images/project-1/project-1-4.JPG",
+
+				"/images/project-9/project-9-6.JPG",
+				"/images/project-9/project-9-7.JPG",
+				"/images/project-9/project-9-8.JPG",
+				"/images/project-9/project-9-9.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/portfolio-tailwind"
+				}
+			],
+			"description": "A personal website where I say something about myself and show my projects. It's multilingual and it has a dark mode",
+			"technologies": [
+				{
+					"name": "ReactJS",
+					"description": "Reusable components, hooks and more"
+				},
+				{
+					"name": "NextJS",
+					"description": "Setting up the project, navigating between pages and data fetching, translation based on locale dynamic routing, image optimization, SSR and more "
+				},
+				{
+					"name": "Tailwind CSS",
+					"description": "For building a responsive website using a custom theme, animation and more"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Vercel with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Dark Mode",
+					"description": "Light and Dark Mode"
+				},
+				{
+					"name": "Multi Lingual",
+					"description": "Website is in English and translated to Slovenian"
+				},
+				{
+					"name": "Contact Form",
+					"description": "Contact form with EmailJS and simple client side validation"
+				},
+				{
+					"name": "SEO",
+					"description": "Dynamic meta tags based on dynamic pages and content"
+				}
+			],
+			"todos": [
+				{
+					"name": "No update",
+					"description": "I don't plan to update this website for now"
+				}
+			]
 		}
 	]
 }

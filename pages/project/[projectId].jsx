@@ -243,6 +243,8 @@ export function getStaticPaths() {
 			{ params: { projectId: 'pp7' }, locale: 'sl' },
 			{ params: { projectId: 'pp8' }, locale: 'en' },
 			{ params: { projectId: 'pp8' }, locale: 'sl' },
+			{ params: { projectId: 'pp9' }, locale: 'en' },
+			{ params: { projectId: 'pp9' }, locale: 'sl' },
 		],
 		fallback: false,
 	}
