@@ -365,6 +365,168 @@
 					"description": "I don't plan to update this website"
 				}
 			]
+		},
+		{
+			"id": "pp6",
+			"title": "Javascript Dice Game",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-6/project-6-1.JPG",
+				"/images/project-6/project-6-2.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/dice-game-js"
+				},
+				{ "name": "website", "link": "https://dice-gamee-js.netlify.app/" }
+			],
+
+			"description": "Simple javascript dice game where two players take turns and roll dice. Who gets 20 points first wins",
+			"technologies": [
+				{
+					"name": "Javascript",
+					"description": "For interactivity and DOM manipulation"
+				},
+				{
+					"name": "Styling",
+					"description": "For styling is used plain css"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Netlify with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Dice game",
+					"description": "Take turns and roll dice. Who gets 20 points first wins"
+				}
+			],
+			"todos": [
+				{
+					"name": "No update",
+					"description": "I don't plan to update this website"
+				}
+			]
+		},
+		{
+			"id": "pp7",
+			"title": "Javascript Pomodoro Timer",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-7/project-7-1.JPG",
+				"/images/project-7/project-7-2.JPG",
+				"/images/project-7/project-7-3.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/pomodoro-js"
+				},
+				{ "name": "website", "link": "https://pomodoro-timerr-js.netlify.app/" }
+			],
+
+			"description": "Javascript Pomodoro Timer with custom timers and breaks",
+			"technologies": [
+				{
+					"name": "Javascript",
+					"description": "For interactivity and DOM manipulation"
+				},
+				{
+					"name": "Local Storage",
+					"description": "Custom length for session and break is stored in local storage"
+				},
+				{
+					"name": "Styling",
+					"description": "For styling is used plain css"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Netlify with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Pomodoro Timer",
+					"description": "Users can set custom timer lengths for sessions and breaks"
+				},
+				{
+					"name": "End Warning",
+					"description": "10 seconds before the end progress bar turns red and starts to pulse. When the counter reaches zero the sound is played"
+				}
+			],
+			"todos": [
+				{
+					"name": "History",
+					"description": "List of completed past sessions"
+				},
+				{
+					"name": "Statistic",
+					"description": "Statistic on daily, weekly, monthly, yearly base with charts"
+				}
+			]
+		},
+		{
+			"id": "pp8",
+			"title": "Javascript Sticky Notes",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-8/project-8-1.JPG",
+				"/images/project-8/project-8-2.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/sticky-notes-js"
+				},
+				{ "name": "website", "link": "https://sticky-notez-js.netlify.app/" }
+			],
+
+			"description": "Javascript Sticky Notes that are saved to browser's local storage",
+			"technologies": [
+				{
+					"name": "Javascript",
+					"description": "For interactivity and DOM manipulation"
+				},
+				{
+					"name": "Local Storage",
+					"description": "Notes are saved to browser's local storage"
+				},
+				{
+					"name": "Styling",
+					"description": "For styling is used plain css"
+				},
+				{
+					"name": "Deployment",
+					"description": "Hosted on Netlify with continuous deployment from Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Sticky Notes",
+					"description": "Users can create sticky note"
+				}
+			],
+			"todos": [
+				{
+					"name": "Titles",
+					"description": "Add title to sticky notes"
+				},
+				{
+					"name": "Colors",
+					"description": "Set color of background"
+				}
+			]
 		}
 	]
 }

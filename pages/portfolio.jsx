@@ -62,7 +62,7 @@ export default function PortfolioPage({ projectsEn, projectsSl }) {
 				))}
 			</div>
 
-			<div className='grid md:grid-cols-2 xl:grid-cols-4 my-20 gap-10 justify-center items-center mx-auto '>
+			<div className='grid md:grid-cols-2 xl:grid-cols-4 my-20 gap-10 justify-center items-center mx-auto animate:rotate-[30deg] '>
 				{projects
 					.filter((filterProject) =>
 						filterProject.category.includes(projectCategory)

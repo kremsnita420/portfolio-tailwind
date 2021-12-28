@@ -29,7 +29,7 @@ export default function HeroText() {
 					{t.text4}
 				</span>
 			</h2>
-			<h1 className='text-center '>
+			<h1 className='text-center animate-moveRight3'>
 				<span
 					className='mb-14 text-8xl md:text-[12rem] xl:text-[15rem]
 					text-transparent bg-clip-text animate-moveRight4 bg-gradient-to-b from-blue-500 to-pink-700 dark:from-blue-400 dark:to-green-500 font-heading1 font-black'>

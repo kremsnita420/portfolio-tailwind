@@ -126,9 +126,7 @@ export default function AboutPage() {
 						<a
 							target='_blank'
 							href='https://drive.google.com/file/d/1bZW3APymGqEtAAC5W3n6TtyZyBX3vX8H/view?usp=sharing'>
-							<CtaButton title='Resume'>
-								<span className='flex items-center justify-center'>Resume</span>
-							</CtaButton>
+							<CtaButton title={locale === 'en' ? 'Resume' : 'CV'}></CtaButton>
 						</a>
 					</div>
 				</div>

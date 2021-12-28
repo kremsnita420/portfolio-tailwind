@@ -130,7 +130,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 							<ul className=' py-2 glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200'>
 								{filteredProject.features.map((feature, i) => (
 									<li className=' py-2 text-center' key={i}>
-										<h4 className='font-heading1 md:text-2xl font-black mb-5 '>
+										<h4 className='font-heading1 text-xl md:text-2xl font-black mb-5 '>
 											<span className='sketch-highlight inline-block p-3'>
 												{i + 1}. {feature.name}
 											</span>
@@ -147,10 +147,10 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 						<SecondaryTitle title={t.single_project_title5} />
 					</div>
 
-					<p className='text-lg md:text-xl mb-10'>
+					<p className=' mb-10'>
 						{/* Here is a */}
 						{t.single_project_text4}{' '}
-						<span className='sketch-highlight inline-block px-2 py-[2px] rotate-3'>
+						<span className='sketch-highlight inline-block text-xl md:text-2xl px-2 py-[2px] rotate-3'>
 							{/* list */}
 							{t.single_project_text5}
 						</span>{' '}
@@ -160,11 +160,11 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 
 					<ul className='pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-center dark:text-gray-200'>
 						{filteredProject.todos.map((todo, i) => (
-							<li className='md:ml-5 py-2 text-center' key={i}>
-								<h4 className='realistic-marker-highlight inline-block font-heading1 rotate-2 font-black mb-2'>
+							<li className='md:pl-5 py-2 text-center' key={i}>
+								<h4 className='realistic-marker-highlight inline-block font-heading1 text-xl md:text-2xl rotate-2 font-black mb-2'>
 									{i + 1}. {todo.name}
 								</h4>
-								<p className='pb-2'>{todo.description}</p>
+								<p className='pb-2 md:w-[90%]'>{todo.description}</p>
 							</li>
 						))}
 					</ul>
@@ -237,6 +237,12 @@ export function getStaticPaths() {
 			{ params: { projectId: 'pp4' }, locale: 'sl' },
 			{ params: { projectId: 'pp5' }, locale: 'en' },
 			{ params: { projectId: 'pp5' }, locale: 'sl' },
+			{ params: { projectId: 'pp6' }, locale: 'en' },
+			{ params: { projectId: 'pp6' }, locale: 'sl' },
+			{ params: { projectId: 'pp7' }, locale: 'en' },
+			{ params: { projectId: 'pp7' }, locale: 'sl' },
+			{ params: { projectId: 'pp8' }, locale: 'en' },
+			{ params: { projectId: 'pp8' }, locale: 'sl' },
 		],
 		fallback: false,
 	}

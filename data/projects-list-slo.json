@@ -367,6 +367,164 @@
 					"description": "Ne nameravam posodabljati te spletne strani"
 				}
 			]
+		},
+		{
+			"id": "pp6",
+			"title": "Javascript Igra s kockami",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-6/project-6-1.JPG",
+				"/images/project-6/project-6-2.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/dice-game-js"
+				},
+				{ "name": "demo", "link": "https://dice-gamee-js.netlify.app/" }
+			],
+
+			"description": "Preprosta javascript igra s kockami, kjer se dva igralca izmenjujeta in mečeta kocko. Zmaga tisti, ki prvi zbere 20 točk",
+			"technologies": [
+				{
+					"name": "Javascript",
+					"description": "Za interaktivnost in manipulacijo DOM"
+				},
+				{
+					"name": "Stil",
+					"description": "Za oblikovanje se uporablja navaden css"
+				},
+				{
+					"name": "Gostovanje",
+					"description": "Gostuje na Netlify z neprekinjenim nalaganjem z Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Igra s kockami",
+					"description": "Izmenično metanje kock. Zmaga tisti, ki prvi zbere 20 točk"
+				}
+			],
+			"todos": [
+				{
+					"name": "Brez posodobitve",
+					"description": "Ne nameravam posodabljati te spletne strani"
+				}
+			]
+		},
+		{
+			"id": "pp7",
+			"title": "Javascript Pomodoro Časovnik",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-7/project-7-1.JPG",
+				"/images/project-7/project-7-2.JPG",
+				"/images/project-7/project-7-3.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/pomodoro-js"
+				},
+				{ "name": "website", "link": "https://pomodoro-timerr-js.netlify.app/" }
+			],
+
+			"description": "Javascript Pomodoro časovnik s prilagojenimi časovniki in odmori",
+			"technologies": [
+				{
+					"name": "Javascript",
+					"description": "Za interaktivnost in manipulacijo DOM"
+				},
+				{
+					"name": "Stil",
+					"description": "Za oblikovanje se uporablja navaden css"
+				},
+				{
+					"name": "Gostovanje",
+					"description": "Gostuje na Netlify z neprekinjenim nalaganjem z Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Pomodoro časovnik",
+					"description": "Uporabniki lahko nastavijo dolžine časovnika po meri za seje in odmore"
+				},
+				{
+					"name": "Opozorilo o koncu",
+					"description": "10 sekund pred koncem seje vrstica napredka se obarva rdeče in začne utripati. Ko števec doseže nič, se predvaja zvok"
+				}
+			],
+			"todos": [
+				{
+					"name": "Zgodovina",
+					"description": "Seznam opravljenih preteklih sej"
+				},
+				{
+					"name": "Statistika",
+					"description": "Statistika na dnevni, tedenski, mesečni, letni osnovi z grafikoni"
+				}
+			]
+		},
+		{
+			"id": "pp8",
+			"title": "Javascript lepljivi listki",
+			"category": "Javascript",
+			"isFeatured": false,
+			"image": [
+				"/images/project-8/project-8-1.JPG",
+				"/images/project-8/project-8-2.JPG"
+			],
+
+			"languages": ["Html", "CSS", "Javascript"],
+			"links": [
+				{
+					"name": "github",
+					"link": "https://github.com/kremsnita420/sticky-notes-js"
+				},
+				{ "name": "demo", "link": "https://sticky-notez-js.netlify.app/" }
+			],
+
+			"description": "Javascript lepljivi listki, ki so shranjeni v lokalni shrambi brskalnika",
+			"technologies": [
+				{
+					"name": "Javascript",
+					"description": "Za interaktivnost in manipulacijo DOM"
+				},
+				{
+					"name": "Lokalna Shramba",
+					"description": "Listki so shranjeni v lokalni shrambi brskalnika"
+				},
+				{
+					"name": "Stil",
+					"description": "Za oblikovanje se uporablja navaden css"
+				},
+				{
+					"name": "Gostovanje",
+					"description": "Gostuje na Netlify z neprekinjenim nalaganjem z Github"
+				}
+			],
+			"features": [
+				{
+					"name": "Lepljivi listki",
+					"description": "Uporabniki lahko ustvarijo lepljive listke"
+				}
+			],
+			"todos": [
+				{
+					"name": "Naslovi",
+					"description": "Ob kreiranju novega listka vstavi naslov"
+				},
+				{
+					"name": "Barve",
+					"description": "Nastavi poljubno barvo listka"
+				}
+			]
 		}
 	]
 }
