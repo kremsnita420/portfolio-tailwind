@@ -6,17 +6,24 @@
 /* typography */
 @layer components {
     p {
-        @apply text-gray-600 dark:text-gray-300 text-lg md:text-xl lg:text-2xl
+        @apply text-gray-600 dark:text-gray-300 text-lg md:text-xl
     }
-}
 
+  }
+  
 
+  ::selection {
+   @apply bg-purple-300 dark:bg-blue-300;
+  }
+  
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   cursor: default;
   
 }
+
+
 
 
 
