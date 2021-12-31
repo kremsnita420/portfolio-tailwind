@@ -205,7 +205,7 @@
 					"name": "github",
 					"link": "https://github.com/kremsnita420/animated-weather-pureJS-bootstrap"
 				},
-				{ "name": "demo", "link": "https://weathe-app-pure-js.netlify.app/" }
+				{ "name": "demo", "link": "https://weather-app-pure-js.netlify.app/" }
 			],
 
 			"description": "Aplikacija za vremensko napoved, ki prikazuje urne in dnevne napovedi na podlagi geolokacije naprave. Ozadje je animirano(gif) in se spreminja glede na vremenske razmere",

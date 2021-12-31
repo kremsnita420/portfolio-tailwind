@@ -202,7 +202,7 @@
 					"name": "github",
 					"link": "https://github.com/kremsnita420/animated-weather-pureJS-bootstrap"
 				},
-				{ "name": "website", "link": "https://weathe-app-pure-js.netlify.app/" }
+				{ "name": "website", "link": "https://weather-app-pure-js.netlify.app/" }
 			],
 
 			"description": "Weather App that shows hourly and daily forecasts based on devices geolocation. The background is animated(gif) and changes based on weather condition",
