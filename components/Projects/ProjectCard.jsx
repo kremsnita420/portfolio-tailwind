@@ -22,7 +22,6 @@ export default function ProjectCard({ id, image, title }) {
 						blurDataURL='https://images.unsplash.com/photo-1613387275674-cb92af1c29d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
 						src={image}
 						alt='thumbnail'
-						s
 					/>
 					<p className='text-xl font-semibold font-heading1 text-gray-800 dark:text-gray-200 text-center pt-5'>
 						{title}

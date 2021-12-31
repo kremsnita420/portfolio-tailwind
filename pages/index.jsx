@@ -49,7 +49,7 @@ export default function IndexPage({ projectsEn, projectsSl }) {
 				}
 			</p>
 
-			<div className='grid md:grid-cols-2 xl:grid-cols-3 mt-20 gap-10 mx-auto'>
+			<div className='grid md:grid-cols-3 xl:grid-cols-4 mt-20 gap-10 mx-auto'>
 				{projects
 					.filter((project) => project.isFeatured == true)
 					.map((project) => (

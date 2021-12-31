@@ -260,8 +260,7 @@ img {
 
 /*! ABOUT PAGE */
 
-.span-safet, 
-.span-developer {
+.span-safet {
     animation: color_anim2 10s infinite 0.4s;
 }
 @keyframes color_anim2 {

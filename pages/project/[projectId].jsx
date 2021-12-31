@@ -68,11 +68,11 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 
 			<div className='flex flex-col items-center justify-centerlg:justify-around'>
 				{/* repository and live website */}
-				<div className='flex flex-col items-start'>
+				<div className='flex flex-col'>
 					<div className='flex flex-col justify-center text-center items-center w-full mt-10'>
 						{/* Github & Website */}
 						<SecondaryTitle title={t.single_project_title1} />
-						<p className='mb-10'>
+						<p className='mb-10 text-left'>
 							{/* You can see website */}
 							{t.single_project_text1}{' '}
 							<span className='circle-sketch-highlight inline-block'>
@@ -98,7 +98,7 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 				</div>
 
 				{/* project description */}
-				<div className='flex-col items-center w-full text-center justify-center'>
+				<div className='flex-col items-center w-full text-left justify-center'>
 					<div className='flex flex-col justify-center items-center w-full mt-10'>
 						{/* Description */}
 						<SecondaryTitle title={t.single_project_title2} />
@@ -108,34 +108,32 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 						<div className='flex flex-col justify-center items-center w-full md:mr-10'>
 							{/* Technologies */}
 							<SecondaryTitle title={t.single_project_title3} />
-							<ul className=' py-2 mb-10 text-gray-800 dark:text-gray-200'>
+							<ul className=' mb-10 text-gray-800 dark:text-gray-200'>
 								{filteredProject.technologies.map((tech, i) => (
-									<li
-										className=' py-2 text-center glassmorph mb-5 px-2'
-										key={i}>
-										<h4 className='font-heading1 font-black mb-2'>
+									<li className='p-5 glassmorph mb-5' key={i}>
+										<h4 className='font-heading1 text-left font-black mb-2'>
 											<span className='circle-sketch-highlight inline-block md:text-2xl p-1'>
 												{i + 1}. {tech.name}
 											</span>
 										</h4>
-										<p className='pb-2'>{tech.description}</p>
+										<p className='pb-2 text-left'>{tech.description}</p>
 									</li>
 								))}
 							</ul>
 						</div>
 
-						<div className='flex flex-col w-full justify-center items-center py-2 md:ml-10'>
+						<div className='flex flex-col w-full justify-center items-center md:ml-10'>
 							{/* Features */}
 							<SecondaryTitle title={t.single_project_title4} />
-							<ul className=' py-2 glassmorph mb-10 px-2 text-gray-800 dark:text-gray-200'>
+							<ul className=' glassmorph mb-10 text-gray-800 dark:text-gray-200'>
 								{filteredProject.features.map((feature, i) => (
-									<li className=' py-2 text-center' key={i}>
-										<h4 className='font-heading1 text-xl md:text-2xl font-black mb-5 '>
+									<li className='p-5' key={i}>
+										<h4 className='font-heading1 text-left text-xl md:text-2xl font-black mb-5 '>
 											<span className='sketch-highlight inline-block p-3'>
 												{i + 1}. {feature.name}
 											</span>
 										</h4>
-										<p className='pb-2'>{feature.description}</p>
+										<p className='pb-2 text-left'>{feature.description}</p>
 									</li>
 								))}
 							</ul>
@@ -160,11 +158,11 @@ export default function ProjectPage({ filteredProjectEn, filteredProjectSl }) {
 
 					<ul className='pb-10 text-gray-800 flex flex-col md:flex-row justify-center items-center dark:text-gray-200'>
 						{filteredProject.todos.map((todo, i) => (
-							<li className='md:pl-5 py-2 text-center' key={i}>
-								<h4 className='realistic-marker-highlight inline-block font-heading1 text-xl md:text-2xl rotate-2 font-black mb-2'>
+							<li className='md:pl-5 py-2 text-left' key={i}>
+								<h4 className='realistic-marker-highlight inline-block font-heading1 text-xl md:text-2xl rotate-2 font-black mb-5'>
 									{i + 1}. {todo.name}
 								</h4>
-								<p className='pb-2 md:w-[90%]'>{todo.description}</p>
+								<p className='pb-2 text-left md:w-[90%]'>{todo.description}</p>
 							</li>
 						))}
 					</ul>

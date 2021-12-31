@@ -44,16 +44,16 @@ export default function AboutPage() {
 					/>
 				</div>
 
-				<div className='flex text-center flex-col items-center justify-between md:pl-10 lg:w-2/3 xl:w-1/2'>
+				<div className='flex text-left flex-col items-center justify-between md:pl-10 lg:w-2/3 xl:w-1/2'>
 					<h2 className='font-heading1 w-full font-black text-gray-800 dark:text-gray-200 text-2xl md:text-3xl mb-5 relative'>
 						{/* Hello, my name Is */}
-						{t.about_text1} <br />
-						<span className='text-5xl font-black span-safet inline-block mt-5'>
-							Safet
+						{t.about_text1}
+						<span className='text-5xl font-black span-safet block mt-1'>
+							Safet Duranović
 						</span>
-						,
-						<span className='text-5xl font-black span-developer block leading-10'>
-							<br />
+
+						<br />
+						<span className='text-5xl font-black span-safet block'>
 							{/* Web Developer */}
 							{t.about_text2}
 						</span>
@@ -162,7 +162,7 @@ export default function AboutPage() {
 			{/* Courses & Certifications */}
 			<SecondaryTitle title={t.about_title3} />
 			<div className='flex flex-col md:flex-row items-center justify-start text-gray-800 dark:text-gray-400'>
-				<p className='text-xl mb-10 p-5 w-full text-center sketch-highlight inline-block'>
+				<p className='text-xl mb-10 p-5 w-full text-left sketch-highlight inline-block'>
 					{/* Here is a list of completed courses and certifications so fa
         If you wish to know more about a specific course click the card 
         and it will take you to the course provider's website */}
